@@ -1,0 +1,421 @@
+/*  new style   */
+
+
+
+/*popup ®в®Ўа ¦Ґ­Ёп ­ бва®ҐЄ ўЁ¤Ё¬®бвЁ Є®«®­®Є*/
+
+.col_vis_options_style1 {font-family:microsoft sans-serif, tahoma; font-size: 1.4ex; color:#383838; margin:5px; border:2px solid #383838;}
+
+.col_vis_options_style2 {font-family:microsoft sans-serif, tahoma; font-weight:bold; background:#383838; padding:5px; color:#FFFFFF;}
+
+
+/*  -----------------------------   */
+
+
+
+/*  joker was change */
+
+
+
+.menu-button-exit		{background:url("/Skins/newskin/pics/menu_bg_button.gif") left repeat-x;}
+
+
+
+/*  main */
+
+body        {background:#FFFFFF;}
+
+.title-main     {font-family:microsoft sans-serif, tahoma; font-size:11px; color:#383838; font-weight:bold; padding-top:3px; padding-left:10px;}
+
+
+
+/*  images */
+
+.arrow-col-sort     {text-align: right; margin-left:5px; vertical-align:middle;}
+
+.icons      {margin:2px;}
+
+.icons-2        {margin:0px 2px 0px 2px;}
+
+
+
+/*  text */
+
+.doc_item       {font-family:microsoft sans-serif, tahoma; background:#FFFFFF; border:1px solid #CBCBCB; border-bottom:1px dashed #CBCBCB; border-top:none; margin:0px 0px 0px 28px; padding:5px; padding-left:10px; font:Microsoft sun-serif, Arial, Tahoma 11px #383838; list-style-position : outside; list-style-type : none; cursor:hand;}
+
+.menu-bg        {}
+
+
+
+.text-red       {color:#BB0001;}
+
+
+
+/*  календарь */
+
+a.calendarlink  {font-family:microsoft sans-serif, tahoma; font-size:1.6ex; color:#383838;}
+
+a.calendarlink_weeknum  {font-family:microsoft sans-serif, tahoma; font-size:1.6ex; color:#383838; }
+
+
+
+/*  links */
+
+
+
+/*  table */
+
+table.sort  {
+
+	background:#CBCBCB; width:95%;
+
+}
+
+table.sort tr {
+
+	border:1px solid #000;
+
+}
+
+
+
+table.sort thead td.curcol  {
+
+	font-family:microsoft sans-serif, tahoma;
+
+	font-size:1.4ex; font-weight : bold;
+
+	color:#383838;
+
+	background:#FFFFFF;
+
+	border:1px solid #FAFAFB;
+
+	border-bottom:2px solid #BB0001;
+
+}
+
+
+
+table.sort thead td {
+
+	cursor:pointer;
+
+	cursor:hand;
+
+	font-weight:bold;
+
+	text-align:center;
+
+	font-family:microsoft sans-serif, tahoma;
+
+	font-weight : bold;
+
+	color:#383838;
+
+	background:#E7E7E7;
+
+	border:1px solid #FFFFFF;
+
+	border-bottom:1px solid #CBCBCB;
+
+}
+
+
+
+td          {font-family:microsoft sans-serif, tahoma;  font-size:1.4ex; color:#383838}
+
+td.tit      {font-family:microsoft sans-serif, tahoma;  font-size:9pt; color: Black; font-weight : bold; color:#ffffff}
+
+
+
+td.t1 {
+
+	font-family:microsoft sans-serif, tahoma;
+
+	font-weight:bold;
+
+	color:#383838;
+
+	background:#EBEBEB;
+
+	border:1px solid #FFFFFF;
+
+	border-bottom:1px solid #CBCBCB;
+
+	padding:0px 3px 0px 3px;
+
+	vertical-align:middle;
+
+}
+
+td.t2 {
+
+	font-family:microsoft sans-serif, tahoma;
+
+	font-weight:bold;
+
+	color:#383838;
+
+	background:#FFFFFF;
+
+	border:1px solid #FFFFFF;
+
+	border-bottom:1px solid #CBCBCB;
+
+	padding:0px 3px 0px 3px;
+
+	vertical-align:middle;
+
+}
+
+
+
+td.tsimple  {
+
+	font-family:microsoft sans-serif, tahoma;
+
+	font-size:1.4ex;
+
+	color:#383838;
+
+	background:#FAFAFB;
+
+	padding:3px;
+
+	vertical-align:top;
+
+}
+
+td.tsimple2  {
+
+	font-family:microsoft sans-serif, tahoma;
+
+	font-size:1.4ex;
+
+	color:#383838;
+
+	background:#FAFAFB;
+
+	padding:2px;
+
+	vertical-align:top;
+
+}
+
+
+
+.td-title    {width:95%; font-family:microsoft sans-serif, tahoma; font-size:1.4ex; color:#FFFFFF; font-weight:bold; background: #7F7F7F; margin-top:20px; margin-bottom:2px; padding:3px; padding-left:20px;}
+
+
+
+.staffd1plus    { width:95%; font-family:microsoft sans-serif, tahoma; font-size:1.4ex; color:#FFFFFF; font-weight:bold; cursor:hand; background: #7F7F7F; margin-top:20px; margin-bottom:2px; padding:3px; padding-left:20px; background-image:url('/Skins/newskin/pics/plus-svertivalka.gif'); background-repeat:no-repeat;}
+
+.staffd1minus   { width:95%; font-family:microsoft sans-serif, tahoma; font-size:1.4ex; color:#FFFFFF; font-weight:bold; cursor:hand; background: #7F7F7F; margin-top:20px; margin-bottom:2px; padding:3px; padding-left:20px; background-image:url('/Skins/newskin/pics/minus-svertivalka.gif'); background-repeat:no-repeat;}
+
+
+
+.td-slider-1    {padding:3px; border:0px; background:#FFFFFF;}
+
+.td-slider-0    {padding:3px; border:0px; background:#FFFFFF;}
+
+
+
+table.common    {margin-bottom:1em; margin-top:1em; background :#CBCBCB;}
+
+
+
+/*  forms */
+
+input           {font-family:font-family:microsoft sans-serif, tahoma; font-size:11px; background:#eff2f4; background-image:url('/Skins/<?=$_SESSION['MySkin'];?>/pics/button-bg.gif'); border:1px solid #343434;}
+
+option, select  {font-family:font-family:microsoft sans-serif, tahoma; font-size:11px; background:#EFEFEF; border-bottom:1px dashed #DADADA;}
+
+textarea    {font-family:font-family:microsoft sans-serif, tahoma; font-size:11px; background:#DADADA; }
+
+
+
+.visibility_opt_check   {border:1px solid #DADADA; margin:2px 0px 2px 5px; background:#FFFFFF;}
+
+
+
+/*  others */
+
+.div-spacer     {font-size:1px; margin-bottom:3px;}
+
+
+
+/*  -----------------------------   */
+
+
+
+.version_info {
+
+	font-family:tahoma;
+
+	font-size:10px;
+
+	color:#405868;
+
+	padding-top:15px;
+
+}
+
+
+
+.tit1   {
+
+	font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma;
+
+	font-size:10px;
+
+	color:#71768B;
+
+	/*padding-bottom:15px;*/
+
+}
+
+
+
+table.main_table{font-family:arial,sans-serif; font-size:9pt; color: #383838; font-weight:bold; border:0px}
+
+table.table_title{border:0px;}
+
+
+
+
+
+body{ scrollbar-track-color:#ffffff; scrollbar-highlight-color:#CBCBCB; scrollbar-3dlight-color:#f4f6f8; scrollbar-darkshadow-color:#CBCBCB; scrollbar-shadow-color:#CBCBCB; scrollbar-arrow-color:#000000; scrollbar-face-color:#CBCBCB}
+
+
+
+
+
+
+
+option.groupitem{
+
+color: white;
+
+background: #626970;
+
+}
+
+
+
+/*input {
+
+font-family: MS Sans Serif, Sans-serif, Tahoma, Arial; 
+
+color:#000000 ;
+
+background-color : #9CF;
+
+font-size:11px; 
+
+border-style:solid; 
+
+border-width:1px; 
+
+border-color:#000000}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* заголовки таблицы */
+
+
+
+/* заголовок отсортированного столбца */
+
+
+
+
+
+a.staff1,a.staff1:visited
+
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+
+font-size:2.2ex; 
+
+color:#383838; 
+
+font-weight:bold;
+
+text-decoration:none
+
+}
+
+a.staff1:active,a.staff1:hover
+
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+
+font-size:2.2ex; 
+
+color:#ea8c01; 
+
+font-weight:bold;
+
+text-decoration:none
+
+}
+
+a.staff2,a.staff2:visited
+
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+
+font-size:2ex; 
+
+color:#383838
+
+}
+
+a.staff2:active,a.staff2:hover
+
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+
+font-size:2ex; 
+
+color:#ea8c01
+
+}
+
+a.staff3,a.staff3:visited
+
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+
+font-size:1.7ex; 
+
+color:#383838
+
+}
+
+a.staff3:active,a.staff3:hover
+
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+
+font-size:1.7ex; 
+
+color:#ea8c01
+
+}
+
+.header_body
+
+{
+
+background:#F4F6F8 url('/Skins/newskin/pics/header_bg.gif') repeat-x; margin:0px;
+
+}
+
+
+

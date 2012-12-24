@@ -1,0 +1,33 @@
+#php_value error_reporting 7
+
+#ErrorDocument 404 /404.html
+
+
+Options -Indexes
+
+DirectoryIndex index.php
+RewriteEngine On
+
+RewriteBase /
+   	RewriteCond %{HTTP_HOST} ^www.aktiv-sistema.com$ [NC]
+   	RewriteRule ^(.*)$ http://aktiv-sistema.com/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$  http://aktiv-sistema.com/$1 [R=301,L]
+
+RewriteRule ^$  index.php [L]
+Redirect /blog/ http://blog.aktiv-sistema.com.ua/
+
+RewriteRule ^admin$  /auth.php [L]
+RewriteRule ^login$  /auth.php?id=login [L]
+RewriteRule ^logon$  /auth.php?id=logon [L]
+RewriteRule ^logout$ /auth.php?id=logout [L]
+
+#RewriteRule ^sitemap$  /sitemap.php [L]
+
+###  Õ¿—“–Œ… » ƒŒ—“”œ¿   œŒÀ‹«Œ¬¿“≈À‹— Œ… ◊¿—“» CMS WEBSSTYLE  ###
+RewriteRule ^$    index.php [L]
+RewriteRule ^([^/.]+)$    index.php?id=$1 [L]
+RewriteRule ^([^/]+)/([^/.]+)$    index.php?id=$1&ssid=$2 [L]
+RewriteRule ^([^/]+)/([^/]+)/([^/.]+)$    index.php?id=$1&ssid=$2&usid=$3 [L]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/.]+)$    index.php?id=$1&ssid=$2&usid=$3&psid=$4 [L]

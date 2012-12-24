@@ -1,0 +1,684 @@
+[13-Dec-2012 16:33:36] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:33:37] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aktivsis_user'@'localhost' (using password: YES) in W:\home\aktiv\www\lib\class.Mysql.php on line 55
+[13-Dec-2012 16:35:15] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:35:15] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aktivsis_user'@'localhost' (using password: YES) in W:\home\aktiv\www\lib\class.Mysql.php on line 55
+[13-Dec-2012 16:35:18] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:35:18] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aktivsis_user'@'localhost' (using password: YES) in W:\home\aktiv\www\lib\class.Mysql.php on line 55
+[13-Dec-2012 16:35:19] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:35:19] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aktivsis_user'@'localhost' (using password: YES) in W:\home\aktiv\www\lib\class.Mysql.php on line 55
+[13-Dec-2012 16:45:46] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:45:46] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aktivsis_user'@'localhost' (using password: YES) in W:\home\aktiv\www\lib\class.Mysql.php on line 55
+[13-Dec-2012 16:46:04] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:46:04] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aktivsis_user'@'localhost' (using password: YES) in W:\home\aktiv\www\lib\class.Mysql.php on line 55
+[13-Dec-2012 16:47:26] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:47:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:47:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:47:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:47:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:47:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:48:34] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:48:34] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:48:34] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:48:34] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:48:34] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:48:34] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:51:49] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:51:49] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:51:49] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:51:49] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:51:49] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:51:49] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 338
+[13-Dec-2012 16:54:37] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:54:37] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:37] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:37] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:37] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:37] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:57] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 16:54:57] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:57] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:57] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:57] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 16:54:57] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:20:26] PHP Warning:  Variable passed to each() is not an array or object in W:\home\aktiv\www\lib\class.Constructor.php on line 5
+[13-Dec-2012 17:20:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:20:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:20:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:20:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:20:26] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:23:36] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:23:36] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:23:36] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:23:36] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[13-Dec-2012 17:23:36] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:19] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:19] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:19] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:19] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:19] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:24] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:24] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:24] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:24] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 11:33:24] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:08:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:08:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:08:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:08:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:08:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:09:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:09:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:09:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:09:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:09:07] PHP Warning:  substr() expects parameter 2 to be long, string given in W:\home\aktiv\www\lib\class.Template.php on line 336
+[14-Dec-2012 13:19:21] PHP Warning:  require(libs/smarty/libs/Smarty.class.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in W:\home\aktiv\www\sm\Setup.php on line 3
+[14-Dec-2012 13:19:21] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required 'libs/smarty/libs/Smarty.class.php' (include_path='.;/usr/local/php5/PEAR') in W:\home\aktiv\www\sm\Setup.php on line 3
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 268
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 269
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 270
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 271
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 272
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 273
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 274
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 275
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 276
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 277
+[14-Dec-2012 13:21:00] PHP Deprecated:  Function eregi_replace() is deprecated in W:\home\aktiv\www\lib\class.mod_Content.php on line 278
+[14-Dec-2012 13:45:58] PHP Warning:  require_once(lib/class.NewController.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in W:\home\aktiv\www\index.php on line 8
+[14-Dec-2012 13:45:58] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'lib/class.NewController.php' (include_path='.;/usr/local/php5/PEAR') in W:\home\aktiv\www\index.php on line 8
+[14-Dec-2012 13:46:24] PHP Warning:  require_once(class.From.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in W:\home\aktiv\www\lib\class.NewControler.php on line 2
+[14-Dec-2012 13:46:24] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'class.From.php' (include_path='.;/usr/local/php5/PEAR') in W:\home\aktiv\www\lib\class.NewControler.php on line 2
+[14-Dec-2012 13:46:45] PHP Warning:  require_once(lib/class.From.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in W:\home\aktiv\www\lib\class.NewControler.php on line 2
+[14-Dec-2012 13:46:45] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required 'lib/class.From.php' (include_path='.;/usr/local/php5/PEAR') in W:\home\aktiv\www\lib\class.NewControler.php on line 2
+[14-Dec-2012 13:46:54] PHP Warning:  require_once(/lib/class.From.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in W:\home\aktiv\www\lib\class.NewControler.php on line 2
+[14-Dec-2012 13:46:54] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/lib/class.From.php' (include_path='.;/usr/local/php5/PEAR') in W:\home\aktiv\www\lib\class.NewControler.php on line 2
+[14-Dec-2012 13:47:03] PHP Warning:  require_once(./lib/class.From.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in W:\home\aktiv\www\lib\class.NewControler.php on line 2
+[14-Dec-2012 13:47:03] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required './lib/class.From.php' (include_path='.;/usr/local/php5/PEAR') in W:\home\aktiv\www\lib\class.NewControler.php on line 2
+[14-Dec-2012 15:51:07] PHP Fatal error:  Class 'FormAbstract' not found in W:\home\aktiv\www\lib\class.Form.php on line 3
+[14-Dec-2012 15:51:13] PHP Fatal error:  Class 'FormAbstract' not found in W:\home\aktiv\www\lib\class.Form.php on line 3
+[14-Dec-2012 15:52:31] PHP Fatal error:  Class 'FormAbstract' not found in W:\home\aktiv\www\lib\class.Form.php on line 3
+[14-Dec-2012 15:53:05] PHP Fatal error:  Class 'Models_Abstract' not found in W:\home\aktiv\www\models\subscribers.php on line 3
+[14-Dec-2012 15:53:12] PHP Fatal error:  Class 'Models_Abstract' not found in W:\home\aktiv\www\models\subscribers.php on line 3
+[14-Dec-2012 15:53:12] PHP Fatal error:  Class 'Models_Abstract' not found in W:\home\aktiv\www\models\subscribers.php on line 3
+[14-Dec-2012 15:53:12] PHP Fatal error:  Class 'Models_Abstract' not found in W:\home\aktiv\www\models\subscribers.php on line 3
+[14-Dec-2012 15:53:13] PHP Fatal error:  Class 'Models_Abstract' not found in W:\home\aktiv\www\models\subscribers.php on line 3
+[14-Dec-2012 15:53:13] PHP Fatal error:  Class 'Models_Abstract' not found in W:\home\aktiv\www\models\subscribers.php on line 3
+[14-Dec-2012 15:53:13] PHP Fatal error:  Class 'Models_Abstract' not found in W:\home\aktiv\www\models\subscribers.php on line 3
+[14-Dec-2012 16:24:29] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[14-Dec-2012 16:24:29] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[14-Dec-2012 18:14:43] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[14-Dec-2012 18:14:43] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[14-Dec-2012 18:14:43] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[14-Dec-2012 18:14:43] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[14-Dec-2012 18:14:43] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[14-Dec-2012 18:15:10] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[14-Dec-2012 18:15:10] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[14-Dec-2012 18:15:10] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[14-Dec-2012 18:15:10] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[14-Dec-2012 18:15:10] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[14-Dec-2012 18:15:12] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[14-Dec-2012 18:15:12] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[14-Dec-2012 18:15:12] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[14-Dec-2012 18:15:12] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[14-Dec-2012 18:15:12] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[14-Dec-2012 18:15:16] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\structure.php on line 23
+[14-Dec-2012 18:15:16] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\structure.php on line 30
+[14-Dec-2012 18:15:16] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\structure.php on line 37
+[14-Dec-2012 18:15:16] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\structure.php on line 44
+[14-Dec-2012 18:15:16] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\structure.php on line 51
+[14-Dec-2012 18:15:16] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\structure.php on line 58
+[14-Dec-2012 18:15:16] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\structure.php on line 65
+[14-Dec-2012 18:15:16] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\structure.php on line 70
+[14-Dec-2012 18:15:53] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[14-Dec-2012 18:15:53] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[14-Dec-2012 18:15:53] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[14-Dec-2012 18:15:53] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[14-Dec-2012 18:15:53] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[14-Dec-2012 18:15:56] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[14-Dec-2012 18:15:56] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[14-Dec-2012 18:15:56] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[14-Dec-2012 18:15:56] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[14-Dec-2012 18:15:56] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[14-Dec-2012 18:15:58] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[14-Dec-2012 18:15:58] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[14-Dec-2012 18:15:58] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[14-Dec-2012 18:15:58] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[14-Dec-2012 18:15:58] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[14-Dec-2012 18:16:00] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\news.php on line 15
+[14-Dec-2012 18:16:00] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\news.php on line 22
+[14-Dec-2012 18:16:00] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\news.php on line 29
+[14-Dec-2012 18:16:00] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\news.php on line 36
+[14-Dec-2012 18:16:13] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[14-Dec-2012 18:16:13] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[14-Dec-2012 18:16:13] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[14-Dec-2012 18:16:13] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[14-Dec-2012 18:16:13] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[14-Dec-2012 18:16:23] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[14-Dec-2012 18:16:23] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[14-Dec-2012 18:16:23] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[14-Dec-2012 18:16:23] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[14-Dec-2012 18:16:23] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[14-Dec-2012 18:16:26] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\news.php on line 15
+[14-Dec-2012 18:16:26] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\news.php on line 22
+[14-Dec-2012 18:16:26] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\news.php on line 29
+[14-Dec-2012 18:16:26] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\news.php on line 36
+[17-Dec-2012 15:53:51] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 15
+[17-Dec-2012 15:53:51] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 22
+[17-Dec-2012 15:53:51] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 29
+[17-Dec-2012 15:53:51] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 36
+[17-Dec-2012 15:53:51] PHP Notice:  Undefined variable: id in W:\home\aktiv\www\content.php on line 41
+[17-Dec-2012 17:34:54] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template &quot;sm\templates\content.edit.tpl&quot;  on line 9 &quot;&amp;lt;form action=&amp;quot;/content.php?id=edit&amp;amp;ssid={ID}&amp;quot; method=&amp;quot;POST&amp;quot; target=&amp;quot;main&amp;quot; ENCTYPE=&amp;quot;multipart/form-data&amp;quot;&amp;gt;&quot; unknown tag &quot;ID&quot;' in W:\home\aktiv\www\lib\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php:657
+Stack trace:
+#0 W:\home\aktiv\www\lib\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(443): Smarty_Internal_TemplateCompilerBase->trigger_template_error('unknown tag "ID...', 9)
+#1 W:\home\aktiv\www\lib\smarty\libs\sysplugins\smarty_internal_templateparser.php(2393): Smarty_Internal_TemplateCompilerBase->compileTag('ID', Array)
+#2 W:\home\aktiv\www\lib\smarty\libs\sysplugins\smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser->yy_r37()
+#3 W:\home\aktiv\www\lib\smarty\libs\sysplugins\smarty_internal_templateparser in W:\home\aktiv\www\lib\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php on line 657
+[17-Dec-2012 17:36:12] PHP Notice:  Undefined index: ID in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 40
+[17-Dec-2012 17:36:12] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 40
+[17-Dec-2012 17:36:12] PHP Notice:  Undefined index: NAME in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 51
+[17-Dec-2012 17:36:12] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 51
+[17-Dec-2012 17:36:12] PHP Notice:  Undefined index: TITLE in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 56
+[17-Dec-2012 17:36:12] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 56
+[17-Dec-2012 17:36:12] PHP Notice:  Undefined index: KEYWORDS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 61
+[17-Dec-2012 17:36:12] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 61
+[17-Dec-2012 17:36:12] PHP Notice:  Undefined index: DESCRIPTION in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 66
+[17-Dec-2012 17:36:12] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 66
+[17-Dec-2012 17:36:12] PHP Notice:  Undefined index: STATUS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 71
+[17-Dec-2012 17:36:12] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 71
+[17-Dec-2012 17:36:12] PHP Notice:  Undefined index: BODY in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 76
+[17-Dec-2012 17:36:12] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 76
+[17-Dec-2012 17:38:19] PHP Notice:  Undefined index: ID in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 40
+[17-Dec-2012 17:38:19] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 40
+[17-Dec-2012 17:38:19] PHP Notice:  Undefined index: NAME in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 51
+[17-Dec-2012 17:38:19] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 51
+[17-Dec-2012 17:38:19] PHP Notice:  Undefined index: TITLE in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 56
+[17-Dec-2012 17:38:19] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 56
+[17-Dec-2012 17:38:19] PHP Notice:  Undefined index: KEYWORDS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 61
+[17-Dec-2012 17:38:19] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 61
+[17-Dec-2012 17:38:19] PHP Notice:  Undefined index: DESCRIPTION in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 66
+[17-Dec-2012 17:38:19] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 66
+[17-Dec-2012 17:38:19] PHP Notice:  Undefined index: STATUS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 71
+[17-Dec-2012 17:38:19] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 71
+[17-Dec-2012 17:38:19] PHP Notice:  Undefined index: BODY in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 76
+[17-Dec-2012 17:38:19] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 76
+[17-Dec-2012 17:46:47] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:37] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:38] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:39] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:39] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:39] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:40] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:40] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:40] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:40] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:41] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:47:41] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:48:17] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:40] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:41] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:41] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:41] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:42] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:42] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:42] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:42] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:43] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:43] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:43] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:43] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 20
+[17-Dec-2012 17:49:57] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:03] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:04] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:04] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:04] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:05] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:05] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:05] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:05] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:06] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:06] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:06] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:06] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:06] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:07] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:07] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:07] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:07] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:07] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:08] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:08] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:08] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:08] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:09] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:50:09] PHP Fatal error:  Call to undefined method DB::select() in W:\home\aktiv\www\models\content.php on line 30
+[17-Dec-2012 17:51:17] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:51:57] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:51:58] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:51:59] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:51:59] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:51:59] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:51:59] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:00] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:07] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:08] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:09] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:09] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:09] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:10] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:10] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:10] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:10] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:11] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:11] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:11] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:11] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:12] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:12] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:12] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:12] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:12] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:13] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:13] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:13] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:13] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:26] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'aktivsis_db'@'localhost' (using password: YES)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'aktivsis_db', 'root', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem(' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:52:59] PHP Notice:  Undefined index: dbhost in W:\home\aktiv\www\models\abstract.php on line 14
+[17-Dec-2012 17:52:59] PHP Notice:  Undefined index: dbase in W:\home\aktiv\www\models\abstract.php on line 15
+[17-Dec-2012 17:52:59] PHP Notice:  Undefined index: dbuser in W:\home\aktiv\www\models\abstract.php on line 16
+[17-Dec-2012 17:52:59] PHP Notice:  Undefined index: dbpass in W:\home\aktiv\www\models\abstract.php on line 17
+[17-Dec-2012 17:52:59] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user ''@'localhost' (using password: NO)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=;dbn...', NULL, NULL, Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem('12')
+#8 W:\home\aktiv\w in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:53:28] PHP Notice:  Undefined index: dbhost in W:\home\aktiv\www\models\abstract.php on line 14
+[17-Dec-2012 17:53:28] PHP Notice:  Undefined index: dbase in W:\home\aktiv\www\models\abstract.php on line 15
+[17-Dec-2012 17:53:28] PHP Notice:  Undefined index: dbuser in W:\home\aktiv\www\models\abstract.php on line 16
+[17-Dec-2012 17:53:28] PHP Notice:  Undefined index: dbpass in W:\home\aktiv\www\models\abstract.php on line 17
+[17-Dec-2012 17:53:28] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user ''@'localhost' (using password: NO)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=;dbn...', NULL, NULL, Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem('12')
+#8 W:\home\aktiv\w in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:53:29] PHP Notice:  Undefined index: dbhost in W:\home\aktiv\www\models\abstract.php on line 14
+[17-Dec-2012 17:53:29] PHP Notice:  Undefined index: dbase in W:\home\aktiv\www\models\abstract.php on line 15
+[17-Dec-2012 17:53:29] PHP Notice:  Undefined index: dbuser in W:\home\aktiv\www\models\abstract.php on line 16
+[17-Dec-2012 17:53:29] PHP Notice:  Undefined index: dbpass in W:\home\aktiv\www\models\abstract.php on line 17
+[17-Dec-2012 17:53:29] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user ''@'localhost' (using password: NO)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=;dbn...', NULL, NULL, Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem('12')
+#8 W:\home\aktiv\w in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:53:35] PHP Notice:  Undefined index: dbhost in W:\home\aktiv\www\models\abstract.php on line 14
+[17-Dec-2012 17:53:35] PHP Notice:  Undefined index: dbase in W:\home\aktiv\www\models\abstract.php on line 15
+[17-Dec-2012 17:53:35] PHP Notice:  Undefined index: dbuser in W:\home\aktiv\www\models\abstract.php on line 16
+[17-Dec-2012 17:53:35] PHP Notice:  Undefined index: dbpass in W:\home\aktiv\www\models\abstract.php on line 17
+[17-Dec-2012 17:53:35] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user ''@'localhost' (using password: NO)' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=;dbn...', NULL, NULL, Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem('12')
+#8 W:\home\aktiv\w in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:54:49] PHP Parse error:  syntax error, unexpected T_STRING, expecting ')' in W:\home\aktiv\www\models\abstract.php on line 16
+[17-Dec-2012 17:55:52] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000] [1049] Unknown database 'active_db'' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('12', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('content.id = ?', '12', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('content.id = ?', '12', NULL, true)
+#6 W:\home\aktiv\www\models\content.php(24): Zend_Db_Select->where('content.id = ?', '12')
+#7 W:\home\aktiv\www\lib\class.Content.php(111): Models_Content->getContentItem('12')
+#8 W:\home\aktiv\www\content.php(32): Content->e in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[17-Dec-2012 17:56:18] PHP Notice:  Undefined index: ID in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 40
+[17-Dec-2012 17:56:18] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 40
+[17-Dec-2012 17:56:18] PHP Notice:  Undefined index: NAME in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 51
+[17-Dec-2012 17:56:18] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 51
+[17-Dec-2012 17:56:18] PHP Notice:  Undefined index: TITLE in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 56
+[17-Dec-2012 17:56:18] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 56
+[17-Dec-2012 17:56:18] PHP Notice:  Undefined index: KEYWORDS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 61
+[17-Dec-2012 17:56:18] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 61
+[17-Dec-2012 17:56:18] PHP Notice:  Undefined index: DESCRIPTION in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 66
+[17-Dec-2012 17:56:18] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 66
+[17-Dec-2012 17:56:18] PHP Notice:  Undefined index: STATUS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 71
+[17-Dec-2012 17:56:18] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 71
+[17-Dec-2012 17:56:18] PHP Notice:  Undefined index: BODY in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 76
+[17-Dec-2012 17:56:18] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 76
+[17-Dec-2012 18:06:07] PHP Notice:  Undefined index: NAME in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 50
+[17-Dec-2012 18:06:07] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 50
+[17-Dec-2012 18:06:07] PHP Notice:  Undefined index: KEYWORDS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 60
+[17-Dec-2012 18:06:07] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 60
+[17-Dec-2012 18:06:07] PHP Notice:  Undefined index: DESCRIPTION in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 65
+[17-Dec-2012 18:06:07] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 65
+[17-Dec-2012 18:06:07] PHP Notice:  Undefined index: STATUS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 70
+[17-Dec-2012 18:06:07] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 70
+[17-Dec-2012 18:06:07] PHP Notice:  Undefined index: BODY in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 75
+[17-Dec-2012 18:06:07] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 75
+[17-Dec-2012 18:07:38] PHP Notice:  Undefined index: KEYWORDS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 59
+[17-Dec-2012 18:07:38] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 59
+[17-Dec-2012 18:07:38] PHP Notice:  Undefined index: DESCRIPTION in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 64
+[17-Dec-2012 18:07:38] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 64
+[17-Dec-2012 18:07:38] PHP Notice:  Undefined index: STATUS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 69
+[17-Dec-2012 18:07:38] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 69
+[17-Dec-2012 18:07:38] PHP Notice:  Undefined index: BODY in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 74
+[17-Dec-2012 18:07:38] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 74
+[17-Dec-2012 18:08:34] PHP Notice:  Undefined index: DESCRIPTION in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 63
+[17-Dec-2012 18:08:34] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 63
+[17-Dec-2012 18:08:34] PHP Notice:  Undefined index: STATUS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 68
+[17-Dec-2012 18:08:34] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 68
+[17-Dec-2012 18:08:34] PHP Notice:  Undefined index: BODY in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 73
+[17-Dec-2012 18:08:34] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 73
+[17-Dec-2012 18:09:07] PHP Notice:  Undefined index: STATUS in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 67
+[17-Dec-2012 18:09:07] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 67
+[17-Dec-2012 18:09:07] PHP Notice:  Undefined index: BODY in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 72
+[17-Dec-2012 18:09:07] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 72
+[17-Dec-2012 18:11:54] PHP Notice:  Undefined index: BODY in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 76
+[17-Dec-2012 18:11:54] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\16da1a388d46462c440c96cd76565edac39d4332.file.content.edit.tpl.php on line 76
+[17-Dec-2012 18:38:56] PHP Fatal error:  Call to a member function getContentItem() on a non-object in W:\home\aktiv\www\lib\class.Content.php on line 102
+[17-Dec-2012 19:02:25] PHP Notice:  Undefined property: Models_Content::$db in W:\home\aktiv\www\models\abstract.php on line 30
+[17-Dec-2012 19:02:25] PHP Fatal error:  Call to a member function update() on a non-object in W:\home\aktiv\www\models\abstract.php on line 30
+[19-Dec-2012 11:12:09] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[19-Dec-2012 11:12:09] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27

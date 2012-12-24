@@ -1,0 +1,182 @@
+body, tbody {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px; background-color:#FFFFFF;font-family: Tahoma, sans-serif;font-size: 10pt;color: #888687;}
+ul {text-align:left;vertical-align:top; margin:0px; padding-left:15px;}
+li {margin-left: 0px;margin-top: 0px;margin-right: 0px;margin-bottom: 0px;padding:0px}
+.text_body {font-family: Tahoma, sans-serif; font-size: 10pt;color: #888687;padding-top:18px;text-align:left;text-decoration:none;}
+p.text_body {font-family: Tahoma, sans-serif;font-size: 10pt;color: #888687;padding:0px;text-align:left;}
+.menu_title {font-family: Tahoma, sans-serif;font-size: 20pt;font-weight: none;padding-left:0px;color: #00468f;text-align:left;}
+td.submenu {padding-left:40px;padding-top:10px;padding-bottom:10px;}
+a.sub_menu {font-family: Tahoma, sans-serif;font-size: 10pt;font-weight: bold;padding-bottom:5px;padding-left:0px;color: #00468f;text-align:left;text-decoration:none;}
+a.sub_menu_active {font-family: Tahoma, sans-serif;font-size: 10pt;font-weight: bold;padding-bottom:5px;padding-left:0px;color: #d92822;text-align:left;text-decoration:none;}
+a.sub_menu:hover {text-decoration:underline;}
+a.sub_menu_active:hover {text-decoration:underline;}
+
+li.sitemap {text-align:left;vertical-align:top; margin-left:30px; margin-top:10px; margin-bottom: 10px;}
+a.sitemap {text-align:left;vertical-align:top; padding-bottom: 30px;}
+
+#btn_ { float: right; padding-top:20px;padding-right:20px; vertical-align: middle;}
+#btn_ div { float: left; }
+.btn {margin-top: 2px; padding: 0 5px 0 5px;//margin-top: 0px;}
+
+a{font-family: Tahoma, sans-serif;font-size: 10pt;color: #00468f;text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+
+.menu_bottom {font-weight: bold;font-family: Tahoma, sans-serif;font-size: 8pt;color: #c1c1c1;text-align:left;text-decoration: underline;}
+.menu_bottom:hover {text-decoration:none;}
+
+.menu_bottom_mail {font-family: Tahoma, sans-serif;font-size: 8pt;color: #c1c1c1;text-align:left;text-decoration: underline;}
+.menu_bottom_mail:hover {text-decoration:none;}
+
+.menu_bottom_blog {font-weight: bold;font-family: Tahoma, sans-serif;font-size: 8pt; color: #f16567; text-align:left;text-decoration: underline;}
+.menu_bottom_blog:hover {text-decoration:none;}
+
+.seoh1{
+  font-family:Tahoma,sans-serif;
+font-size:20pt;
+padding-left:0;
+text-align:left;
+font-weight: normal;
+}
+
+
+.txt1 {
+
+	font-family: Tahoma, sans-serif;font-size: 10pt;
+       color: #545454;
+	text-align:left;
+}
+
+.news_txt1 {
+	font-family: Tahoma, sans-serif;
+	font-size: 10pt;
+color:#888687;
+	text-align:left;
+	text-decoration:none;
+}
+
+.body_text2 {text_body {font-family: Tahoma, sans-serif; font-size: 10pt;color: #888687;text-align:left;}
+
+.all_news {
+	font-family: Tahoma, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #254a91;
+	padding-left: 19px;
+	padding-right: 19px;
+	text-align:left;
+	text-decoration:none;
+}
+
+a.download {
+	font-family: Tahoma, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #254a91;
+	text-align:left;
+	text-decoration:none;
+}
+
+a.download:hover {
+	text-decoration:underline;
+}
+
+div.download {
+	font-family: Tahoma, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #254a91;
+	text-align:left;
+	text-decoration:none;
+}
+
+.news_date {
+	font-family: Tahoma, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #254a91;
+	text-align:left;
+}
+
+.event_date {
+	font-family: Tahoma, sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #254a91;
+	text-align:left;
+}
+
+.actions_date {
+	font-family: Tahoma, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #df0023;
+	text-align:left;
+}
+
+a.news_title {
+	font-family: arial,Tahoma, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #df0023;
+	text-align:left;
+	text-decoration:none;
+}
+
+a.news_title:hover {text-decoration:underline;}
+
+a.news_title_content {
+	font-family: Tahoma, sans-serif;
+	font-size: 14pt;
+	font-weight: bold;
+color:#0072bc;
+/*	color: #df0023;*/
+	text-align:left;
+	text-decoration:none;
+}
+
+a.news_title_content:hover {text-decoration:underline;}
+
+a.event_title_content {
+	font-family: arial,Tahoma, sans-serif;
+	font-size: 16pt;
+	font-weight: bold;
+	color: #df0023;
+	text-align:left;
+	text-decoration:none;
+}
+
+a.event_title_content:hover {text-decoration:underline;}
+
+.contact {
+	font-family: Tahoma, sans-serif;
+	font-size: 7pt;
+	font-weight: bold;
+	color: #c1c1c1;
+	text-align:left;
+	text-decoration:none;
+}
+
+.text_body {font-family: Tahoma, sans-serif;font-size: 10pt;color: #888687;padding-top:18px;text-align:left;text-decoration:none;}
+
+.tbl_logos {font-family: Tahoma, sans-serif;font-size: 10pt;color: #888687;}
+
+.baza_h1 {font-family: Tahoma, sans-serif;font-size: 14pt;font-weight: bold;padding-bottom:7px; color:#8c6239; /*color: #00468f;*/text-align:left;}
+.baza_t1 {font-family: Tahoma, sans-serif;font-size: 9pt;font-weight: bold;padding-bottom:7px;color: #d92822;text-align:left;}
+.baza_b1 {font-family: Tahoma, sans-serif;font-size: 9pt;font-weight: bold;padding-bottom:7px;color: #00468f;text-align:left;}
+.baza_b1 {font-family: Tahoma, sans-serif;font-size: 9pt;font-weight: bold;padding-bottom:7px;color: #00468f;text-align:left;}
+
+.club_h1 {font-family: Tahoma, sans-serif;font-size: 14pt;font-weight: bold;padding-bottom:7px; color:#3f6618;/* color: #00468f;*/ text-align:left;}
+.club_t1 {font-family: Tahoma, sans-serif;font-size: 9pt;font-weight: bold;padding-bottom:7px;color: #00468f;text-align:left;}
+.club_b1 {font-family: Tahoma, sans-serif;font-size: 9pt;font-weight: bold;padding-bottom:7px;color: #00468f;text-align:left;}
+
+.text_rightblock {font-family: Tahoma, sans-serif;font-size: 8pt;color: #888687;padding-top:18px;text-align:left;text-decoration:none;}
+
+.footer_copyright {color: #c1c1c1; text-align:left; text-decoration:none; font-family: Tahoma, sans-serif;font-size: 8pt;}
+.footer_phone {color: #d92822; text-align:left; text-decoration:none; font-family: Tahoma, sans-serif;font-size: 8pt;}
+
+.tags {
+	font-family: Tahoma, sans-serif;
+	font-size: 7pt;
+	color: #c1c1c1;
+	text-decoration:none;
+}

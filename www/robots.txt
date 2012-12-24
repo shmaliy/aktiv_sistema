@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: /styles/*
+Disallow: /Scripts/*
+Disallow: /images/*
+
+Host: aktiv-sistema.com
+Sitemap: http://aktiv-sistema.com/sitemap.xml
