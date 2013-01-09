@@ -29,5 +29,5 @@ $time = $time_end - $time_start;
 AppendDebugInfo("<hr>Общее время: ".(round($time, 5))." секунд<br>\n");
 AppendDebugInfo("База данных -> Запросы: ".$db->queryCount." Время: ".$db->queryTime." сек)\n");
 //echo GetDebugInfo(); 
-var_export($_SERVER);
+//var_export($_SERVER);
 ?>
