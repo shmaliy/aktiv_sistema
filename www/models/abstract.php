@@ -7,6 +7,9 @@ require_once '/Zend/Db.php';
 class Models_Abstract
 {
 	protected  $_db;
+	public static $charsetDb = 'UTF-8';
+	public static $charsetFrontend = 'windows-1251';
+	
 	
 	public function __construct()
 	{
@@ -15,7 +18,7 @@ class Models_Abstract
 		      'username' => 'root',
 		      'password' => '',
 		      'dbname'   => 'aktivsis_db',
-		      'driver_options' => array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES cp1251')
+		      'driver_options' => array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')
 		));
 	}
 	
@@ -33,5 +36,10 @@ class Models_Abstract
 	public function delete($id, $tbl)
 	{
 		$this->_db->delete($tbl, 'id = ' . $id);
+	}
+	
+	public function iconvCallback(&$item, $key, $options)
+	{
+		$item = iconv($options['from'], $options['to'], $item);
 	}
 }

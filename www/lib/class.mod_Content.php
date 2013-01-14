@@ -17,6 +17,7 @@ class mod_Content{
 				header("Location:/");
 			}
 		}
+		
 		$this->_controller = new NewController();
 	}
 

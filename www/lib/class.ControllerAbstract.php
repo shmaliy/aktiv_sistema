@@ -37,5 +37,53 @@ class Controller_Abstract
 		}
 		return true;
 	}
+	
+	protected function _validatePassword($str)
+	{
+		if (empty($str)) {
+			return false;
+		}
+		
+		if (!preg_match('^[a-zA-Z0-9]{5,12}$^', $str)) {
+			return false;
+		}
+		return true;
+	}
+	
+	protected function _validateFio($str)
+	{
+		if (empty($str)) {
+			return false;
+		}
+		
+		if (!preg_match('^[a-zA-Zà-ÿÀ-ß]*$^', $str)) {
+			return false;
+		}
+		return true;
+	}
+	
+	protected function _validateWork($str)
+	{
+		if (empty($str)) {
+			return false;
+		}
+		
+		if (!preg_match('^[a-zA-Zà-ÿÀ-ß0-9\+\"\,\.\'\(\)\-]*$^', $str)) {
+			return false;
+		}
+		return true;
+	}
+	
+	protected function _validatePhone($str)
+	{
+		if (empty($str)) {
+			return false;
+		}
+	
+		if (!preg_match('^[\+]+[0-9]{12}$^', $str)) {
+			return false;
+		}
+		return true;
+	}
 } 
  

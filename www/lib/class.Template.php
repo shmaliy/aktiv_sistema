@@ -547,8 +547,7 @@ class Template {
 
     function parse($pname, $tname)
     {
-
-        if (!preg_match('/[A-Z0-9][A-Z0-9\_]*/', $pname)) {
+		if (!preg_match('/[A-Z0-9][A-Z0-9\_]*/', $pname)) {
 
             return $false;
 

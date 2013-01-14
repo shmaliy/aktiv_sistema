@@ -19,13 +19,13 @@
   $skins_path = $root_path . '/Skins/';
   $id = $_REQUEST['id'];
   
-  //Ñâÿçü ñ ÁÄ
-  require_once 'Zend/Db.php';
-  $db = Zend_Db::factory('Pdo_Mysql', array(
-      'host'     => dbhost,
-      'username' => dbase,
-      'password' => dbuser,
-      'dbname'   => dbpass,
-      'driver_options' => array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES cp1251')
-  ));
+//Ñâÿçü ñ ÁÄ
+//   require_once 'Zend/Db.php';
+//   $db = Zend_Db::factory('Pdo_Mysql', array(
+//       'host'     => dbhost,
+//       'username' => dbase,
+//       'password' => dbuser,
+//       'dbname'   => dbpass,
+//       'driver_options' => array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES cp1251')
+//   ));
 ?>

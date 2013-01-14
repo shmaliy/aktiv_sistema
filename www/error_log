@@ -688,3 +688,20 @@ Stack trace:
 [26-Dec-2012 11:12:13] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
 [27-Dec-2012 12:49:32] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
 [27-Dec-2012 12:49:32] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[14-Jan-2013 11:17:31] PHP Parse error:  syntax error, unexpected '[' in W:\home\aktiv\www\lib\class.ControllerAbstract.php on line 83
+[14-Jan-2013 11:23:05] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[14-Jan-2013 11:23:05] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[14-Jan-2013 11:23:15] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[14-Jan-2013 11:23:15] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[14-Jan-2013 11:34:17] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000] [1115] Unknown character set: 'utf'' in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php:129
+Stack trace:
+#0 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php(129): PDO->__construct('mysql:host=loca...', 'root', '', Array)
+#1 W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Mysql.php(96): Zend_Db_Adapter_Pdo_Abstract->_connect()
+#2 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(858): Zend_Db_Adapter_Pdo_Mysql->_connect()
+#3 W:\home\aktiv\www\Zend\Db\Adapter\Abstract.php(928): Zend_Db_Adapter_Abstract->quote('pavlenko.obs@gm...', NULL)
+#4 W:\home\aktiv\www\Zend\Db\Select.php(1000): Zend_Db_Adapter_Abstract->quoteInto('users.email = ?', 'pavlenko.obs@gm...', NULL)
+#5 W:\home\aktiv\www\Zend\Db\Select.php(475): Zend_Db_Select->_where('users.email = ?', 'pavlenko.obs@gm...', NULL, true)
+#6 W:\home\aktiv\www\models\subscribers.php(33): Zend_Db_Select->where('users.email = ?', 'pavlenko.obs@gm...')
+#7 W:\home\aktiv\www\lib\class.NewControler.php(116): Models_Su in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
+[14-Jan-2013 13:33:02] PHP Notice:  Undefined index: edit in W:\home\aktiv\www\lib\class.Template.php on line 613
+[14-Jan-2013 13:39:58] PHP Notice:  Undefined index: _no_file_ in W:\home\aktiv\www\lib\class.Template.php on line 612

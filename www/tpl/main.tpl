@@ -55,15 +55,16 @@
 						<div class="sunny-form-element"><input type="password" name="password" class="sunny-form-text"></div>
 						<div class="clr"></div>
 						
-						<div class="sunny-form-label"></div>
-						<div class="sunny-form-element"><a class="forgot-password" href="#" onclick="$.fn.active('panelswitcher', 'sunny-form-body-forgot-password');">Забыли пароль?</a></div>
-						<div class="clr"></div>
+<!-- 						<div class="sunny-form-label"></div> -->
+<!--						<div class="sunny-form-element"><a class="forgot-password" href="#" onclick="$.fn.active('panelswitcher', 'sunny-form-body-forgot-password');">Забыли пароль?</a></div> -->
+<!-- 						<div class="clr"></div> -->
 						
 						<div class="sunny-form-label"></div>
 						<div class="sunny-form-element"><input type="submit" value="Войти" class="sunny-form-login-button"></div>
 						<div class="clr"></div>
 					</form>
 					<div id="sunny-form-error"></div>
+					<div id="sunny-form-success"></div>
 				</div>
 				
 				
@@ -117,7 +118,8 @@
 						<div class="sunny-form-element"><input type="submit" value="Отправить" class="sunny-form-login-button"></div>
 						<div class="clr"></div>
 					</form>
-					<div id="sunny-form-error-register"></div>					
+					<div id="sunny-form-error-register"></div>
+					<div id="sunny-form-success-register"></div>					
 				</div>
 				
 				<div id="sunny-form-body-forgot-password" class="sunny-form-body-form">

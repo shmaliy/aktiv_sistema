@@ -40,7 +40,7 @@ class Content extends Controller_Abstract {
             foreach($sql_sitemap_ssub0 AS $map_ssub0) {
                 if($map_ssub0['status'] == '0') {$__bgstatus1 = '#f3f3f3';$_icon = '<img src="/images/status_offline.png" border="0" title="Статус не активный">';} else {$__bgstatus = '#ffffff'; $_icon = '<img src="/images/status_online.png" border="0" title="Статус активный">';}
                 $r .= '<tr bgcolor="#fefefe"><td valign="middle" bgcolor="'.$__bgstatus1.'" style="padding-left:40px;color:#3D9CB8">
-                <b>'.$map_ssub0['title'].'</b></td><td width="57" bgcolor="'.$__bgstatus1.'" align="right" valign="middle"><div align="right" style="padding-right:1px;"><a href="/content.php?id=status&ssid='.$map_ssub0['id'].'" onclick="if (confirm(\'Вы действительно хотите изменить статус записи '.$map_ssub0['title'].'?\')) {return true} else {return false};">'.$_icon.'</a>&nbsp;<a href="/content.php?id=edit&ssid='.$map_ssub0['id'].'" target="_main"><img src="/images/page_white_edit.png" width="16" height="16" border="0"></a>&nbsp;<a href="/content.php?id=delete_entry&ssid='.$map_ssub0['id'].'" onclick="if (confirm(\'Вы действительно хотите удалить запись '.$map_ssub0['title'].'?\')) {return true} else {return false};"><img src="/images/page_white_delete.png" width="16" height="16" border="0"></a></div></td></tr>';
+                <b>'.$map_ssub0['title'].'</b></td><td width="57" bgcolor="'.$__bgstatus1.'" align="right" valign="middle"><div align="right" style="padding-right:1px;"><a href="/content.php?id=status&ssid='.$map_ssub0['id'].'" onclick="if (confirm(\'Вы действительно хотите изменить статус записи '.$map_ssub0['title'].'?\')) {return true} else {return false};">'.$_icon.'</a>&nbsp;<a href="/content.php?id=edit&ssid='.$map_ssub0['id'].'" target="main"><img src="/images/page_white_edit.png" width="16" height="16" border="0"></a>&nbsp;<a href="/content.php?id=delete_entry&ssid='.$map_ssub0['id'].'" onclick="if (confirm(\'Вы действительно хотите удалить запись '.$map_ssub0['title'].'?\')) {return true} else {return false};"><img src="/images/page_white_delete.png" width="16" height="16" border="0"></a></div></td></tr>';
             }
 
 /* Построение меню второго уровня */
@@ -127,9 +127,9 @@ class Content extends Controller_Abstract {
     		
     	} else {
     		$this->_tpl->assign('item', $content);
-    		$this->_tpl->display('content.edit.tpl');
+    		$tpl = $this->_tpl->fetch('content.edit.tpl');
+	    	$this->tpl->assign('CONTENT', $tpl);
     	}
-    	
     	
     	return true;
     	

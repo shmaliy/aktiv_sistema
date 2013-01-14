@@ -22,7 +22,12 @@ class Models_Content extends Models_Abstract
 		$select = $this->_db->select();
 		$select->from(array("content" => $this->_tbl));
 		$select->where('content.id = ?', $id);
+		$return = $this->_db->fetchRow($select);
 		
-		return $this->_db->fetchRow($select);
+		array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+		
+		return $return;
 	}
+	
+	
 }

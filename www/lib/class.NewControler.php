@@ -73,7 +73,7 @@ class NewController extends Controller_Abstract
 			return;
 		}
 		
-		$result['success'] = 1;
+		$result['success'] = iconv("windows-1251", "UTF-8", 'Авторизация прошла успешно!');
 		echo json_encode($result);
 		
 		session_id($sid);
@@ -101,7 +101,7 @@ class NewController extends Controller_Abstract
 		$result = array();
 		$result['errors'] = array();
 		
-		//var_export($formData);
+		//var_export(iconv("UTF-8", "windows-1251", $formData['f']));
 		
 		// Первичная проверка на пустые значения
 		foreach ($formData as $key=>$field) {
@@ -120,22 +120,72 @@ class NewController extends Controller_Abstract
 		}
 		
 		// Сравнение паролей
-		
 		if ($formData['password'] !== $formData['password_']) {
 			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Пароли не совпадают!');
 		}
 		
+		// Валидация пароля
+		if(!$this->_validatePassword($formData['password'])) {
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Неверный формат пароля!');
+		}
+		
 		// Валидация телефона
+		if(!$this->_validatePhone($formData['phone'])) {
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Номер телефона должен быть в формате "+ХХХХХХХХХХХХ"!');
+		}
 		
 		// Валидация ФИО
+		if(!$this->_validateFio($formData['f'])) {
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Корректно заполните поле "Фамилия"!');
+		}
+		
+		if(!$this->_validateFio($formData['i'])) {
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Корректно заполните поле "Имя"!');
+		}
+		
+		if(!$this->_validateFio($formData['o'])) {
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Корректно заполните поле "Отчество"!');
+		}
+		
 		
 		// Валидация названия компании и должности
+		if(!$this->_validateWork($formData['company'])) {
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Корректно укажите название компании!');
+		}
+		
+		if(!$this->_validateWork($formData['post'])) {
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Корректно укажите название должности!');
+		}
+		
 		
 		if(count($result['errors']) > 0) {
 			echo json_encode($result);
 			return;
 		}
 		
+		if ($formData['send_spam'] == 'on') {
+			$formData['send_spam'] = 'YES';
+		} else {
+			$formData['send_spam'] = 'NO';
+		}
+		
+		$insert = array(
+			'email' => $formData['email'],
+			'password' => md5($formData['password']),
+			'phone' => $formData['phone'],
+			'f' => $formData['f'],
+			'i' => $formData['i'],
+			'o' => $formData['o'],
+			'company' => $formData['company'],
+			'post' => $formData['post'],
+			'send_spam' => $formData['send_spam'],
+			'verify_code' => md5($formData['password']),
+			'verify_ts' => 0,
+			'registered_ts' => time()
+		);
+		
+		$this->_subscribersModel->insert($this->_subscribersModel->getTbl(), $insert);
+		$result['success'] = iconv("windows-1251", "UTF-8", 'Регистрация прошла успешно!');
 		echo json_encode($result);
 	}
 	

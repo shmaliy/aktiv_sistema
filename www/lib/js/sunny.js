@@ -148,7 +148,17 @@ var registerTab = '#tabs-list-register';
 							}
 						}
 					} else {
-						window.location = '/';
+						if (response['success']) {
+							
+								if (url == '/frontendLogin') {
+									$('#sunny-form-success').append(response['success'] + '<br />');
+								} else if (url == '/frontendRegister') {
+									$('#sunny-form-success-register').append(response['success'] + '<br />');
+								}
+							
+						}
+						
+						setTimeout(function() { window.location = '/';}, 2000);
 					}
 									
 				},

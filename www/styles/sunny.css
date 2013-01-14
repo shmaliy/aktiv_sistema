@@ -197,3 +197,9 @@
 	color:red;
 	padding: 12px 24px 5px 15px;
 }
+
+#sunny-form-success,
+#sunny-form-success-register {
+	color:green;
+	padding: 12px 24px 5px 15px;
+}
