@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2012-12-14 16:24:29
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-13 20:01:22
          compiled from "sm\templates\form.register.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1447150cb288d4feac3-29236140%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'f11633c2467bd68826c6eaf712bc12630c976158' => 
     array (
       0 => 'sm\\templates\\form.register.tpl',
-      1 => 1355486318,
+      1 => 1358098520,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_50cb288d53e1e4_82008646',
   'variables' => 
   array (
     'register_from' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_50cb288d53e1e4_82008646',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_50cb288d53e1e4_82008646')) {function content_50cb288d53e1e4_82008646($_smarty_tpl) {?><form name="form_register" enctype="multypart/form-data">
 	<input type="hidden" name="register_from" value="<?php echo $_smarty_tpl->tpl_vars['register_from']->value;?>

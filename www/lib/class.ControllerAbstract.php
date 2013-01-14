@@ -14,20 +14,28 @@ class Controller_Abstract
 		$this->_model = new Models_Content();
 	}
 	
-	protected function valitadeTitle($str = null)
-	{
-		if (null === $str || empty(strip_tags($str))) {
-			return false;
-		}
-		else return true;
-	}
+// 	protected function valitadeTitle($str = null)
+// 	{
+// 		if (null === $str || empty(strip_tags($str))) {
+// 			return false;
+// 		}
+// 		else return true;
+// 	}
 	
-	protected function validatePageTitle($str = null)
+// 	protected function validatePageTitle($str = null)
+// 	{
+// 		if (null === $str || empty(strip_tags($str))) {
+// 			return false;
+// 		}
+// 		else return true;
+// 	}
+	
+	protected function _validateEmail($str)
 	{
-		if (null === $str || empty(strip_tags($str))) {
+		if (!preg_match('^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^', $str)) {
 			return false;
 		}
-		else return true;
+		return true;
 	}
 } 
  

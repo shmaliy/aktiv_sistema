@@ -14,6 +14,8 @@
 <meta name="Revizit-after" content="1 days">
 <meta name="Robots" content="all">
 <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
+<link href="/styles/sunny.css" type="text/css" rel=stylesheet>
+<script src="lib/js/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -31,6 +33,7 @@
 <!-- /header block -->
 
 <body>
+<div class="login-buttons">/tpl/news.tpl</div>
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		bgcolor="#FFFFFF">
 		<tr>

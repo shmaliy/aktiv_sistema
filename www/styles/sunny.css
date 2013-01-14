@@ -1,0 +1,199 @@
+@CHARSET "UTF-8";
+
+.clr {
+	clear: both;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.login-buttons {
+	position: absolute;
+	width: 220px;
+	height: 40px;
+	/* outline: 1px solid red; */
+	margin:0 0 0 400px;
+	padding:0;
+}
+
+.login-buttons .login-buttons-login {
+	font-size: 11px;
+	color: #e30133;
+	display:block;
+	float:left; 
+	margin: 12px 15px 0 0;
+	padding:0;
+	/* outline: 1px solid green; */
+}
+
+.login-buttons .login-buttons-register {
+	font-size: 11px;
+	color: #00468f;
+	display:block;
+	float:left; 
+	margin: 12px 0 0 0;
+	padding:0;
+	/* outline: 1px solid blue; */
+}
+
+.modal-container {
+	display:none;
+	width: 100%;
+	height:100%;
+	position:fixed;
+	background: url('/images/sunny/modal-overlay.png');
+	margin: 0;
+	padding: 0;
+	z-index:100;
+}
+
+.modal-container .sunny-form {
+	position: absolute;
+	z-index:200;
+	width:377px;
+	/* outline:1px solid red; */
+	margin:113px 0 0 400px;
+}
+
+.modal-container .sunny-form .sunny-form-tabs {
+	width:377px;
+	height:37px;
+}
+
+.modal-container .sunny-form .sunny-form-tabs .tabs-list {
+	width:377px;
+	height:37px;
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.modal-container .sunny-form .sunny-form-tabs .tabs-list li {
+	margin: 0 5px 0 0;
+	float:left;
+	cursor:pointer;
+}
+
+.modal-container .sunny-form .sunny-form-tabs .tabs-list li span {
+	color: #4d4d4d;
+	display:block;
+	font-size:16px;
+	margin:8px 0 0 8px;
+}
+
+.modal-container .sunny-form .sunny-form-tabs .tabs-list .login {
+	width: 61px;
+	height:37px;
+	background: url('/images/sunny/login-tab.png') top left no-repeat;
+}
+
+.modal-container .sunny-form .sunny-form-tabs .tabs-list .login-active {
+	width: 61px;
+	height:37px;
+	background: url('/images/sunny/login-tab-active.png') top left no-repeat;
+}
+
+.modal-container .sunny-form .sunny-form-tabs .tabs-list .register {
+	width: 166px;
+	height:37px;
+	background: url('/images/sunny/register-tab.png') top left no-repeat;
+}
+
+.modal-container .sunny-form .sunny-form-tabs .tabs-list .register-active {
+	width: 166px;
+	height:37px;
+	background: url('/images/sunny/register-tab-active.png') top left no-repeat;
+}
+
+.sunny-form-body-top {
+	width: 377px;
+	height:7px;
+	background: url('/images/sunny/form-body-top.png') top left no-repeat;
+}
+
+.sunny-form-body {
+	width: 377px;
+	background: #f4f6f7;
+	position:relative;
+}
+
+.sunny-form-body .close {
+	width: 9px;
+	height:9px;
+	background: url('/images/sunny/close-button.png') top left no-repeat;
+	position:absolute;
+	right:7px;
+}
+
+.sunny-form-body .sunny-form-body-form {
+	width: 338px;
+	padding: 12px 24px 5px 15px;
+}
+
+.sunny-form-body .sunny-form-body-form-login {
+	width: 338px;
+	padding: 12px 24px 5px 15px;
+}
+
+.sunny-form-body-form-login .sunny-form-label {
+	width: 85px;
+	float:left;
+	margin:0 8px 10px 0;
+	font-size:13px;
+	color: #4d4d4d;
+	text-align:right;
+}
+
+.sunny-form-body-form-login .sunny-form-element {
+	width: 245px;
+	float:right;
+	margin:0 0 10px 0;
+}
+
+.sunny-form-body-form-login .sunny-form-element .sunny-form-text {
+	width: 205px;
+}
+
+.forgot-password {
+	font-size:11px;
+	color: #0075c0;
+}
+
+.sunny-form-login-button {
+	width: 90px;
+	height:24px;
+	background: url('/images/sunny/login-button.png') bottom left no-repeat;
+	border:0px;
+	color:#fff;
+}
+
+.sunny-form-body-bottom {
+	width: 377px;
+	height:6px;
+	background: url('/images/sunny/form-body-bottom.png') bottom left no-repeat;
+}
+
+.sunny-form-label {
+	width: 165px;
+	float:left;
+	margin:0 8px 10px 0;
+	font-size:13px;
+	color: #4d4d4d;
+	text-align:right;
+}
+
+.sunny-form-element {
+	width: 165px;
+	float:right;
+	margin:0 0 10px 0;
+}
+
+.sunny-form-element .sunny-form-text {
+	width: 165px;
+}
+
+#sunny-form-error,
+#sunny-form-error-register {
+	color:red;
+	padding: 12px 24px 5px 15px;
+}

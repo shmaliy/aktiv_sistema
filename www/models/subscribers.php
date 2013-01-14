@@ -22,5 +22,19 @@ class Models_Subscribers extends Models_Abstract
 		return $this->_tbl;
 	}
 	
+	public function parseLogin ($data)
+	{
+		$select = $this->_db->select();
+		$select->from(
+			array('users' => $this->_tbl)		
+		);
+		
+		foreach ($data as $key=>$value) {
+			$select->where('users.' . $key . ' = ?', $value);
+		}
+		
+		return $this->_db->fetchRow($select);
+		
+	}
 	
 }

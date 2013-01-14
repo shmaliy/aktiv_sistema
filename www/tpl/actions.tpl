@@ -4,7 +4,7 @@
 <head>
 <title>События — консалтинговая компания «Актив-Система»</title>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
-<meta name="Description" content="События — «Актив-Система» - консалтинг в области развития и оптимизации бизнеса: стратегическое планирование, описание и оптимизация бизнес-процессов, внедрение системы сбалансированных показателей и ключевых показателей оценки эффективности бизнес-процессов.">
+	<meta name="Description" content="События — «Актив-Система» - консалтинг в области развития и оптимизации бизнеса: стратегическое планирование, описание и оптимизация бизнес-процессов, внедрение системы сбалансированных показателей и ключевых показателей оценки эффективности бизнес-процессов.">
     <meta http-equiv="Pragma" content="no-cache">
     <meta name="Generator" content="Amiweb Design Studio">
     <meta name="Author-corporate" content="Amiweb Design Studio">
@@ -12,6 +12,8 @@
     <meta name="Revizit-after" content="1 days">
     <meta name="Robots" content="all">
     <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
+    <link href="/styles/sunny.css" type="text/css" rel=stylesheet>
+	<script src="lib/js/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -29,6 +31,7 @@
 <!-- /header block -->
 
 <body>
+<div class="login-buttons">/tpl/actions.tpl</div>
 <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
     <td width="103" rowspan="7">&nbsp;</td>

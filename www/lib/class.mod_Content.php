@@ -22,8 +22,28 @@ class mod_Content{
 
 	function view() {
 		if(!isset($_GET['id']) || @$_GET['id'] == 'main') {
+			$this->tpl->assign(array(
+				'SESSION_ID' => session_id(),
+				'PANEL' => $this->_controller->topPanelAction(),
+			));
 			$this->tpl->define_dynamic('index', 'main.tpl');
 		}
+		
+		if(@$_GET['id'] == 'frontendLogin') {
+			$this->_controller->frontendLoginAction();
+			return;
+		}
+		
+		if(@$_GET['id'] == 'frontendUnLogin') {
+			$this->_controller->frontendUnLoginAction();
+			return;
+		}
+		
+		if(@$_GET['id'] == 'frontendRegister') {
+			$this->_controller->frontendRegisterAction();
+			return;
+		}
+		
 		if(isset($_GET['id']) && @$_GET['id'] !== 'main' && @$_GET['id'] == 'company') {
 			$this->tpl->define_dynamic('index', 'des_company.tpl');
 		}
@@ -70,7 +90,16 @@ class mod_Content{
 		$this->tpl->define_dynamic('show_base_detail_body', 'index');
 
 
-		if(isset($_GET['id']) && @$_GET['id'] !== 'sitemap' && @$_GET['id'] !== 'base' && @$_GET['id'] !== 'news' && @$_GET['id'] !== 'actions') {
+		if(
+			isset($_GET['id']) 
+			&& @$_GET['id'] !== 'frontendRegister'
+			&& @$_GET['id'] !== 'frontendUnLogin' 
+			&& @$_GET['id'] !== 'frontendLogin' 
+			&& @$_GET['id'] !== 'sitemap' 
+			&& @$_GET['id'] !== 'base' 
+			&& @$_GET['id'] !== 'news' 
+			&& @$_GET['id'] !== 'actions'
+		) {
 			$sql_checkhref = $this->db->queryOneRecord("SELECT * FROM str_menu WHERE href='".@$_GET['id']."' AND status='1'");
 			if(!$this->db->numRows($sql_checkhref)) {
 				redirect("/404.html");
@@ -427,7 +456,7 @@ class mod_Content{
 			foreach($sql_newsactions AS $AS_action) {
 				$dd6 = @explode('-', $AS_action['public_date']);
 				$d6 = @$dd6[2] . '.' . @$dd6[1] . '.' . @substr($dd6[0], -2);
-				$content11 = eregi_replace('"images/', '"/images/',$AS_action['body']);
+				$content11 = str_replace('"images/', '"/images/',$AS_action['body']);
 
 				$this->tpl->assign(array(
 					'AC_ID' => $AS_action['id'],
@@ -513,7 +542,7 @@ class mod_Content{
 			foreach($AS_bases1 AS $AS_base) {
 				$dd9 = @explode('-', $AS_base['public_date']);
 				$d9 = @$dd9[2] . '.' . @$dd9[1] . '.' . @substr($dd9[0], -2);
-				$content1q1 = eregi_replace('"images/', '"/images/',$AS_base['body']);
+				$content1q1 = str_replace('"images/', '"/images/',$AS_base['body']);
 
 				$this->tpl->assign(array(
 					'ACBID' => $AS_base['id'],

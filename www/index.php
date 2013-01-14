@@ -1,6 +1,7 @@
 <?
 
 session_start();
+
 require_once 'lib/config.php';
 require_once 'lib/class.Constructor.php';
 require_once 'lib/class.Template.php';
@@ -30,4 +31,5 @@ AppendDebugInfo("<hr>Общее время: ".(round($time, 5))." секунд<br>\n");
 AppendDebugInfo("База данных -> Запросы: ".$db->queryCount." Время: ".$db->queryTime." сек)\n");
 //echo GetDebugInfo(); 
 //var_export($_SERVER);
+//var_export($_SESSION);
 ?>
