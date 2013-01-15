@@ -78,12 +78,36 @@
 
 					<tr>
 						<td style="background-color: #EBEBEB;" class="tsimple"
-							align="left">Прикрепленные файлы</td>
-						<td align=left style="background-color: #F7F7F7;"
+							align="left">Прикрепленный файл</td>
+						<td align=left style="background-color: #F7F7F7;">
 							<div class="sunny-filemanager">
-								<div class="file"></div>
-								<div class="file-info"></div>
-							</div> 
+								<div class="sunny-fileuploader">
+									<div class="file-name">
+										<span>Название файла</span>
+										<input type="text" name="files-name">	
+										<div class="clr"></div>								
+									</div>
+									<div class="file">
+										<span>Путь</span>
+										<input type="file" name="fileslist">
+										<div class="clr"></div>
+									</div>
+									<div class="file-info"><input type="checkbox" name="free_file"> <span>доступен без регистрации</span></div>
+								</div> 
+								<div class="uploaded-file">
+									<span>Название файла: </span>
+									<span>{$filestore.title}</span>
+									<div class="clr"></div>
+									
+									<span>Путь к файлу: </span>
+									<span>{$filestore.path}</span>
+									<div class="clr"></div>
+									
+									<span>Доступен без регистрации: </span>
+									<span>{$filestore.free}</span>
+								</div>
+								<div class="clr"></div>
+							</div>
 						</td>
 					</tr>
 					<tr bgcolor="#ffffff">

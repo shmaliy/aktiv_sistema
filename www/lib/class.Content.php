@@ -59,7 +59,7 @@ class Content extends Controller_Abstract {
         }
    
         $r .='</table>';
-        $this->tpl->assign(array('CONTENT_BODY' => $r));
+        $this->tpl->assign(array('CONTENT_BODY' => $r . '213132112131'));
 
         $this->tpl->parse('MENU', '.menu');
         $this->tpl->parse('CONTENT', 'index');
@@ -112,21 +112,49 @@ class Content extends Controller_Abstract {
     		if ($_POST['status'] == 'on') {
     			$status = 1;
     		}
+    		
+    		$filestore = array();
+    		if ($_FILES['fileslist']['size'] > 0) {
+				if(move_uploaded_file($_FILES['fileslist']['tmp_name'], "uploads/" . $_FILES['fileslist']['name'])) {
+					$filestore = array(
+						'title' => iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['files-name'])),
+						'path' => "uploads/" . $_FILES['fileslist']['name'],
+						'free' => $_REQUEST['free_file']
+					);
+				}
+    		}
+    		
+    		
     		$update = array(
-    			'title' 		=> htmlspecialchars($_POST['title']),
-    			'body' 			=> str_replace('images/', 'images/', $_POST['body']),
-    			'page_title' 	=> htmlspecialchars($_POST['page_title']),
-    			'keywords' 		=> htmlspecialchars($_POST['keywords']),
-    			'description' 	=> htmlspecialchars($_POST['description']),
+    			'title' 		=> iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['title'])),
+    			'body' 			=> iconv('windows-1251', 'UTF-8', str_replace('images/', 'images/', $_REQUEST['body'])),
+    			'page_title' 	=> iconv('windows-1251', 'UTF-8', $_REQUEST['page_title']),
+    			'keywords' 		=> iconv('windows-1251', 'UTF-8', $_REQUEST['keywords']),
+    			'description' 	=> iconv('windows-1251', 'UTF-8', $_REQUEST['description']),
     			'public_date' 	=> time(),
-    			'status' 		=> $status
+    			'status' 		=> iconv('windows-1251', 'UTF-8', $status),
+    			
     		);
+    		
+    		if (!empty($filestore)) {
+    			$update['fileslist'] = serialize($filestore);
+    		}
+    		
+//     		echo '<pre>';
+//     		var_export($_FILES);
+//     		echo '</pre>';
+//     		echo '<pre>';
+//     		var_export($_REQUEST);
+//     		echo '</pre>';
+    		
+			
     		
     		$this->_model->update($_REQUEST['ssid'], $this->_model->_tbl, $update);
     		@header("Location: /content.php?id=view");
     		
     	} else {
     		$this->_tpl->assign('item', $content);
+    		$this->_tpl->assign('filestore', unserialize($content['fileslist']));
     		$tpl = $this->_tpl->fetch('content.edit.tpl');
 	    	$this->tpl->assign('CONTENT', $tpl);
     	}

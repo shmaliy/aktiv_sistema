@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-14 14:17:04
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-15 17:30:37
          compiled from "sm\templates\content.edit.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3042150cf2ddcaff986-01620434%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '16da1a388d46462c440c96cd76565edac39d4332' => 
     array (
       0 => 'sm\\templates\\content.edit.tpl',
-      1 => 1358162212,
+      1 => 1358260217,
       2 => 'file',
     ),
   ),
@@ -20,6 +20,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'item' => 0,
+    'filestore' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -108,12 +109,39 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 					<tr>
 						<td style="background-color: #EBEBEB;" class="tsimple"
-							align="left">Прикрепленные файлы</td>
-						<td align=left style="background-color: #F7F7F7;"
+							align="left">Прикрепленный файл</td>
+						<td align=left style="background-color: #F7F7F7;">
 							<div class="sunny-filemanager">
-								<div class="file"></div>
-								<div class="file-info"></div>
-							</div> 
+								<div class="sunny-fileuploader">
+									<div class="file-name">
+										<span>Название файла</span>
+										<input type="text" name="files-name">	
+										<div class="clr"></div>								
+									</div>
+									<div class="file">
+										<span>Путь</span>
+										<input type="file" name="fileslist">
+										<div class="clr"></div>
+									</div>
+									<div class="file-info"><input type="checkbox" name="free_file"> <span>доступен без регистрации</span></div>
+								</div> 
+								<div class="uploaded-file">
+									<span>Название файла: </span>
+									<span><?php echo $_smarty_tpl->tpl_vars['filestore']->value['title'];?>
+</span>
+									<div class="clr"></div>
+									
+									<span>Путь к файлу: </span>
+									<span><?php echo $_smarty_tpl->tpl_vars['filestore']->value['path'];?>
+</span>
+									<div class="clr"></div>
+									
+									<span>Доступен без регистрации: </span>
+									<span><?php echo $_smarty_tpl->tpl_vars['filestore']->value['free'];?>
+</span>
+								</div>
+								<div class="clr"></div>
+							</div>
 						</td>
 					</tr>
 					<tr bgcolor="#ffffff">

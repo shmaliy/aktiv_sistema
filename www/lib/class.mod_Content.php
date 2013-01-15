@@ -52,6 +52,10 @@ class mod_Content{
 			$this->tpl->define_dynamic('index', 'des_services.tpl');
 		}
 		if(isset($_GET['id']) && @$_GET['id'] !== 'main' && @$_GET['id'] == 'tools') {
+			$this->tpl->assign(array(
+				'SESSION_ID' => session_id(),
+				'PANEL' => $this->_controller->topPanelAction(),
+			));
 			$this->tpl->define_dynamic('index', 'des_tools.tpl');
 		}
 		if(isset($_GET['id']) && @$_GET['id'] !== 'main' && @$_GET['id'] == 'sitemap') {

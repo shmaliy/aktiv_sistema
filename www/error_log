@@ -705,3 +705,31 @@ Stack trace:
 #7 W:\home\aktiv\www\lib\class.NewControler.php(116): Models_Su in W:\home\aktiv\www\Zend\Db\Adapter\Pdo\Abstract.php on line 144
 [14-Jan-2013 13:33:02] PHP Notice:  Undefined index: edit in W:\home\aktiv\www\lib\class.Template.php on line 613
 [14-Jan-2013 13:39:58] PHP Notice:  Undefined index: _no_file_ in W:\home\aktiv\www\lib\class.Template.php on line 612
+[15-Jan-2013 16:37:45] PHP Notice:  iconv() [<a href='function.iconv'>function.iconv</a>]: Wrong charset, conversion from `UTF-8' to `cp-1251' is not allowed in W:\home\aktiv\www\lib\class.Content.php on line 116
+[15-Jan-2013 16:38:37] PHP Notice:  iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an illegal character in input string in W:\home\aktiv\www\lib\class.Content.php on line 116
+[15-Jan-2013 16:39:19] PHP Notice:  iconv() [<a href='function.iconv'>function.iconv</a>]: Detected an illegal character in input string in W:\home\aktiv\www\lib\class.Content.php on line 116
+[15-Jan-2013 17:31:50] PHP Notice:  Undefined variable: filestore in W:\home\aktiv\www\lib\class.Content.php on line 135
+[15-Jan-2013 17:36:04] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:36:04] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:39:31] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:39:31] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:39:59] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:39:59] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:46:54] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:46:54] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:47:24] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:47:24] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:47:35] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:47:35] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:54:43] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:54:43] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:55:13] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 17:55:13] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 18:13:43] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 18:13:43] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 18:22:14] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 18:22:14] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 18:22:22] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 18:22:22] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 18:22:59] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[15-Jan-2013 18:22:59] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27

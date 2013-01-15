@@ -213,4 +213,9 @@ class NewController extends Controller_Abstract
 	{
 	
 	}
+	
+	public function contentsViewAction($id)
+	{
+		
+	}
 }

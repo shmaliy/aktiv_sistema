@@ -277,14 +277,13 @@
 							</div>
 							<div>
 								<div align="left">
-									<a href="/news" class="menu_bottom">Новости</a>&nbsp;&nbsp; <a
-										href="/company" class="menu_bottom">Компания</a>&nbsp;&nbsp; <a
-										href="/services" class="menu_bottom">Услуги</a>&nbsp;&nbsp; <a
-										href="/tools/business_studio" class="menu_bottom">Инструменты</a>&nbsp;&nbsp;<a
-										href="/base" class="menu_bottom">База знаний</a> &nbsp;&nbsp;<a
-										href="/actions" class="menu_bottom">События</a> &nbsp;&nbsp;<a
-										href="http://blog.aktiv-sistema.com.ua"
-										class="menu_bottom_blog">Блог</a>
+									<a href="/news" class="menu_bottom">Новости</a>&nbsp;&nbsp; 
+									<a href="/company" class="menu_bottom">Компания</a>&nbsp;&nbsp; 
+									<a href="/services" class="menu_bottom">Услуги</a>&nbsp;&nbsp; 
+									<a href="/tools/business_studio" class="menu_bottom">Инструменты</a>&nbsp;&nbsp; 
+									<a href="/base" class="menu_bottom">База знаний</a> &nbsp;&nbsp;
+									<a href="/actions" class="menu_bottom">События</a> &nbsp;&nbsp;
+									<a href="http://blog.aktiv-sistema.com.ua" class="menu_bottom_blog">Блог</a>
 								</div>
 								<td width="1" class="style5"><img src="/images/t_fiil.png"
 									width="1" height="1" /></td>

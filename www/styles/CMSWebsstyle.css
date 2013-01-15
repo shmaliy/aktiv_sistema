@@ -198,3 +198,74 @@ font-size:8pt;
 color:#405868; 
 text-decoration:none
 }
+
+.sunny-filemanager {
+	
+}
+
+.sunny-filemanager .sunny-fileuploader {
+	width:400px;
+	height:150px;
+	float:left;
+	margin:0 15px 0 0;
+}
+
+.sunny-filemanager .sunny-fileuploader .file-name {
+	padding:10px 0 15px 15px;
+	border-bottom:1px dashed #ccc;
+}
+
+.sunny-filemanager .sunny-fileuploader .file-name span {
+	display:block;
+	width:100px;
+	margin:0 10px 0 0;
+	float:left;
+}
+
+.sunny-filemanager .sunny-fileuploader .file-name input {
+	
+}
+
+.sunny-filemanager .sunny-fileuploader .file {
+	padding:10px 0 15px 15px;
+	border-bottom:1px dashed #ccc;
+}
+
+.sunny-filemanager .sunny-fileuploader .file span {
+	display:block;
+	width:100px;
+	margin:0 10px 0 0;
+	float:left;
+}
+
+.sunny-filemanager .sunny-fileuploader .file input {}
+
+.sunny-filemanager .sunny-fileuploader .file-info {
+	padding:10px 0 15px 15px;
+	border-bottom:1px dashed #ccc;
+}
+
+.sunny-filemanager .sunny-fileuploader .file input {}
+.sunny-filemanager .sunny-fileuploader .file span {
+	display:block;
+	width:100px;
+	margin:0 10px 0 0;
+	float:left;
+}
+
+.sunny-filemanager .uploaded-file {
+	width:300px;
+	height:150px;
+	background:#ccc;
+	float:left;
+	padding:10px 15px 15px 15px;
+}
+
+.clr {
+	clear: both;
+	line-height:0;
+	margin:0;
+	padding:0;
+}
+
+
