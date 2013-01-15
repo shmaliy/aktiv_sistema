@@ -1,4 +1,4 @@
-
+<!-- /tpl/add.tpl -->
 
 <table width="500" cellspacing="0">';
 <tr style="padding-bottom: 5px;">

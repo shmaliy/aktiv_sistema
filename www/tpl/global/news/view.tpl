@@ -1,3 +1,4 @@
+<!-- /tpl/global/news/view.tpl -->
 <table cellpadding='17' cellspacing='1' width="100%" height="100%" bgcolor="#cecece">
     <tr>
         <td width="50%" bgcolor="#ffffff" align="center" valign="top">

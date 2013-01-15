@@ -1,3 +1,4 @@
+<!-- <?php echo __FILE__; ?> -->
 <?session_start();?>
 <html>
 <head>

@@ -1,3 +1,4 @@
+<!-- /tpl/global/footer.tpl -->
 </td>
 </tr>
 </table>

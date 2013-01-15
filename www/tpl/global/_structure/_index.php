@@ -1,3 +1,4 @@
+<!-- <?php echo __FILE__; ?> -->
 <html>
 <head>
 <title>WebsstyleCMS - Система управления контентом</title>

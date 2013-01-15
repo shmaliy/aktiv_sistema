@@ -1,3 +1,4 @@
+<!-- /tpl/login_form.tpl -->
 <html>
 <head>
 <META http-equiv="Content-Type" content="text/html">

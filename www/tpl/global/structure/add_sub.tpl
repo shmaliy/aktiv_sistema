@@ -1,3 +1,4 @@
+<!-- /tpl/global/structure/add_sub.tpl -->
 <form name="f1" action="/structure.php?id=add_sub" method="POST" target="main" enctype="multipart/form-data" onsubmit="return checkForm(this)">
 <table cellpadding='0' cellspacing='1' width="99%" bgcolor="#dedede">
 <tr bgcolor="#ffffff">

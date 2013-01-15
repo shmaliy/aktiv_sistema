@@ -1,3 +1,4 @@
+<!-- /tpl/global/structure/edit_submenu.tpl -->
 <form name="f1" action="/structure.php?id=edit_submenu&ssid={ID}" method="post" ENCTYPE="multipart/form-data" onsubmit="return ValidateForm(f1)" target="_parent">
 <table cellpadding='0' cellspacing='1' width="99%" bgcolor="#dedede">
 <tr bgcolor="#ffffff">

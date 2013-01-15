@@ -1,3 +1,4 @@
+<!-- /tpl/global/content/edit.tpl -->
 <script language="javascript" type="text/javascript" src="lib/jscripts/tiny_mce/tiny_mce.js"></script>
 <script language="javascript" type="text/javascript" src="lib/jscripts/tiny_mce_init.js"></script> 
 <script language="javascript" type="text/javascript" src="lib/js/jquery-1.8.3.min.js"></script>

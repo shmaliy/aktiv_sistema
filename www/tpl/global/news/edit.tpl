@@ -1,4 +1,4 @@
-
+<!-- /tpl/global/news/edit.tpl -->
 <script language="javascript" type="text/javascript" src="lib/jscripts/tiny_mce/tiny_mce.js"></script>
 <script language="javascript" type="text/javascript" src="lib/jscripts/tiny_mce_init.js"></script> 
 

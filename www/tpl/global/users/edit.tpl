@@ -1,3 +1,4 @@
+<!-- /tpl/global/users/edit.tpl -->
 <table cellpadding='17' cellspacing='1' width="100%" height="99%" bgcolor="#cecece" border="0">
     <tr>
         <td width="50%" bgcolor="#ffffff" align="center" valign="top">

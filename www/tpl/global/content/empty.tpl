@@ -1,3 +1,4 @@
+<!-- /tpl/global/content/empty.tpl -->
 <table class='sort' cellpadding='1' cellspacing='1' width="99%">
 <tr>
 <td align="center" valign="middle" height="10"><h1>”правление региональными администраторами</h1></td>
