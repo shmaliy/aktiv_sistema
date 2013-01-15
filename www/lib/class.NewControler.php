@@ -218,4 +218,15 @@ class NewController extends Controller_Abstract
 	{
 		
 	}
+	
+	public function headIncludesAction()
+	{
+		return $this->_tpl->fetch('head.includes.tpl');
+	}
+	
+	public function formsAction()
+	{
+		$this->_tpl->assign('session', session_id());
+		return $this->_tpl->fetch('forms.tpl');
+	}
 }

@@ -22,11 +22,14 @@ class mod_Content{
 	}
 
 	function view() {
+		$this->tpl->assign(array(
+			'SESSION_ID' 		=> session_id(),
+			'HEAD_INCLUDES'		=> $this->_controller->headIncludesAction(),
+			'PANEL' 			=> $this->_controller->topPanelAction(),
+			'FORMS'				=> $this->_controller->formsAction() 
+		));
+		
 		if(!isset($_GET['id']) || @$_GET['id'] == 'main') {
-			$this->tpl->assign(array(
-				'SESSION_ID' => session_id(),
-				'PANEL' => $this->_controller->topPanelAction(),
-			));
 			$this->tpl->define_dynamic('index', 'main.tpl');
 		}
 		
@@ -352,6 +355,13 @@ class mod_Content{
 				
 				$arr=explode('/',$str_content['content_title']);
 				if(!empty($arr[count($arr)-1])) $title=$arr[count($arr)-1]; else $title=$str_content['title'];
+				
+				/**
+				 * √де то тут нужно перехватить и отдать данные 
+				 * в контроллер, а может и выше, 
+				 * чтобы убрать отсюда запросы!
+				 */
+				
 				
 				$this->tpl->assign(
 					array(

@@ -15,166 +15,12 @@
 <meta name="Keywords" content="{CONTENT_KEYWORDS}">
 <meta name="Description" content="{CONTENT_DESC}">
 <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
-<link href="/styles/sunny.css" type="text/css" rel=stylesheet>
-<script src="/lib/js/AC_RunActiveContent.js" type="text/javascript"></script>
-<script src="/lib/js/jquery-1.8.3.min.js" type="text/javascript"></script>
-<script src="/lib/js/sunny.js" type="text/javascript"></script>
-
-<script>
-var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-27653780-1']);
-_gaq.push(['_trackPageview']); (function() { var ga =
-document.createElement('script'); ga.type = 'text/javascript'; ga.async
-= true; ga.src = ('https:' == document.location.protocol ? 'https://ssl'
-: 'http://www') + '.google-analytics.com/ga.js'; var s =
-document.getElementsByTagName('script')[0];
-s.parentNode.insertBefore(ga, s); })();
-
-</script>
+{HEAD_INCLUDES}
 </head>
 <!-- /header block -->
 
 <body>
-	{PANEL}
-
-	<div class="modal-container" id="modal-container">
-		<div class="sunny-form">
-			<div class="sunny-form-tabs">
-				<ul class="tabs-list">
-					<li class="login" id="tabs-list-login"
-						onclick="$.fn.active('panelswitcher', this.id);"><span>Войти</span>
-					</li>
-					<li class="register" id="tabs-list-register"
-						onclick="$.fn.active('panelswitcher', this.id);"><span>Зарегистрироваться</span>
-					</li>
-				</ul>
-			</div>
-			<div class="sunny-form-body-top"></div>
-			<div class="sunny-form-body">
-				<a class="close" href="#"
-					onclick="$.fn.active('hidemodal', 'modal-container');"></a>
-
-				<div id="sunny-form-body-login" class="sunny-form-body-form-login">
-					<form enctype="multypart/form-data" class="via_ajax"
-						action="/frontendLogin">
-						<input type="hidden" name="url" value="/frontendLogin"> <input
-							type="hidden" name="sid" value="{SESSION_ID}">
-						<div class="sunny-form-label">Эл. почта</div>
-						<div class="sunny-form-element">
-							<input type="text" name="email" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Пароль</div>
-						<div class="sunny-form-element">
-							<input type="password" name="password" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<!-- 						<div class="sunny-form-label"></div> -->
-						<!--						<div class="sunny-form-element"><a class="forgot-password" href="#" onclick="$.fn.active('panelswitcher', 'sunny-form-body-forgot-password');">Забыли пароль?</a></div> -->
-						<!-- 						<div class="clr"></div> -->
-
-						<div class="sunny-form-label"></div>
-						<div class="sunny-form-element">
-							<input type="submit" value="Войти"
-								class="sunny-form-login-button">
-						</div>
-						<div class="clr"></div>
-					</form>
-					<div id="sunny-form-error"></div>
-					<div id="sunny-form-success"></div>
-				</div>
-
-
-				<div id="sunny-form-body-register" class="sunny-form-body-form">
-					<form enctype="multypart/form-data" class="via_ajax"
-						action="/frontendRegister">
-						<input type="hidden" name="url" value="/frontendRegister"> <input
-							type="hidden" name="sid" value="{SESSION_ID}"> <input
-							type="hidden" name="send_spam" value="0">
-
-						<div class="sunny-form-label">Эл. почта</div>
-						<div class="sunny-form-element">
-							<input type="text" name="email" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Пароль</div>
-						<div class="sunny-form-element">
-							<input type="password" name="password" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Повторите пароль</div>
-						<div class="sunny-form-element">
-							<input type="password" name="password_" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Телефон</div>
-						<div class="sunny-form-element">
-							<input type="text" name="phone" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Фамилия</div>
-						<div class="sunny-form-element">
-							<input type="text" name="f" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Имя</div>
-						<div class="sunny-form-element">
-							<input type="text" name="i" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Отчество</div>
-						<div class="sunny-form-element">
-							<input type="text" name="o" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Название компании</div>
-						<div class="sunny-form-element">
-							<input type="text" name="company" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Название должности</div>
-						<div class="sunny-form-element">
-							<input type="text" name="post" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Подписаться на рассылку</div>
-						<div class="sunny-form-element">
-							<input type="checkbox" name="send_spam">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label"></div>
-						<div class="sunny-form-element">
-							<input type="submit" value="Отправить"
-								class="sunny-form-login-button">
-						</div>
-						<div class="clr"></div>
-					</form>
-					<div id="sunny-form-error-register"></div>
-					<div id="sunny-form-success-register"></div>
-				</div>
-
-				<div id="sunny-form-body-forgot-password"
-					class="sunny-form-body-form">dfsdf</div>
-
-
-			</div>
-			<div class="sunny-form-body-bottom"></div>
-		</div>
-		<div class="clr"></div>
-	</div>
-
-
+	{PANEL} {FORMS}
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		bgcolor="#FFFFFF">
 		<tr>
@@ -272,10 +118,7 @@ s.parentNode.insertBefore(ga, s); })();
 							</table></td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
-						<td width="531" valign="top">
-							{CONTENT_BODY}
-							{CONTENT_FILES}
-						</td>
+						<td width="531" valign="top">{CONTENT_BODY} {CONTENT_FILES}</td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
 						<td width="186" valign="top"><table width="100%" border="0"
