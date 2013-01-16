@@ -1,0 +1,200 @@
+h1 {font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; font-size:9pt; color:#405868;padding:0px; margin:0px;}
+td{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; font-size:1.4ex; color:#405868}
+
+.td {
+    font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma;
+    font-size:1.4ex;
+    color:#405868
+}
+
+td.tit{font-family:tahoma,sans-serif; font-size:9pt; color: Black; font-weight : bold; color:#ffffff}
+
+.version_info {
+	padding-top:15px;
+	font-family:tahoma;
+	font-size:10px;
+	color:#405868;
+}
+
+.tit1{
+	font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma;
+	font-size:10px;
+	color:#405868;
+	padding-bottom:0px;
+}
+
+table.main_table{font-family:arial,sans-serif; font-size:9pt; color: #405868; font-weight : bold; border: 0px}
+table.table_title{border:0px;border-bottom:0px}
+
+
+body{margin:0px;scrollbar-track-color:#ffffff; scrollbar-highlight-color:#d0dbe2; scrollbar-3dlight-color:#f4f6f8; scrollbar-darkshadow-color:#d0dbe2; scrollbar-shadow-color:#d0dbe2; scrollbar-arrow-color:#000000; scrollbar-face-color:#d0dbe2}
+
+input, option, select, textarea, button{
+font-family: MS Sans Serif, Sans-serif, Tahoma, Arial; 
+color:#405868;
+font-size:11px; 
+border:1px solid #405868;
+background: #F1F5F8;
+}
+
+input.calc, option.calc, select.calc{
+font-family: MS Sans Serif, Sans-serif, Tahoma, Arial; 
+width:100%;
+color:#405868;
+font-size:11px; 
+border:0px solid #405868;
+background: #F1F5F8;
+}
+
+input.logon{
+font-family: MS Sans Serif, Sans-serif, Tahoma, Arial;
+color:#405868;
+font-size:11px;
+border:1px solid #405868;
+background: #D9D9D9;
+}
+
+option.groupitem{
+color: white;
+background: #626970;
+}
+
+table.sort{
+border-spacing:0.1em;
+margin-bottom:1em;
+margin-top:1em;
+background :#D0DBE2;
+}
+
+table.common{
+border-spacing:0.1em;
+margin-bottom:1em;
+margin-top:1em;
+background :#D0DBE2
+}
+
+
+/* headline tables */
+table.sort thead td{
+cursor:pointer;
+cursor:hand;
+font-weight:bold;
+text-align:center;
+vertical-align:middle;
+font-family:tahoma,sans-serif; 
+font-size:1.4ex; 
+font-weight : bold; 
+color:#405868;
+background:#F4F6F8
+}
+
+/* headline of sorteded column */
+table.sort thead td.curcol{
+font-family:tahoma,sans-serif; 
+font-size:1.4ex; 
+font-weight : bold; 
+color:#405868;
+background:#D0DBE2
+}
+
+td.t1 {
+    font-family: tahoma,sans-serif;
+    font-size: 1.4ex;
+    font-weight: bold;
+    color: #405868;
+    background: #F4F6F8;
+}
+
+.th1 {
+    font-family: tahoma,sans-serif;
+    font-size: 1.4ex;
+    font-weight: bold;
+    color: #405868;
+    background: #F4F6F8;
+}
+td.tsimple
+{font-family:tahoma,sans-serif; 
+ font-size:1.4ex; 
+ color:#405868;
+ background:#ffffff;
+ vertical-align:top;
+}
+
+a.staff1,a.staff1:visited
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+font-size:8pt; 
+color:#405868; 
+font-weight:bold;
+text-decoration:none
+}
+a.staff1:active,a.staff1:hover
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+color:#ea8c01; 
+font-weight:bold
+}
+a.staff2,a.staff2:visited
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma;
+font-size:2ex;
+color:#405868
+}
+a.staff2:active,a.staff2:hover
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+color:#ea8c01
+}
+a.staff3,a.staff3:visited
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+font-size:1.7ex; 
+color:#405868
+}
+a.staff3:active,a.staff3:hover
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+font-size:1.7ex; 
+color:#ea8c01
+}
+
+.staffd1plus
+{font-family: MS Sans Serif, Sans-serif, Tahoma; 
+font-size:1.6ex; 
+color:#405868; 
+font-weight:bold;
+cursor:hand;
+border:1px solid #9cb3c2;
+background: #F4F6F8;
+margin-top:15px; 
+padding:3px;
+padding-left:23px;
+background-image:url('/Skins/<?=$_SESSION['MySkin'];?>/pics/plus-svertivalka.gif');
+background-repeat:no-repeat
+}
+
+.staffd1minus {
+font-family: Tahoma; 
+font-size:12px;
+color:#405868; 
+font-weight:bold;
+cursor:hand;
+border:1px solid #9cb3c2;
+background: #F4F6F8;
+margin-top:15px; 
+padding:3px;
+padding-left:23px;
+background-image:url('/Skins/<?=$_SESSION['MySkin'];?>/pics/minus-svertivalka.gif');
+background-repeat:no-repeat
+}
+
+
+
+.calendar_button {
+	width: 20px;
+	height: 17px;
+	padding-bottom:3px;
+	background-image:url('/images/calendar2.gif');
+	
+}
+
+a
+{font-family: tahoma, MS Sans Serif, Sans-serif, Tahoma; 
+font-size:8pt; 
+color:#405868; 
+text-decoration:none
+}

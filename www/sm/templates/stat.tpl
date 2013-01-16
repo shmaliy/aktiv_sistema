@@ -20,7 +20,7 @@
 <!-- /header block -->
 
 <body>
-
+<a href="list/receivers.csv">Скачать базу подписчиков рассылки</a>
 	<table class="stat_tbl" cellpadding="5" cellspacing="0">
 		<thead>
 			<tr>

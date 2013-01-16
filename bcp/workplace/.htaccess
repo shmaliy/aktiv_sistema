@@ -1,0 +1,7 @@
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^workplace.aktiv-sistema.com.ua$ [OR]
+RewriteCond %{HTTP_HOST} ^www.workplace.aktiv-sistema.com.ua$
+RewriteRule ^(.*)$ "http\:\/\/92\.243\.91\.61\/" [R=301,L]
+

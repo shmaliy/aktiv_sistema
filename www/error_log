@@ -733,3 +733,5 @@ Stack trace:
 [15-Jan-2013 18:22:22] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
 [15-Jan-2013 18:22:59] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
 [15-Jan-2013 18:22:59] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[16-Jan-2013 13:48:26] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
+[16-Jan-2013 13:48:26] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27

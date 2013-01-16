@@ -1,0 +1,10 @@
+THEME LICENSE:
+By purchasing/downloading a product from http://premiumthemes.net, you agree to the following: 
+1. It remain property of http://premiumthemes.net/
+2. the credit link in the footer must remain intact, except for Developer Packs. 
+3. The product may be used by the licensee in any personal or commercial projects. They may not be resold or redistributed in whole or part. For example: transformed into a new product and making it available for download. By purchasing a Developer Pack, you are free to remove the credit link informations, modify the files and hand it over to your clients.
+
+If you have any questions regarding license or not sure about certain thing, ASK before you use it. Please send your queries regarding license at - business@premiumthemes.net with subject line "License Inquiry"
+
+ICONS LICENSE:
+Icons used in the theme is created and owned by FamFamFam.com, which where released under Creative Commons 2.5. check license details here: http://creativecommons.org/licenses/by/2.5/

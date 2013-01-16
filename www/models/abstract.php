@@ -1,8 +1,8 @@
 <?php
 
 //Ñâÿçü ñ ÁÄ
-require_once '/lib/config.php';
-require_once '/Zend/Db.php';
+require_once 'lib/config.php';
+require_once 'Zend/Db.php';
 
 class Models_Abstract
 {
@@ -15,8 +15,8 @@ class Models_Abstract
 	{
 		$this->_db = Zend_Db::factory('Pdo_Mysql', array(
 		      'host'     => 'localhost',
-		      'username' => 'root',
-		      'password' => '',
+		      'username' => 'aktivsis_user',
+		      'password' => '456852',
 		      'dbname'   => 'aktivsis_db',
 		      'driver_options' => array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')
 		));

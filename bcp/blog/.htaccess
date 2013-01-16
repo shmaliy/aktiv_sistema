@@ -1,0 +1,25 @@
+php_value error_reporting 7
+#AddHandler application/x-httpd-php5 .php .php4 .php3 .phtml
+
+Options +FollowSymlinks
+DirectoryIndex index.php
+RewriteEngine On
+RewriteBase /
+RewriteRule ^$  index.php [L]
+
+
+RewriteRule ^admin$  /auth.php [L]
+RewriteRule ^login$  /auth.php?id=login [L]
+RewriteRule ^logon$  /auth.php?id=logon [L]
+RewriteRule ^logout$ /auth.php?id=logout [L]
+
+###  ��������� ������� � ���������������� ����� CMS WEBSSTYLE  ###
+#RewriteRule ^([^/.]+)$    index.php?lang=$1&id=$2 [L]
+#RewriteRule ^([^/]+)/([^/.]+)$    index.php?lang=$1&id=$2&ssid=$3 [L]
+#RewriteRule ^([^/]+)/([^/]+)/([^/.]+)$    index.php?lang=$1&id=$2&ssid=$3&usid=$4 [L]
+#RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/.]+)$    index.php?lang=$1&id=$2&ssid=$3&usid=$4&psid=$5 [L]
+
+RewriteRule ^([^/.]+)$    index.php?id=$1 [L]
+RewriteRule ^([^/]+)/([^/.]+)$    index.php?id=$1&ssid=$2 [L]
+RewriteRule ^([^/]+)/([^/]+)/([^/.]+)$    index.php?id=$1&ssid=$2&usid=$3 [L]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/.]+)$    index.php?id=$1&ssid=$2&usid=$3&psid=$4&dsid=$5 [L]
