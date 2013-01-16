@@ -118,6 +118,7 @@ var registerTab = '#tabs-list-register';
 			
 		},
 		
+		
 		request: function (url, data, _htmlCallback)
 		{
 			console.log('request');
@@ -167,6 +168,36 @@ var registerTab = '#tabs-list-register';
 			$(this).find('input, select, textarea, button').removeAttr("disabled");
 		},
 		
+		getfile: function (url)
+		{
+			console.log('getfile');
+			console.log(url);
+			$('#sunny-form-error').html('');
+			$('#sunny-form-error-register').html('');
+			
+			$.ajax({
+				url: url,
+				data: [],
+				type: 'POST',
+				error: function(jqXHR, textStatus, errorThrown) {
+					
+				},
+				success: function(data, textStatus, jqXHR) {
+					//console.log(jqXHR.responseText);
+					var response = jqXHR.responseText;
+					if (response == 'error') {
+						$(this).active('showmodal', 'modal-container', 'tabs-list-login');
+					} else {
+						window.location = '/' + response;
+					}
+									
+				},
+				complete: function(jqXHR, textStatus) {}
+			});
+			return false;
+			
+		}
+		
 		
 	};
 	
@@ -189,6 +220,7 @@ $(document).ready(function(){
 	//observeFormOnSubmit();
 	//observeAnchorOnClick();
 	$.fn.active('observe');
+	
 	//uploader();
 	//rightFormSelector();
 });

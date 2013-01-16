@@ -1,20 +1,20 @@
 <?php
-require_once 'class.Form.php';
 require_once 'class.ControllerAbstract.php';
 require_once 'sm/Setup.php';
 require_once 'models/subscribers.php';
+require_once 'models/content.php';
 
 class NewController extends Controller_Abstract
 {
-	//protected $_form;
 	protected $_tpl;
 	protected $_subscribersModel;
+	protected $_contentModel;
 	
 	public function __construct()
 	{
-		//$this->_form = new Form();
 		$this->_tpl = new Smarty_Tpl();
 		$this->_subscribersModel = new Models_Subscribers();
+		$this->_contentModel = new Models_Content();
 	}
 	
 	public function topPanelAction()
@@ -24,9 +24,18 @@ class NewController extends Controller_Abstract
 		}
 		else {
 			$user = $this->_subscribersModel->parseLogin(array('id' => $_SESSION['frontEndLogin']['userId']));
+			$this->_tpl->assign('link', 1);
+			if ($user['email'] == 'admin@aktiv-sistema.com') {
+				$this->_tpl->assign('link', 1);
+			}
 			$this->_tpl->assign('name', $user['email']);
 			return $this->_tpl->fetch('top.panel.user.tpl');
 		}
+	}
+	
+	public function statAction()
+	{
+		$this->_tpl->display('stat.tpl');
 	}
 	
 	/**
@@ -228,5 +237,86 @@ class NewController extends Controller_Abstract
 	{
 		$this->_tpl->assign('session', session_id());
 		return $this->_tpl->fetch('forms.tpl');
+	}
+	
+	public function contentsListAction($href, $param)
+	{
+		echo $param;
+		return $this->_contentModel->getContentList($href, $param);
+	}
+	
+	public function filesAccessAction($str, $id, $tbl)
+	{
+		if (empty($str)) {
+			return '';
+		}
+		$file = unserialize($str);
+		$this->_tpl->assign('file', $file);
+		$this->_tpl->assign('id', $id);
+		$this->_tpl->assign('tbl', $tbl);
+		//var_export($file);
+		
+		$this->_tpl->assign('logged', '0');
+		
+		if (isset($_SESSION['frontEndLogin']['userId']))
+		{
+			$this->_tpl->assign('logged', '1');
+		}
+		return $this->_tpl->fetch('files-access.tpl');
+	}
+	
+	public function getFileAction($url)
+	{
+		$parse = explode('_', $url);
+		$id = $parse[0];
+		$tbl = $parse[1];
+		
+		if ($tbl == 'content') {
+			$item = $this->_contentModel->getContentItem($id);
+			$file = unserialize($item['fileslist']);
+			
+			if(isset($_SESSION['frontEndLogin']['userId']) && $_SESSION['frontEndLogin']['userId'] > 0) {
+				echo $file['path'];
+					
+				$insert = array(
+						'subscribers_id' =>	$_SESSION['frontEndLogin']['userId'],
+						'activity_type'	=>	iconv("windows-1251", "UTF-8", 'Загрузка файла из инструментов ' . $file['path']),
+						'ts'	=> time()
+				);
+					
+				$this->_contentModel->insert($this->_contentModel->_activityTbl, $insert);
+					
+			} else {
+				if ($file['free'] == 1) {
+					echo $file['path'];
+				} else {
+					echo 'error';
+				}
+			}
+		} else {
+			$item = $this->_contentModel->getBaseItem($id);
+			$file = unserialize($item['fileslist']);
+			
+			if(isset($_SESSION['frontEndLogin']['userId']) && $_SESSION['frontEndLogin']['userId'] > 0) {
+				echo $file['path'];
+					
+				$insert = array(
+						'subscribers_id' =>	$_SESSION['frontEndLogin']['userId'],
+						'activity_type'	=>	iconv("windows-1251", "UTF-8", 'Загрузка файла из базы знаний ' . $file['path']),
+						'ts'	=> time()
+				);
+					
+				$this->_contentModel->insert($this->_contentModel->_activityTbl, $insert);
+					
+			} else {
+				if ($file['free'] == 1) {
+					echo $file['path'];
+				} else {
+					echo 'error';
+				}
+			}
+		}
+		
+		
 	}
 }

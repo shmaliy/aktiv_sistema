@@ -1,5 +1,5 @@
-<!-- <?php echo __FILE__; ?> -->
-<?session_start();?>
+<!-- <?php //echo __FILE__; ?> -->
+<?//session_start();?>
 <html>
 <head>
 <meta  http-equiv="nocache">

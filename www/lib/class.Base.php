@@ -4,14 +4,16 @@ Error_Reporting(E_ALL & ~E_NOTICE);
 require_once 'lib/class.Template.php';
 require_once 'lib/class.Mysql.php';
 require_once 'lib/function.php';
+require_once 'lib/class.ControllerAbstract.php';
 
-class class_Base {
+class class_Base extends Controller_Abstract {
     function __construct($db,$tpl) {
         $this->db = $db;
         $this->tpl = $tpl;
 
        	$this->tpl->define_dynamic('design', $_SESSION['INTERFACE'] . '/header.tpl');
 		$this->tpl->assign(array('SKIN' => $_SESSION['MySkin']));
+		parent::__construct();
     }
 
     function view() {
@@ -86,7 +88,71 @@ class class_Base {
     }
 
     function edit() {
-        $this->tpl->define_dynamic('edit_menu', $_SESSION['INTERFACE'] . '/base/edit.tpl');
+    	$content = $this->_model->getBaseItem($_REQUEST['ssid']);
+    	if (!empty($_POST)) {
+    		
+    		$status = 0;
+    		if ($_POST['status'] == 'on') {
+    			$status = 1;
+    		}
+    		
+    		$free_file = 0;
+    		if (isset ($_POST['free_file']) && $_POST['free_file'] == 'on') {
+    			$free_file = 1;
+    		}
+    		
+    		$filestore = array();
+    		if (!empty($_FILES) && isset($_FILES['fileslist'])) {
+	    		if ($_FILES['fileslist']['size'] > 0) {
+	    			if(move_uploaded_file($_FILES['fileslist']['tmp_name'], "uploads/" . $_FILES['fileslist']['name'])) {
+	    				$filestore = array(
+	    						'title' => iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['files-name'])),
+	    						'path' => "uploads/" . $_FILES['fileslist']['name'],
+	    						'free' => $free_file
+	    				);
+	    			}
+	    		}
+    		}
+    		
+    		
+    		$update = array(
+    				'title' 		=> 	iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['title'])),
+    				'description'	=>	iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['description'])),
+    				'body' 			=> iconv('windows-1251', 'UTF-8', str_replace('images/', 'images/', $_REQUEST['body'])),
+    				'public_date' 	=> $_REQUEST['public_date'],
+    				'status' 		=> iconv('windows-1251', 'UTF-8', $status),
+    				 
+    		);
+    		
+    		if (!empty($filestore)) {
+    			$update['fileslist'] = serialize($filestore);
+    		}
+    		
+    		//     		echo '<pre>';
+    		//     		var_export($_FILES);
+    		//     		echo '</pre>';
+    		//     		echo '<pre>';
+    		//     		var_export($_REQUEST);
+    		//     		echo '</pre>';
+    		
+    		//var_export($update);	
+    		
+    		$this->_model->update($_REQUEST['ssid'], $this->_model->_baseTbl, $update);
+    		@header("Location: /logon");
+    		
+    		
+    	} else {
+    		$this->_tpl->assign('item', $content);
+    		$this->_tpl->assign('filestore', unserialize($content['fileslist']));
+    		$tpl = $this->_tpl->fetch('base.edit.tpl');
+    		$this->tpl->assign('CONTENT', $tpl);
+    	}
+    	
+    	return;
+    	
+    	
+    	
+    	$this->tpl->define_dynamic('edit_menu', $_SESSION['INTERFACE'] . '/base/edit.tpl');
         if(isset($_POST['save'])) {
             if(isset($_POST['status'])) {$_status = '1';} else {$_status = '0';}
             $this->db->query("UPDATE base SET 

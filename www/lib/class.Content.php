@@ -59,7 +59,7 @@ class Content extends Controller_Abstract {
         }
    
         $r .='</table>';
-        $this->tpl->assign(array('CONTENT_BODY' => $r . '213132112131'));
+        $this->tpl->assign(array('CONTENT_BODY' => $r));
 
         $this->tpl->parse('MENU', '.menu');
         $this->tpl->parse('CONTENT', 'index');
@@ -108,10 +108,17 @@ class Content extends Controller_Abstract {
     	
     	$content = $this->_model->getContentItem($_REQUEST['ssid']);
     	if (!empty($_POST)) {
+    		
     		$status = 0;
     		if ($_POST['status'] == 'on') {
     			$status = 1;
     		}
+    		
+    		$free_file = 0;
+    		if (isset ($_POST['free_file']) && $_POST['free_file'] == 'on') {
+    			$free_file = 1;
+    		}
+    		
     		
     		$filestore = array();
     		if ($_FILES['fileslist']['size'] > 0) {
@@ -119,7 +126,7 @@ class Content extends Controller_Abstract {
 					$filestore = array(
 						'title' => iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['files-name'])),
 						'path' => "uploads/" . $_FILES['fileslist']['name'],
-						'free' => $_REQUEST['free_file']
+						'free' => $free_file
 					);
 				}
     		}
@@ -150,7 +157,7 @@ class Content extends Controller_Abstract {
 			
     		
     		$this->_model->update($_REQUEST['ssid'], $this->_model->_tbl, $update);
-    		@header("Location: /content.php?id=view");
+    		@header("Location: /logon");
     		
     	} else {
     		$this->_tpl->assign('item', $content);
