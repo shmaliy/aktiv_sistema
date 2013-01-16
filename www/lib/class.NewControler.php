@@ -35,6 +35,18 @@ class NewController extends Controller_Abstract
 	
 	public function statAction()
 	{
+		$list = $this->_contentModel->getSpamList();
+		
+		$row = '';
+		foreach ($list as $item) {
+			$row .= '' . implode('; ', $item) . '' . "\n";
+		}
+		
+		file_put_contents('list/receivers.csv', $row);
+		
+		$result = $this->_contentModel->getActivityList();
+		$this->_tpl->assign('grid', $result);
+		
 		$this->_tpl->display('stat.tpl');
 	}
 	

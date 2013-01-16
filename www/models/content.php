@@ -11,6 +11,7 @@ class Models_Content extends Models_Abstract
 	public $_subMenuTbl;
 	public $_activityTbl;
 	public $_baseTbl;
+	public $_subscribersTbl;
 	
 	public function __construct()
 	{
@@ -20,6 +21,7 @@ class Models_Content extends Models_Abstract
 		$this->_subMenuTbl = 'sub_menu';
 		$this->_activityTbl = 'subscribers_activity';
 		$this->_baseTbl = 'base';
+		$this->_subscribersTbl = 'subscribers';
 		parent::__construct();
 	}
 	
@@ -52,6 +54,59 @@ class Models_Content extends Models_Abstract
 	
 		array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
 	
+		return $return;
+	}
+	
+	public function getActivityList()
+	{
+		$select = $this->_db->select();
+		
+		$select->from(array('act' => $this->_activityTbl));
+		$select->order('id desc');
+		
+		$select->joinLeft(
+			array('users' => $this->_subscribersTbl),
+			"users.id = act.subscribers_id",
+			array(
+				'users.f',
+				'users.i',
+				'users.o',
+				'users.email',
+				'users.company',
+				'users.post'
+			)
+		);
+		
+		$return = $this->_db->fetchAll($select);
+		foreach ($return as &$item) {
+			$item['ts'] = date("h:i:s d-m-Y", $item['ts']);
+		}
+		
+		array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+		
+		return $return;
+
+	}
+	
+	public function getSpamList()
+	{
+		$select = $this->_db->select();
+		$select->from(
+				array('list' => $this->_subscribersTbl),
+				array(
+					'list.email',
+					'list.f',
+					'list.i',
+					'list.o',
+				)
+		);
+		$select->where('list.send_spam = ?', 'YES');
+		
+		$return = $this->_db->fetchAll($select);
+		
+		array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+		
+		
 		return $return;
 	}
 	

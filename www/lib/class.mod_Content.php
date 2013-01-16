@@ -85,10 +85,7 @@ class mod_Content{
 			}
 		}
 		
-		if($route == 'stat' && isset($_SESSION['frontEndLogin']['userId']) && !empty($_SESSION['frontEndLogin']['userId'])) {
-			$this->_controller->statAction();
-			return;
-		}
+		
 		
 		if (isset($nonAjaxRoutes[$route])) {
 			if ($rParam == 0) {
@@ -97,6 +94,10 @@ class mod_Content{
 				$this->tpl->define_dynamic('index',$nonAjaxRoutes[$route][1]);
 			}
 		} else {
+			if($route == 'stat' && isset($_SESSION['frontEndLogin']['userId']) && !empty($_SESSION['frontEndLogin']['userId'])) {
+				$this->_controller->statAction();
+				return;
+			}
 			$sql_checkhref = $this->db->queryOneRecord("SELECT * FROM str_menu WHERE href='".@$_GET['id']."' AND status='1'");
 			if(!$this->db->numRows($sql_checkhref)) {
 				redirect("/404.html");

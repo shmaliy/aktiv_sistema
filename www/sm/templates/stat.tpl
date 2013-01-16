@@ -14,10 +14,39 @@
 <script src="/lib/js/AC_RunActiveContent.js" type="text/javascript"></script>
 <script src="/lib/js/jquery-1.8.3.min.js" type="text/javascript"></script>
 <script src="/lib/js/sunny.js" type="text/javascript"></script>
+
+
 </head>
 <!-- /header block -->
 
 <body>
-	
+
+	<table class="stat_tbl" cellpadding="5" cellspacing="0">
+		<thead>
+			<tr>
+				<td>Эл. почта</td>
+				<td>Фамилия</td>
+				<td>Имя</td>
+				<td>Компания</td>
+				<td>Должность</td>
+				<td>Действие</td>
+				<td>Дата действия</td>
+			</tr>
+		</thead>
+		<tbody>
+		{foreach $grid as $row}	
+			<tr>
+				<td>{$row.email}</td>
+				<td>{$row.f}</td>
+				<td>{$row.i}</td>
+				<td>{$row.company}</td>
+				<td>{$row.post}</td>
+				<td>{$row.activity_type}</td>
+				<td>{$row.ts}</td>
+			</tr>
+		{/foreach}
+		</tbody>
+	</table>
+
 </body>
 </html>
