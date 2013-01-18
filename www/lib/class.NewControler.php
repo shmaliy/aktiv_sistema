@@ -50,6 +50,45 @@ class NewController extends Controller_Abstract
 		return $this->_tpl->fetch('_knowledge-base-list.tpl');
 	}
 	
+	public function actionViewAction($menu, $submenu)
+	{
+		$result = $this->_contentModel->getActionsList(1);
+		$this->_tpl->assign('data', $result[0]);
+		$this->_tpl->assign('mainmenu', $this->mainMenuAction($menu, $submenu));
+		$this->_tpl->assign('panel', $this->topPanelAction());
+		$this->_tpl->assign('forms', $this->formsAction());
+		$this->_tpl->assign('knowledgebase', $this->baseKnowledgeWidget('1'));
+		$this->_tpl->assign('actions', $this->actionsWidget('1'));
+		//var_export($result);
+		
+		return $this->_tpl->fetch('_actions-layout.tpl');
+	}
+	
+	public function signToAction($id)
+	{
+		$result = $this->_contentModel->getActionsList();
+		foreach ($result as $item) {
+			if ($id == $item['id']) {
+				$message =  $item['title'] . ' - ' . $item['public_date'];
+				break;
+			}
+		}
+		
+		if(isset($_SESSION['frontEndLogin']['userId']) && $_SESSION['frontEndLogin']['userId'] > 0) {
+						
+			$insert = array(
+					'subscribers_id' =>	$_SESSION['frontEndLogin']['userId'],
+					'activity_type'	=>	iconv("windows-1251", "UTF-8", 'Зарегистрировался на событие "' . $message . '"'),
+					'ts'	=> time()
+			);
+				
+			$this->_contentModel->insert($this->_contentModel->_activityTbl, $insert);
+			echo $item['title'] . ' - ' . $item['public_date'];
+		} else {
+			echo 'error';
+		}
+	}
+	
 	public function contentItemAction($menu, $submenu) {
 		
 		$result = $this->_contentModel->getContentListNew($menu, $submenu);
@@ -90,10 +129,12 @@ class NewController extends Controller_Abstract
 		else {
 			$user = $this->_subscribersModel->parseLogin(array('id' => $_SESSION['frontEndLogin']['userId']));
 			$this->_tpl->assign('link', 1);
-			if ($user['email'] == 'admin@aktiv-sistema.com') {
+			if ($user['email'] == 'admin@aktiv-sistema.com' || $user['email'] == 'shmaliy@sunny.net.ua') {
 				$this->_tpl->assign('link', 1);
+			} else {
+				$this->_tpl->assign('link', 0);
 			}
-			$this->_tpl->assign('name', $user['email']);
+			$this->_tpl->assign('name', $user['f'] . ' ' . $user['i']);
 			return $this->_tpl->fetch('top.panel.user.tpl');
 		}
 	}
@@ -132,7 +173,7 @@ class NewController extends Controller_Abstract
 		$result['errors'] = array();
 		
 		if ($this->_validateEmail($formData['email']) === false) {
-			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Эл. адрес указхан неверно!');
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Эл. адрес указан неверно!');
 		}
 		
 		if ($formData['password'] == '') {
@@ -191,11 +232,18 @@ class NewController extends Controller_Abstract
 		
 		// Первичная проверка на пустые значения
 		foreach ($formData as $key=>$field) {
-			if(empty($field) && $key != 'send_spam') {
+			if(empty($field) && $key != 'send_spam' && $key != '0') {
 				$result['errors'][] = iconv("windows-1251", "UTF-8", 'Все поля должны быть заполнены!');
 				echo json_encode($result);
 				return;
 			}
+		}
+		
+		// Валидация эл. почты
+		if($this->_validateEmail($formData['email']) == false) {
+			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Неверный формат электронного адреса!');
+			echo json_encode($result);
+			return;
 		}
 		
 		// Проверка на существование эл. почты
@@ -228,11 +276,6 @@ class NewController extends Controller_Abstract
 		if(!$this->_validateFio($formData['i'])) {
 			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Корректно заполните поле "Имя"!');
 		}
-		
-		if(!$this->_validateFio($formData['o'])) {
-			$result['errors'][] = iconv("windows-1251", "UTF-8", 'Корректно заполните поле "Отчество"!');
-		}
-		
 		
 		// Валидация названия компании и должности
 		if(!$this->_validateWork($formData['company'])) {
@@ -270,7 +313,7 @@ class NewController extends Controller_Abstract
 			'registered_ts' => time()
 		);
 		
-		$this->_subscribersModel->insert($this->_subscribersModel->getTbl(), $insert);
+		$_SESSION['frontEndLogin']['userId'] = $this->_subscribersModel->insert($this->_subscribersModel->getTbl(), $insert);
 		$result['success'] = iconv("windows-1251", "UTF-8", 'Регистрация прошла успешно!');
 		echo json_encode($result);
 	}

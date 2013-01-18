@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 02:28:54
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 04:45:57
          compiled from "sm\templates\_knowledge-base-list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3187950f8933a4058f7-90143455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a6a8409b1360c4fd2643e248c34b33674c32c1ea' => 
     array (
       0 => 'sm\\templates\\_knowledge-base-list.tpl',
-      1 => 1358468932,
+      1 => 1358477019,
       2 => 'file',
     ),
   ),
@@ -19,9 +19,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_50f8933a4ded85_10794675',
   'variables' => 
   array (
-    'panel' => 0,
     'forms' => 0,
     'mainmenu' => 0,
+    'panel' => 0,
     'data' => 0,
     'item' => 0,
     'fileinfo' => 0,
@@ -63,8 +63,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!-- /header block -->
 
 <body>
-	<?php echo $_smarty_tpl->tpl_vars['panel']->value;?>
- <?php echo $_smarty_tpl->tpl_vars['forms']->value;?>
+	<?php echo $_smarty_tpl->tpl_vars['forms']->value;?>
 
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		bgcolor="#FFFFFF">
@@ -120,7 +119,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 					cellspacing="0">
 					<tr>
 						<td width="218" valign="top"><?php echo $_smarty_tpl->tpl_vars['mainmenu']->value;?>
-</td>
+<?php echo $_smarty_tpl->tpl_vars['panel']->value;?>
+ </td>
 						<td width="23"><img src="/images/t_fill.gif" width="23"
 							height="1"></td>
 						<td width="531" valign="top">

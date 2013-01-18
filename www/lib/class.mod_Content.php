@@ -84,6 +84,10 @@ class mod_Content{
 				case 'load':
 					$this->_controller->getFileAction($rParam);
 					return;
+					
+				case 'signToAction':
+					$this->_controller->signToAction($rParam);
+					return;
 			}
 		}
 		
@@ -93,7 +97,8 @@ class mod_Content{
 		 */
 		$myRoutes = array(
 				'tools' => 1,
-				'base' => 1
+				'base' => 1,
+				'actions' => 1
 		);
 		
 		if(isset($myRoutes[$route])) {
@@ -108,11 +113,17 @@ class mod_Content{
 					
 				case 'base':
 					if ($rParam == 0) {
+						echo $rParam;
 						echo $this->_controller->knowledgeBaseListAction($route, $rParam);
+						return;
 					} else {
-						echo $this->_controller->contentItemAction($route, $rParam);
+						continue;
 					}
+					
+				case 'actions':
+					echo $this->_controller->actionViewAction($route, $rParam);
 					return;
+					
 			}
 		}
 		

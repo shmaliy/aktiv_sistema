@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-16 08:14:23
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 05:00:32
          compiled from "sm\templates\stat.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1835050f635d79e4f55-26541711%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ccc00427c54a9bf6f6ce1aee1a7fd6347f3b47af' => 
     array (
       0 => 'sm\\templates\\stat.tpl',
-      1 => 1358316861,
+      1 => 1358477977,
       2 => 'file',
     ),
   ),
@@ -46,7 +46,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <!-- /header block -->
 
 <body>
-
+<a href="list/receivers.csv">Скачать базу подписчиков рассылки</a>
 	<table class="stat_tbl" cellpadding="5" cellspacing="0">
 		<thead>
 			<tr>
@@ -55,6 +55,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				<td>Имя</td>
 				<td>Компания</td>
 				<td>Должность</td>
+				<td>Телефон</td>
 				<td>Действие</td>
 				<td>Дата действия</td>
 			</tr>
@@ -75,6 +76,8 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
 				<td><?php echo $_smarty_tpl->tpl_vars['row']->value['company'];?>
 </td>
 				<td><?php echo $_smarty_tpl->tpl_vars['row']->value['post'];?>
+</td>
+				<td><?php echo $_smarty_tpl->tpl_vars['row']->value['phone'];?>
 </td>
 				<td><?php echo $_smarty_tpl->tpl_vars['row']->value['activity_type'];?>
 </td>

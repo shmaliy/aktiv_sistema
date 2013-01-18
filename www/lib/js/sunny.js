@@ -196,6 +196,41 @@ var registerTab = '#tabs-list-register';
 			});
 			return false;
 			
+		},
+		
+		signtoaction: function (url)
+		{
+			console.log('signToAction');
+			console.log(url);
+			$('#sunny-form-error').html('');
+			$('#sunny-form-error-register').html('');
+			
+			$.ajax({
+				url: url,
+				data: [],
+				type: 'POST',
+				error: function(jqXHR, textStatus, errorThrown) {
+					
+				},
+				success: function(data, textStatus, jqXHR) {
+					//console.log(jqXHR.responseText);
+					var response = jqXHR.responseText;
+					if (response == 'error') {
+						$(this).active('showmodal', 'modal-container', 'tabs-list-login');
+					} else {
+						$(this).active('message', '"Спасибо, Ваша регистрация для участия в мероприятии "' + response + '" принята. В течении одного рабочего дня с Вами  свяжется менеджер и расскажет Вам все необходимые подробности"');
+					}
+									
+				},
+				complete: function(jqXHR, textStatus) {}
+			});
+			return false;
+			
+		},
+		
+		message: function (text)
+		{
+			alert(text);
 		}
 		
 		

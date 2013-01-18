@@ -33,7 +33,11 @@ class Models_Subscribers extends Models_Abstract
 			$select->where('users.' . $key . ' = ?', $value);
 		}
 		
-		return $this->_db->fetchRow($select);
+		$return = $this->_db->fetchRow($select);
+		
+		array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+		
+		return $return;
 		
 	}
 	

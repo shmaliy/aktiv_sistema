@@ -55,37 +55,13 @@
 							type="hidden" name="sid" value="{$session}"> <input
 							type="hidden" name="send_spam" value="0">
 
-						<div class="sunny-form-label">Эл. почта</div>
-						<div class="sunny-form-element">
-							<input type="text" name="email" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Пароль</div>
-						<div class="sunny-form-element">
-							<input type="password" name="password" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Повторите пароль</div>
-						<div class="sunny-form-element">
-							<input type="password" name="password_" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Телефон</div>
-						<div class="sunny-form-element">
-							<input type="text" name="phone" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Фамилия</div>
+						<div class="sunny-form-label">Фамилия <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="text" name="f" class="sunny-form-text">
 						</div>
 						<div class="clr"></div>
 
-						<div class="sunny-form-label">Имя</div>
+						<div class="sunny-form-label">Имя <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="text" name="i" class="sunny-form-text">
 						</div>
@@ -96,22 +72,51 @@
 							<input type="text" name="o" class="sunny-form-text">
 						</div>
 						<div class="clr"></div>
-
-						<div class="sunny-form-label">Название компании</div>
+						
+						<div class="sunny-form-label">Название компании <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="text" name="company" class="sunny-form-text">
 						</div>
 						<div class="clr"></div>
 
-						<div class="sunny-form-label">Название должности</div>
+						<div class="sunny-form-label">Название должности <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="text" name="post" class="sunny-form-text">
 						</div>
 						<div class="clr"></div>
-
-						<div class="sunny-form-label">Подписаться на рассылку</div>
+						
+						<div class="sunny-form-label">Телефон <span>*</span></div>
 						<div class="sunny-form-element">
-							<input type="checkbox" name="send_spam">
+							<input type="text" name="phone" class="sunny-form-text">
+							<div class="remarc">Телефон в формате +ХХХХХХХХХХХХ</div>
+						</div>
+						<div class="clr"></div>
+						
+						<div class="sunny-form-label">Эл. почта <span>*</span></div>
+						<div class="sunny-form-element">
+							<input type="text" name="email" class="sunny-form-text">
+						</div>
+						<div class="clr"></div>
+
+						<div class="sunny-form-label">Пароль <span>*</span></div>
+						<div class="sunny-form-element">
+							<input type="password" name="password" class="sunny-form-text">
+							<div class="remarc">ОТ 5 до 12 латинских символов и цифр</div>
+						</div>
+						<div class="clr"></div>
+
+						<div class="sunny-form-label">Повторите пароль <span>*</span></div>
+						<div class="sunny-form-element">
+							<input type="password" name="password_" class="sunny-form-text">
+						</div>
+						<div class="clr"></div>
+
+
+
+
+						<div class="sunny-form-label">Подписаться на рассылку "Инструменты системного управления бизнесом"</div>
+						<div class="sunny-form-element">
+							<input type="checkbox" name="send_spam" checked>
 						</div>
 						<div class="clr"></div>
 

@@ -8,16 +8,34 @@
 }
 
 .login-buttons {
-	position: absolute;
 	width: 220px;
 	height: 40px;
 	/* outline: 1px solid red; */
-	margin:0 0 0 400px;
+	margin:15px 0 0 0px;
 	padding:0;
 }
 
+.login-buttons .message {
+	/* outline: 1px solid red; */
+	font-size: 14px;
+	margin:0 0 0 0px;
+	padding:0;
+	color: #00468F;
+	text-align:left;
+}
+
+.login-buttons .username {
+	/* outline: 1px solid red; */
+	font-size: 14px;
+	margin:0 0 0 0px;
+	padding:0;
+	color:  #00468F;
+	font-weight:bold;
+	text-align:left;
+}
+
 .login-buttons .login-buttons-login {
-	font-size: 11px;
+	font-size: 14px;
 	color: #e30133;
 	display:block;
 	float:left; 
@@ -27,7 +45,7 @@
 }
 
 .login-buttons .login-buttons-register {
-	font-size: 11px;
+	font-size: 14px;
 	color: #00468f;
 	display:block;
 	float:left; 
@@ -165,6 +183,18 @@
 	background: url('/images/sunny/login-button.png') bottom left no-repeat;
 	border:0px;
 	color:#fff;
+	margin:0 0 0 120px;
+	display:block;
+}
+
+.sunny-form-body-form .sunny-form-login-button {
+	width: 90px;
+	height:24px;
+	background: url('/images/sunny/login-button.png') bottom left no-repeat;
+	border:0px;
+	color:#fff;
+	margin:0 0 0 35px;
+	display:block;
 }
 
 .sunny-form-body-bottom {
@@ -196,12 +226,14 @@
 #sunny-form-error-register {
 	color:red;
 	padding: 12px 24px 5px 15px;
+	text-align:center;
 }
 
 #sunny-form-success,
 #sunny-form-success-register {
 	color:green;
 	padding: 12px 24px 5px 15px;
+	text-align:center;
 }
 
 .stat_tbl {

@@ -29,11 +29,7 @@
 <!-- /header block -->
 
 <body>
-
-	{PANEL}
 	{FORMS}
-	
-
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		align="center">
 		<tr>
@@ -87,7 +83,10 @@
 					width="100%" height="100%" border="0" cellpadding="0"
 					cellspacing="0">
 					<tr>
-						<td width="221" align="center" valign="middle" bgcolor="#FFFFFF">{MENU}</td>
+						<td width="221" align="center" valign="middle" bgcolor="#FFFFFF">
+							{MENU}
+							{PANEL}
+						</td>
 						<td width="25" bgcolor="#FFFFFF">&nbsp;</td>
 						<td width="514" bgcolor="#FFFFFF"><object
 								classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"

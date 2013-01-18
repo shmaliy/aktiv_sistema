@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-15 22:14:45
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 04:09:55
          compiled from "sm\templates\forms.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1634550f5b8b53dac67-25806590%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '621e3d2a80aa72e53161bde477ad3c22950dd782' => 
     array (
       0 => 'sm\\templates\\forms.tpl',
-      1 => 1358280881,
+      1 => 1358474993,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.12',
+  'unifunc' => 'content_50f5b8b54c8f99_66435267',
   'variables' => 
   array (
     'session' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.12',
-  'unifunc' => 'content_50f5b8b54c8f99_66435267',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_50f5b8b54c8f99_66435267')) {function content_50f5b8b54c8f99_66435267($_smarty_tpl) {?><div class="modal-container" id="modal-container">
 		<div class="sunny-form">
@@ -82,37 +82,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 "> <input
 							type="hidden" name="send_spam" value="0">
 
-						<div class="sunny-form-label">Эл. почта</div>
-						<div class="sunny-form-element">
-							<input type="text" name="email" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Пароль</div>
-						<div class="sunny-form-element">
-							<input type="password" name="password" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Повторите пароль</div>
-						<div class="sunny-form-element">
-							<input type="password" name="password_" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Телефон</div>
-						<div class="sunny-form-element">
-							<input type="text" name="phone" class="sunny-form-text">
-						</div>
-						<div class="clr"></div>
-
-						<div class="sunny-form-label">Фамилия</div>
+						<div class="sunny-form-label">Фамилия <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="text" name="f" class="sunny-form-text">
 						</div>
 						<div class="clr"></div>
 
-						<div class="sunny-form-label">Имя</div>
+						<div class="sunny-form-label">Имя <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="text" name="i" class="sunny-form-text">
 						</div>
@@ -123,22 +99,51 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 							<input type="text" name="o" class="sunny-form-text">
 						</div>
 						<div class="clr"></div>
-
-						<div class="sunny-form-label">Название компании</div>
+						
+						<div class="sunny-form-label">Название компании <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="text" name="company" class="sunny-form-text">
 						</div>
 						<div class="clr"></div>
 
-						<div class="sunny-form-label">Название должности</div>
+						<div class="sunny-form-label">Название должности <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="text" name="post" class="sunny-form-text">
 						</div>
 						<div class="clr"></div>
-
-						<div class="sunny-form-label">Подписаться на рассылку</div>
+						
+						<div class="sunny-form-label">Телефон <span>*</span></div>
 						<div class="sunny-form-element">
-							<input type="checkbox" name="send_spam">
+							<input type="text" name="phone" class="sunny-form-text">
+							<div class="remarc">Телефон в формате +ХХХХХХХХХХХХ</div>
+						</div>
+						<div class="clr"></div>
+						
+						<div class="sunny-form-label">Эл. почта <span>*</span></div>
+						<div class="sunny-form-element">
+							<input type="text" name="email" class="sunny-form-text">
+						</div>
+						<div class="clr"></div>
+
+						<div class="sunny-form-label">Пароль <span>*</span></div>
+						<div class="sunny-form-element">
+							<input type="password" name="password" class="sunny-form-text">
+							<div class="remarc">ОТ 5 до 12 латинских символов и цифр</div>
+						</div>
+						<div class="clr"></div>
+
+						<div class="sunny-form-label">Повторите пароль <span>*</span></div>
+						<div class="sunny-form-element">
+							<input type="password" name="password_" class="sunny-form-text">
+						</div>
+						<div class="clr"></div>
+
+
+
+
+						<div class="sunny-form-label">Подписаться на рассылку "Инструменты системного управления бизнесом"</div>
+						<div class="sunny-form-element">
+							<input type="checkbox" name="send_spam" checked>
 						</div>
 						<div class="clr"></div>
 

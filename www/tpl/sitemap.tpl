@@ -16,25 +16,12 @@
     <meta name="Description" content="{CONTENT_DESC}">
     <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
     <link href="/styles/sunny.css" type="text/css" rel=stylesheet>
-	<script src="lib/js/jquery-1.8.3.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-25408116-6']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+	{HEAD_INCLUDES}
 </head>
 <!-- /header block -->
 
 <body>
-<div class="login-buttons">/tpl/sitemap.tpl</div>
+{FORMS}
 <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
   <tr>
     <td width="103" rowspan="7">&nbsp;</td>
@@ -67,29 +54,7 @@
   <tr>
     <td><table width="981" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="218" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="2" background="/images/design/h_menu_lines.jpg"><img src="/images/t_fiil.png" width="1" height="2" /></td>
-          </tr>
-          <tr>
-            <td height="32" align="left"><a href="/company"><img src="/images/design/menu_company.jpg" width="216" height="32" border="0" /></a></td>
-          </tr>
-          <tr>
-            <td height="2" background="/images/design/h_menu_lines.jpg"><img src="/images/t_fiil.png" width="1" height="2" /></td>
-          </tr>
-          <tr>
-            <td width="31" align="left"><a href="/services"><img src="/images/design/menu_services.jpg" width="216" height="31" border="0" /></a></td>
-          </tr>
-          <tr>
-            <td height="2" background="/images/design/h_menu_lines.jpg"><img src="/images/t_fiil.png" width="1" height="2" /></td>
-          </tr>
-          <tr>
-            <td height="31" align="left"><a href="/tools/business_studio"><img src="/images/design/menu_instruments.jpg" width="216" height="31" border="0" /></a></td>
-          </tr>
-          <tr>
-            <td height="2" background="/images/design/h_menu_lines.jpg"><img src="/images/t_fiil.png" width="1" height="2" /></td>
-          </tr>
-        </table></td>
+        <td width="218" valign="top">{MENU}{PANEL}</td>
         <td width="23"><img src="/images/t_fill.gif" width="23" height="1"></td>
         <td width="531" valign="top">{SITEMAP}</td>
         <td width="23"><img src="/images/t_fill.gif" width="23" height="1"></td>

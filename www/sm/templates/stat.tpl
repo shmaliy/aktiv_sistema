@@ -29,6 +29,7 @@
 				<td>Имя</td>
 				<td>Компания</td>
 				<td>Должность</td>
+				<td>Телефон</td>
 				<td>Действие</td>
 				<td>Дата действия</td>
 			</tr>
@@ -41,6 +42,7 @@
 				<td>{$row.i}</td>
 				<td>{$row.company}</td>
 				<td>{$row.post}</td>
+				<td>{$row.phone}</td>
 				<td>{$row.activity_type}</td>
 				<td>{$row.ts}</td>
 			</tr>

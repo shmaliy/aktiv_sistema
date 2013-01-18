@@ -34,7 +34,7 @@
 <!-- /header block -->
 
 <body>
-	{$panel} {$forms}
+	{$forms}
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		bgcolor="#FFFFFF">
 		<tr>
@@ -86,7 +86,7 @@
 		<tr>
 			<td><table width="981" border="0" cellpadding="0" cellspacing="0">
 					<tr>
-						<td width="218" valign="top">{$mainmenu}</td>
+						<td width="218" valign="top">{$mainmenu}{$panel} </td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
 						<td width="531" valign="top">{$data.body}{$files}</td>

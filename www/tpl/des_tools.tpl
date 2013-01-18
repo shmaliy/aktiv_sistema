@@ -20,7 +20,7 @@
 <!-- /header block -->
 
 <body>
-	{PANEL} {FORMS}
+{FORMS}
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		bgcolor="#FFFFFF">
 		<tr>
@@ -108,7 +108,7 @@
 								<tr>
 									<td align="left" class="submenu">
 										<!-- BDP: menu_top -->
-										<div>{LINK}</div> <!-- EDP: menu_top -->
+										<div>{MENU}{PANEL}</div> <!-- EDP: menu_top -->
 									</td>
 								</tr>
 								<tr>

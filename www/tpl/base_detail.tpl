@@ -22,7 +22,7 @@
 <!-- /header block -->
 
 <body>
-	{PANEL} {FORMS}
+	{FORMS}
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		bgcolor="#FFFFFF">
 		<tr>
@@ -73,7 +73,7 @@
 		<tr>
 			<td><table width="981" border="0" cellpadding="0" cellspacing="0">
 					<tr>
-						<td width="218" valign="top">{MENU}</td>
+						<td width="218" valign="top">{MENU}{PANEL}</td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
 

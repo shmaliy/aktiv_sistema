@@ -1,11 +1,9 @@
-<!-- /tpl/news.tpl -->
+<!-- /tpl/des_tools.tpl -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <!-- header block -->
 <head>
-<title>Новости компании — консалтинговая компания «Актив-Система»</title>
-<meta name="Description"
-	content="Новости компании — «Актив-Система» - консалтинг в области развития и оптимизации бизнеса: стратегическое планирование, описание и оптимизация бизнес-процессов, внедрение системы сбалансированных показателей и ключевых показателей оценки эффективности бизнес-процессов.">
+<title>События — консалтинговая компания «Актив-Система»</title>
 <meta http-equiv="Content-Type"
 	content="text/html; charset=windows-1251">
 <meta http-equiv="Pragma" content="no-cache">
@@ -14,13 +12,29 @@
 <meta name="Publisher" content="Amiweb Design Studio">
 <meta name="Revizit-after" content="1 days">
 <meta name="Robots" content="all">
+<meta name="Keywords" content="{$data.keywords}">
+<meta name="Description" content="{$data.description}">
 <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
-{HEAD_INCLUDES}
+<link href="/styles/sunny.css" type="text/css" rel=stylesheet>
+<script src="/lib/js/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="/lib/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="/lib/js/sunny.js" type="text/javascript"></script>
+
+<script>
+	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-27653780-1']);
+	_gaq.push(['_trackPageview']); (function() { var ga =
+	document.createElement('script'); ga.type = 'text/javascript'; ga.async
+	= true; ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+	: 'http://www') + '.google-analytics.com/ga.js'; var s =
+	document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s); })();
+
+</script>
 </head>
 <!-- /header block -->
 
 <body>
-{FORMS}
+	{$forms}
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		bgcolor="#FFFFFF">
 		<tr>
@@ -39,8 +53,8 @@
 							class="menu_title"><table width="100%" border="0" cellpadding="0"
 								cellspacing="0" bgcolor="#B2DEF7">
 								<tr>
-									<td valign="top" bgcolor="#B2DEF7" class="menu_title">Новости
-										компании</td>
+									<td valign="top" bgcolor="#B2DEF7" class="menu_title"><h1
+											class="seoh1">{$data.title}</h1></td>
 									<td width="20" valign="middle" bgcolor="#B2DEF7">&nbsp;</td>
 									<td width="20" valign="middle" bgcolor="#B2DEF7"><a href="/"
 										title="На главную"><img src="/images/home_disabled.gif"
@@ -72,124 +86,29 @@
 		<tr>
 			<td><table width="981" border="0" cellpadding="0" cellspacing="0">
 					<tr>
-						<td width="218" valign="top">{MENU}{PANEL} </td>
+						<td width="218" valign="top">{$mainmenu}{$panel} </td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
-
 						<td width="531" valign="top">
-
-							<table width="100%" cellpadding="0" cellspacing="3" border="0">
-								<!-- BDP: show_content_news -->
-								<tr>
-									<td valign="top" width="10%"><span class="news_date">{DATE}<br>
-									</span></td>
-								</tr>
-								<tr>
-									<td width="90%" valign="top">{TITLE}</td>
-								</tr>
-
-
-								<tr>
-									<td colspan="2"><div class="body_text2">{NEWS_BODY}</div> <br />
-									</td>
-								</tr>
-								<!-- EDP: show_content_news -->
-							</table>
-						
+							<img width="530" height="175" border="0" src="/images/design/event_intro.jpg">
+							{$data.body}
+							<a href="#" onclick="return $.fn.active('signtoaction', '/signToAction/{$data.id}');">Принять участие</a>
+						</td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
 						<td width="186" valign="top"><table width="100%" border="0"
 								cellspacing="0" cellpadding="0">
 								<tr>
-									<td valign="top">
-										<table width="100%" border="0" cellspacing="0" cellpadding="3">
-											<tr>
-												<td colspan="3" class="baza_h1"></td>
-											</tr>
-											<tr>
-												<td width="73" valign="top">{IMAGES}</td>
-												<td align="left" valign="top"><span class="baza_h1">База
-														знаний</span><br> <span class="actions_date">Новое
-														поступление</span>
-													<table width="100%" border="0" cellspacing="0"
-														cellpadding="0">
-														<tr>
-															<td height="10"><img src="/images/t_fill.gif" width="1"
-																height="10"></td>
-														</tr>
-														<tr>
-															<td class="club_t1" colspan="3" valign="top"><div
-																	style="clear: left; float: left; margin-right: 10px; padding-right: 0px;">
-																	<a href="/base/{ACBID}">{BASE_TITLE}</a>
-																</div></td>
-														</tr>
-														<tr>
-															<td class="club_b1">&nbsp;</td>
-														</tr>
-													</table></td>
-											</tr>
-											<tr>
-												<td colspan="3" align="left"><span class="txt1">{BASE_BODY_DESC}</span>
-												</td>
-											</tr>
-										</table> <br>
-									</td>
-								</tr>
-								<tr>
-									<td height="2" background="/images/design/h_menu_lines.jpg"><img
-										src="../images/t_fill.gif" width="1" height="1"></td>
-								</tr>
-								<tr>
-									<td>
-										<br>
-										<table width="100%" border="0" cellspacing="0" cellpadding="3">
-											<tr>
-												<td colspan="3" class="baza_h1"></td>
-											</tr>
-											<tr>
-												<td width="73" valign="top"><a href="/actions"><img
-														src="/images/design/company/club.jpg" width="69"
-														height="107" border="0"> </a></td>
-												<td align="left" valign="top"><span class="club_h1">События</span><br>
-													<span class="actions_date">{ACTIONS_DATE}</span>
-													<table width="100%" border="0" cellspacing="0"
-														cellpadding="0">
-														<tr>
-															<td height="10"><img src="/images/t_fill.gif" width="1"
-																height="10"></td>
-														</tr>
-														<tr>
-															<td class="club_t1" colspan="3" valign="top"><div
-																	style="clear: left; float: left; margin-right: 10px; padding-right: 0px;">
-																	<a href="/actions">{ACTIONS_TITLE}</a>
-																</div></td>
-														</tr>
-														<tr>
-															<td class="club_b1">&nbsp;</td>
-														</tr>
-													</table></td>
-											</tr>
-											<tr>
-												<td colspan="3" align="left"><span class="txt1">{ACTIONS_BODY_DESC}</span>
-												</td>
-											</tr>
-										</table></td>
-								</tr>
-								
-								<tr>
-									<td>
-										{TEST_OUTPUT}	
-									</td>
+									<td>{$knowledgebase}</td>
 								</tr>
 								
 								
-							</table>
-						</td>
+							</table></td>
 					</tr>
 				</table></td>
 		</tr>
 		<tr>
-			<td><img src="/images/t_fill.gif" width="1" height="10"></td>
+			<td><img src="../images/t_fill.gif" width="1" height="10"></td>
 		</tr>
 		<tr>
 			<td height="2"><table height="2" border="0" cellspacing="0"
