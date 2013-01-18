@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 04:26:37
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 12:13:17
          compiled from "sm\templates\top.panel.user.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2486250f35aeba5e7c4-71741944%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c96cefb82d6e559ef5d79f11447e13ad440b259a' => 
     array (
       0 => 'sm\\templates\\top.panel.user.tpl',
-      1 => 1358475996,
+      1 => 1358503996,
       2 => 'file',
     ),
   ),
@@ -19,20 +19,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'unifunc' => 'content_50f35aebc788a9_70722397',
   'variables' => 
   array (
-    'name' => 0,
     'link' => 0,
+    'name' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_50f35aebc788a9_70722397')) {function content_50f35aebc788a9_70722397($_smarty_tpl) {?><div class="login-buttons">
-		<div class="message">Вы авторизованы как </div>
-		<div class="clr"></div>
-		<div class="username"><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
-</div>
-		<a class="login-buttons-login via_ajax" href="#" onclick="$.fn.active('request', '/frontendUnLogin', '{}');">Выйти</a>
 		
 		<?php if ($_smarty_tpl->tpl_vars['link']->value==1){?>
 		<a class="login-buttons-register" href="/stat">Статистика</a>
 		<?php }?>
+		<a class="login-buttons-login via_ajax" href="#" onclick="$.fn.active('request', '/frontendUnLogin', '{}');">Выйти</a>
+		<div class="username"><?php echo $_smarty_tpl->tpl_vars['name']->value;?>
+</div>
+		<div class="message">Вы авторизованы как </div>
 		<div class="clr"></div>
 </div><?php }} ?>

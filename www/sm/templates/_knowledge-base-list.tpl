@@ -45,34 +45,35 @@
 								height="73" border="0"> </a></td>
 						<td width="20" bgcolor="#FFFFFF"><img
 							src="/images/t_fill.gif" width="20" height="1"></td>
-						<td width="27"><img src="/images/design/header_ugol.jpg"
-							width="27" height="121"></td>
 						<td height="121" align="left" valign="bottom" bgcolor="#B2DEF7"
-							class="menu_title"><table width="100%" border="0"
-								cellpadding="0" cellspacing="0" bgcolor="#B2DEF7">
-								<tr>
-									<td valign="top" bgcolor="#B2DEF7" class="menu_title"><h1
-											class="seoh1">База знаний</h1></td>
-									<td width="20" valign="middle" bgcolor="#B2DEF7">&nbsp;</td>
-									<td width="20" valign="middle" bgcolor="#B2DEF7"><a
-										href="/" title="На главную"><img
-											src="/images/home_disabled.gif" width="11" height="10"
-											border="0" /> </a></td>
-									<td width="20" valign="middle" bgcolor="#B2DEF7"><a
+							class="menu_title">
+							<div class="header-contents">
+								<div class="header-panel">
+									<div class="links">
+										<a href="/"
+										title="На главную"><img src="/images/home_disabled.gif"
+											width="11" height="10" border="0" /> </a>
+										<a
 										href="/sitemap" title="Карта сайта"><img
 											src="/images/map_disabled.gif" width="9" height="9"
-											border="0" /> </a></td>
-									<td width="20" valign="middle" bgcolor="#B2DEF7"><a
+											border="0" /> </a>
+											
+										<a
 										href="mailto:info@aktiv-sistema.com?subject=Сообщение с сайта aktiv-sistema.com.ua"
-										title="Обратная связь"><img src="/images/mail.gif"
-											width="12" height="10" border="0" /> </a></td>
-								</tr>
-								<tr>
-									<td height="17" colspan="5" valign="top" bgcolor="#B2DEF7"
-										class="menu_title"><img src="../images/t_fill.gif"
-										width="1" height="18"></td>
-								</tr>
-							</table></td>
+										title="Обратная связь"><img src="/images/mail.gif" width="12"
+											height="10" border="0" /> </a>
+									</div>
+									<div class="panel">{$panel}</div>
+									<div class="clr"></div>
+								</div>
+								<div class="clr"></div>
+								<div class="header-title">
+									<h1>База знаний</h1>
+								</div>
+								
+							</div>
+							
+						</td>
 					</tr>
 				</table></td>
 			<td bgcolor="#B2DEF7">&nbsp;</td>
@@ -86,14 +87,14 @@
 			<td><table width="981" border="0" cellpadding="0"
 					cellspacing="0">
 					<tr>
-						<td width="218" valign="top">{$mainmenu}{$panel} </td>
+						<td width="218" valign="top">{$mainmenu} </td>
 						<td width="23"><img src="/images/t_fill.gif" width="23"
 							height="1"></td>
 						<td width="531" valign="top">
 							<div class="kb-list">
 							{foreach $data as $item}		
 								<div class="kb-item">
-									<!-- {$fileinfo = '<span class="nan">(не содержит материалов для загрузки)</span>'} -->
+									<!-- {$fileinfo = ''} -->
 									{if !empty($item.fileslist) && $item.fileslist.free == 0}
 									<!-- {$fileinfo = '<span class="pay">(требует регистрации)</span>'} -->
 									{elseif !empty($item.fileslist) && $item.fileslist.free == 1}

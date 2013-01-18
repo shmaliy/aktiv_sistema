@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 04:45:59
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 12:29:50
          compiled from "sm\templates\_actions-layout.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1725050f89bf91424b8-75233702%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '07a29cc7442f4e210d7cc98d33d52086cb6769b4' => 
     array (
       0 => 'sm\\templates\\_actions-layout.tpl',
-      1 => 1358477030,
+      1 => 1358504979,
       2 => 'file',
     ),
   ),
@@ -21,8 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'data' => 0,
     'forms' => 0,
-    'mainmenu' => 0,
     'panel' => 0,
+    'mainmenu' => 0,
     'knowledgebase' => 0,
   ),
   'has_nocache_code' => false,
@@ -79,34 +79,38 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 								height="73" border="0"> </a></td>
 						<td width="20" bgcolor="#FFFFFF"><img src="/images/t_fill.gif"
 							width="20" height="1"></td>
-						<td width="27"><img src="/images/design/header_ugol.jpg"
-							width="27" height="121"></td>
 						<td height="121" align="left" valign="bottom" bgcolor="#B2DEF7"
-							class="menu_title"><table width="100%" border="0" cellpadding="0"
-								cellspacing="0" bgcolor="#B2DEF7">
-								<tr>
-									<td valign="top" bgcolor="#B2DEF7" class="menu_title"><h1
-											class="seoh1"><?php echo $_smarty_tpl->tpl_vars['data']->value['title'];?>
-</h1></td>
-									<td width="20" valign="middle" bgcolor="#B2DEF7">&nbsp;</td>
-									<td width="20" valign="middle" bgcolor="#B2DEF7"><a href="/"
+							class="menu_title">
+							
+							<div class="header-contents">
+								<div class="header-panel">
+									<div class="links">
+										<a href="/"
 										title="На главную"><img src="/images/home_disabled.gif"
-											width="11" height="10" border="0" /> </a></td>
-									<td width="20" valign="middle" bgcolor="#B2DEF7"><a
+											width="11" height="10" border="0" /> </a>
+										<a
 										href="/sitemap" title="Карта сайта"><img
 											src="/images/map_disabled.gif" width="9" height="9"
-											border="0" /> </a></td>
-									<td width="20" valign="middle" bgcolor="#B2DEF7"><a
+											border="0" /> </a>
+											
+										<a
 										href="mailto:info@aktiv-sistema.com?subject=Сообщение с сайта aktiv-sistema.com.ua"
 										title="Обратная связь"><img src="/images/mail.gif" width="12"
-											height="10" border="0" /> </a></td>
-								</tr>
-								<tr>
-									<td height="17" colspan="5" valign="top" bgcolor="#B2DEF7"
-										class="menu_title"><img src="../images/t_fill.gif" width="1"
-										height="18"></td>
-								</tr>
-							</table></td>
+											height="10" border="0" /> </a>
+									</div>
+									<div class="panel"><?php echo $_smarty_tpl->tpl_vars['panel']->value;?>
+</div>
+									<div class="clr"></div>
+								</div>
+								<div class="clr"></div>
+								<div class="header-title">
+									<h1><?php echo $_smarty_tpl->tpl_vars['data']->value['title'];?>
+</h1>
+								</div>
+								
+							</div>
+							
+						</td>
 					</tr>
 				</table></td>
 			<td bgcolor="#B2DEF7">&nbsp;</td>
@@ -120,7 +124,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<td><table width="981" border="0" cellpadding="0" cellspacing="0">
 					<tr>
 						<td width="218" valign="top"><?php echo $_smarty_tpl->tpl_vars['mainmenu']->value;?>
-<?php echo $_smarty_tpl->tpl_vars['panel']->value;?>
  </td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>

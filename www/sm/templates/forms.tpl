@@ -101,7 +101,7 @@
 						<div class="sunny-form-label">Пароль <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="password" name="password" class="sunny-form-text">
-							<div class="remarc">ОТ 5 до 12 латинских символов и цифр</div>
+							<div class="remarc">От 5 до 12 латинских символов и цифр</div>
 						</div>
 						<div class="clr"></div>
 

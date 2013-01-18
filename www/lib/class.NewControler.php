@@ -415,7 +415,7 @@ class NewController extends Controller_Abstract
 			}
 		} else {
 			$item = $this->_contentModel->getBaseItem($id);
-			$file = unserialize($item['fileslist']);
+			$file = $item['fileslist'];
 			
 			if(isset($_SESSION['frontEndLogin']['userId']) && $_SESSION['frontEndLogin']['userId'] > 0) {
 				echo $file['path'];

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 04:09:55
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 14:13:30
          compiled from "sm\templates\forms.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1634550f5b8b53dac67-25806590%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '621e3d2a80aa72e53161bde477ad3c22950dd782' => 
     array (
       0 => 'sm\\templates\\forms.tpl',
-      1 => 1358474993,
+      1 => 1358511202,
       2 => 'file',
     ),
   ),
@@ -128,7 +128,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<div class="sunny-form-label">Пароль <span>*</span></div>
 						<div class="sunny-form-element">
 							<input type="password" name="password" class="sunny-form-text">
-							<div class="remarc">ОТ 5 до 12 латинских символов и цифр</div>
+							<div class="remarc">От 5 до 12 латинских символов и цифр</div>
 						</div>
 						<div class="clr"></div>
 

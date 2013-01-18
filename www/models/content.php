@@ -174,9 +174,10 @@ class Models_Content extends Models_Abstract
 			{
 				$item['fileslist'] = unserialize($item['fileslist']);
 				array_walk_recursive($item['fileslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
-				$item['body'] = str_replace('"images/', '"/images/',$item['body']);
-				$item['body'] = str_replace("'images/", '"/images/',$item['body']);
+				
 			}
+			$item['body'] = str_replace('"images/', '"/images/',$item['body']);
+			$item['body'] = str_replace("'images/", '"/images/',$item['body']);
 		}
 		
 		return $return;		
@@ -202,8 +203,8 @@ class Models_Content extends Models_Abstract
 		foreach ($return as &$item) {
 			if(!empty($item['fileslist']))
 			{
-				$item['fileslist'] = unserialize($item['fileslist']);
-				array_walk_recursive($item['fileslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+				//$item['fileslist'] = unserialize($item['fileslist']);
+				//array_walk_recursive($item['fileslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
 				
 			}
 			$item['body'] = str_replace('"images/', '"/images/',$item['body']);

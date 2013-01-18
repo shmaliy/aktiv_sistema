@@ -34,8 +34,9 @@ class Models_Subscribers extends Models_Abstract
 		}
 		
 		$return = $this->_db->fetchRow($select);
-		
-		array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+		if ($return !== false) {
+			array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+		}
 		
 		return $return;
 		

@@ -42,37 +42,29 @@
 								width="214" height="73" border="0" /> </a></td>
 						<td width="25" bgcolor="#FFFFFF">&nbsp;</td>
 						<td width="244" bgcolor="#FFFFFF">&nbsp;</td>
-						<td align="right" valign="top" bgcolor="#CAE7FA">
-							<div id="btn_">
-								<div class="btn">
-									<a href="/" title="На главную"><img
-										src="/images/home_disabled.gif" width="11" height="10"
-										border="0" /> </a>
-								</div>
-								<div class="btn">
-									<a href="/sitemap" title="Карта сайта"><img
-										src="/images/map_disabled.gif" width="9" height="9" border="0" />
-									</a>
-								</div>
-								<div class="btn">
+						<td valign="top" bgcolor="#CAE7FA">
+							<div class="header-panel-wrapper">
+								<div class="links">
+									<a href="/"
+									title="На главную"><img src="/images/home_disabled.gif"
+										width="11" height="10" border="0" /> </a>
 									<a
-										href="mailto:info@aktiv-sistema.com?subject=Сообщение с сайта aktiv-sistema.com"
-										title="Пишите нам"><img src="/images/mail.gif" width="12"
+									href="/sitemap" title="Карта сайта"><img
+										src="/images/map_disabled.gif" width="9" height="9"
+										border="0" /> </a>
+										
+									<a
+									href="mailto:info@aktiv-sistema.com?subject=Сообщение с сайта aktiv-sistema.com.ua"
+									title="Обратная связь"><img src="/images/mail.gif" width="12"
 										height="10" border="0" /> </a>
 								</div>
-							</div>
-
-							<div id="btn_">
-								<div class="btn">
-									<a
-										href="http://subscribe.ru/catalog/economics.school.aktivsistema"><h3>"Как
+								<div class="index-panel">{PANEL}</div>
+								<div class="clr"></div>
+								<a class="subscribe" href="http://subscribe.ru/catalog/economics.school.aktivsistema"><h3>"Как
 											сделать свой бизнес системным". Наша рассылка на
-											subscribe.ru. Подпишитесь!
-									
-									</a>
-								</div>
+											subscribe.ru. Подпишитесь! </a>
+								
 							</div>
-
 						</td>
 					</tr>
 				</table></td>
@@ -85,7 +77,7 @@
 					<tr>
 						<td width="221" align="center" valign="middle" bgcolor="#FFFFFF">
 							{MENU}
-							{PANEL}
+							
 						</td>
 						<td width="25" bgcolor="#FFFFFF">&nbsp;</td>
 						<td width="514" bgcolor="#FFFFFF"><object

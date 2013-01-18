@@ -8,48 +8,50 @@
 }
 
 .login-buttons {
-	width: 220px;
-	height: 40px;
+	width: 620px;
+	height: 30px;
 	/* outline: 1px solid red; */
-	margin:15px 0 0 0px;
+	margin:7px 0 0 0px;
 	padding:0;
 }
 
 .login-buttons .message {
 	/* outline: 1px solid red; */
 	font-size: 14px;
-	margin:0 0 0 0px;
+	margin:0 10px 0 0px;
 	padding:0;
 	color: #00468F;
 	text-align:left;
+	float:right;
 }
 
 .login-buttons .username {
 	/* outline: 1px solid red; */
-	font-size: 14px;
-	margin:0 0 0 0px;
+	font-size: 12px;
+	margin:0 10px 0 0px;
 	padding:0;
 	color:  #00468F;
 	font-weight:bold;
 	text-align:left;
+	float:right;
 }
 
 .login-buttons .login-buttons-login {
-	font-size: 14px;
+	font-size: 12px;
 	color: #e30133;
 	display:block;
-	float:left; 
-	margin: 12px 15px 0 0;
+	float:right; 
+	margin: 0 15px 0 0;
 	padding:0;
 	/* outline: 1px solid green; */
 }
 
 .login-buttons .login-buttons-register {
-	font-size: 14px;
+	font-size: 12px;
 	color: #00468f;
 	display:block;
-	float:left; 
-	margin: 12px 0 0 0;
+	float:right; 
+	margin: 0 15px 0 0;
 	padding:0;
 	/* outline: 1px solid blue; */
 }
@@ -222,6 +224,12 @@
 	width: 165px;
 }
 
+.sunny-form-element .remarc {
+	text-align:center;
+	font-size:10px;
+}
+
+
 #sunny-form-error,
 #sunny-form-error-register {
 	color:red;
@@ -307,7 +315,7 @@
 .mainmenu {
 	width:218px;
 	background: url(/images/design/h_menu_lines.jpg) top left repeat-x;
-	padding:5px 0 5px 0;
+	padding:0px 0 5px 0;
 }
 
 .mainmenu .main {
@@ -318,12 +326,12 @@
 
 .mainmenu .main li {
 	background: url(/images/design/h_menu_lines.jpg) bottom left repeat-x;
-	padding:5px 0 5px 0;
+	padding:7px 0 5px 0;
 }
 
 .mainmenu .main li .sub {
-	margin:0;
-	padding:5px 0 0 0;
+	margin:3px 0 0 0;
+	padding:10px 0 10px 0;
 	list-style:none;
 	background: url(/images/design/h_menu_lines.jpg) top left repeat-x;
 }
@@ -336,6 +344,7 @@
 	background: none;
 	display:block;
 	margin:0 0 0 45px;
+	padding:0 0 3px 0;
 }
 
 .mainmenu .main li .sub li .active {
@@ -374,5 +383,70 @@
 }
 
 .kb-list .kb-item div {
+	
+}
+
+.header-contents {
+	width:771px;
+	height:121px;
+	background:url(/images/design/header_ugol.jpg) top left no-repeat #B2DEF7;
+	padding:0 0 0 37px;
+}
+
+.header-contents .header-panel {
+	
+}
+
+.header-contents .header-title {
+	width:771px;
+	height:60px;
+	position:relative;
+}
+
+.header-contents .header-title h1{
+	width:771px;
+	font-size:22px;
+	font-weight:normal;
+	margin:0;
+	padding:0;
+	position:absolute;
+	bottom:0;
+}
+
+.header-contents .header-panel .panel {
+	float:right;
+	margin:0 15px 0 0;
+}
+
+.header-contents .header-panel .links {
+	float:right;
+	margin: 5px 0 0 0;
+}
+
+.index-panel {
+	float:right;
+}
+
+.main_btn {
+	float:right;
+	padding:5px 0 0 0 !important;
+}
+
+.header-panel-wrapper {
+	text-align:left;
+	width:670px;
+	margin:0 0 0 20px;
+}
+
+.header-panel-wrapper .links {
+	float:right;
+	margin:5px 0 0 0;
+}
+
+.header-panel-wrapper .index-panel {
+	margin:2px 0 0 0;
+}
+
+.header-panel-wrapper .subscribe {
 	
 }

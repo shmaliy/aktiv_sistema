@@ -113,7 +113,6 @@ class mod_Content{
 					
 				case 'base':
 					if ($rParam == 0) {
-						echo $rParam;
 						echo $this->_controller->knowledgeBaseListAction($route, $rParam);
 						return;
 					} else {
