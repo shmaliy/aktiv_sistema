@@ -17,6 +17,71 @@ class NewController extends Controller_Abstract
 		$this->_contentModel = new Models_Content();
 	}
 	
+	public function modelTest($menu, $submenu)
+	{
+		$this->_contentModel->getContentListNew($menu, $submenu);
+	}
+	
+	public function contentListAction($menu, $submenu) 
+	{
+		
+	}
+	
+	public function mainMenuAction($menu, $submenu)
+	{
+		$result = $this->_contentModel->getMenuTree($menu, $submenu);
+		$this->_tpl->assign('menu', $result);
+		return $this->_tpl->fetch('main-menu.tpl');
+	}
+	
+	public function knowledgeBaseListAction($menu, $submenu) 
+	{
+		$result = $this->_contentModel->getKnowledgeBaseList();
+		
+// 		var_export($result);
+		
+		$this->_tpl->assign('data', $result);
+		$this->_tpl->assign('mainmenu', $this->mainMenuAction($menu, $submenu));
+		$this->_tpl->assign('panel', $this->topPanelAction());
+		$this->_tpl->assign('forms', $this->formsAction());
+		$this->_tpl->assign('knowledgebase', $this->baseKnowledgeWidget('1'));
+		$this->_tpl->assign('actions', $this->actionsWidget('1'));
+		
+		return $this->_tpl->fetch('_knowledge-base-list.tpl');
+	}
+	
+	public function contentItemAction($menu, $submenu) {
+		
+		$result = $this->_contentModel->getContentListNew($menu, $submenu);
+		//var_export($result);
+		$this->_tpl->assign('data', $result[0]);
+		$this->_tpl->assign('mainmenu', $this->mainMenuAction($menu, $submenu));
+		$this->_tpl->assign('panel', $this->topPanelAction());
+		$this->_tpl->assign('forms', $this->formsAction());
+		$this->_tpl->assign('knowledgebase', $this->baseKnowledgeWidget('1'));
+		$this->_tpl->assign('actions', $this->actionsWidget('1'));
+		$this->_tpl->assign('files', $this->filesAccessAction($result[0]['fileslist'], $result[0]['id'], 'content'));
+		
+		return $this->_tpl->fetch('_layout.tpl');
+	}
+	
+	public function baseKnowledgeWidget($limit)
+	{
+		$result = $this->_contentModel->getKnowledgeBaseList($limit);
+		//var_export($result[0]);
+		$this->_tpl->assign('kdata', $result[0]);
+		return $this->_tpl->fetch('base-knowledge-widget.tpl');
+	}
+	
+	public function actionsWidget($limit)
+	{
+		$result = $this->_contentModel->getActionsList($limit);
+		//var_export($result[0]);
+		$this->_tpl->assign('kdata', $result[0]);
+		return $this->_tpl->fetch('actions-widget.tpl');
+	}
+	
+	
 	public function topPanelAction()
 	{
 		if(!isset($_SESSION['frontEndLogin']['userId']) || empty($_SESSION['frontEndLogin']['userId'])) {
@@ -262,8 +327,8 @@ class NewController extends Controller_Abstract
 		if (empty($str)) {
 			return '';
 		}
-		$file = unserialize($str);
-		$this->_tpl->assign('file', $file);
+		
+		$this->_tpl->assign('file', $str);
 		$this->_tpl->assign('id', $id);
 		$this->_tpl->assign('tbl', $tbl);
 		//var_export($file);

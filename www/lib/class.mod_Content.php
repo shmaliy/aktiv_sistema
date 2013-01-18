@@ -24,16 +24,6 @@ class mod_Content{
 	function view() {
 
 		/**
-		 * ѕередаем в шаблон регул€рные панели
-		 */
-		$this->tpl->assign(array(
-				'SESSION_ID' 		=> session_id(),
-				'HEAD_INCLUDES'		=> $this->_controller->headIncludesAction(),
-				'PANEL' 			=> $this->_controller->topPanelAction(),
-				'FORMS'				=> $this->_controller->formsAction()
-		));
-
-		/**
 		 * ќпредел€ем переменные навигации
 		*/
 		$route = 0;
@@ -45,9 +35,21 @@ class mod_Content{
 		if (isset($_GET['ssid'])) {
 			$rParam = $_GET['ssid'];
 		}
-
-
+		
 		/**
+		 * ѕередаем в шаблон регул€рные панели
+		 */
+		$this->tpl->assign(array(
+				'SESSION_ID' 		=> session_id(),
+				'HEAD_INCLUDES'		=> $this->_controller->headIncludesAction(),
+				'PANEL' 			=> $this->_controller->topPanelAction(),
+				'FORMS'				=> $this->_controller->formsAction(),
+				'MENU'				=> $this->_controller->mainMenuAction($route, $rParam)
+		));
+		
+		
+
+				/**
 		 * –егистраци€ неа€ксовых маршрутов
 		 */
 		$nonAjaxRoutes = array(
@@ -61,7 +63,7 @@ class mod_Content{
 				'actions'	=> array('actions.tpl', 'actions_detail.tpl'),
 				'base'		=> array('base.tpl', 'base_detail.tpl')
 		);
-
+		
 		/**
 		 * —начала провер€ем маршрут на а€кс обращение
 		*/
@@ -86,7 +88,38 @@ class mod_Content{
 		}
 		
 		
+		/**
+		 * ѕерехват отдельных страниц в мой контроллер
+		 */
+		$myRoutes = array(
+				'tools' => 1,
+				'base' => 1
+		);
 		
+		if(isset($myRoutes[$route])) {
+			switch ($route) {
+				case 'tools':
+					if (is_numeric($rParam)) {
+						echo $this->_controller->contentListAction($route, $rParam);
+					} else {
+						echo $this->_controller->contentItemAction($route, $rParam);
+					}
+					return;
+					
+				case 'base':
+					if ($rParam == 0) {
+						echo $this->_controller->knowledgeBaseListAction($route, $rParam);
+					} else {
+						echo $this->_controller->contentItemAction($route, $rParam);
+					}
+					return;
+			}
+		}
+		
+		/**
+		 * “ут јмивэб какую то хуйню творит, 
+		 * пока делаем вид, что не видим
+		 */
 		if (isset($nonAjaxRoutes[$route])) {
 			if ($rParam == 0) {
 				$this->tpl->define_dynamic('index', $nonAjaxRoutes[$route][0]);

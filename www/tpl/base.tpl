@@ -50,29 +50,7 @@
   <tr>
     <td><table width="981" border="0" cellpadding="0" cellspacing="0">
       <tr>
-        <td width="218" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          <tr>
-            <td height="2" background="/images/design/h_menu_lines.jpg"><img src="/images/t_fiil.png" width="1" height="2" /></td>
-          </tr>
-          <tr>
-            <td height="32" align="left"><a href="/company"><img src="/images/design/menu_company.jpg" width="216" height="32" border="0" /></a></td>
-          </tr>
-          <tr>
-            <td height="2" background="/images/design/h_menu_lines.jpg"><img src="/images/t_fiil.png" width="1" height="2" /></td>
-          </tr>
-          <tr>
-            <td width="31" align="left"><a href="/services"><img src="/images/design/menu_services.jpg" width="216" height="31" border="0" /></a></td>
-          </tr>
-          <tr>
-            <td height="2" background="/images/design/h_menu_lines.jpg"><img src="/images/t_fiil.png" width="1" height="2" /></td>
-          </tr>
-          <tr>
-            <td height="31" align="left"><a href="/tools/business_studio"><img src="/images/design/menu_instruments.jpg" width="216" height="31" border="0" /></a></td>
-          </tr>
-          <tr>
-            <td height="2" background="/images/design/h_menu_lines.jpg"><img src="/images/t_fiil.png" width="1" height="2" /></td>
-          </tr>
-        </table></td>
+        <td width="218" valign="top">{MENU}</td>
         <td width="23"><img src="/images/t_fill.gif" width="23" height="1"></td>
 
         <td width="531" valign="top">

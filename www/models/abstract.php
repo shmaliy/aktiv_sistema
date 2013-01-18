@@ -13,12 +13,20 @@ class Models_Abstract
 	
 	public function __construct()
 	{
+// 		$this->_db = Zend_Db::factory('Pdo_Mysql', array(
+// 		      'host'     => 'localhost',
+// 		      'username' => 'aktivsis_user',
+// 		      'password' => '456852',
+// 		      'dbname'   => 'aktivsis_db',
+// 		      'driver_options' => array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')
+// 		));
+		
 		$this->_db = Zend_Db::factory('Pdo_Mysql', array(
-		      'host'     => 'localhost',
-		      'username' => 'aktivsis_user',
-		      'password' => '456852',
-		      'dbname'   => 'aktivsis_db',
-		      'driver_options' => array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')
+				'host'     => 'localhost',
+				'username' => 'root',
+				'password' => '',
+				'dbname'   => 'aktivsis_db',
+				'driver_options' => array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8')
 		));
 	}
 	

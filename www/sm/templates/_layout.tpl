@@ -1,28 +1,40 @@
-<!-- /tpl/base_detail.tpl -->
+<!-- /tpl/des_tools.tpl -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <!-- header block -->
 <head>
-<title>{PAGE_TITLE}</title>
+<title>{$data.page_title}</title>
 <meta http-equiv="Content-Type"
 	content="text/html; charset=windows-1251">
-<meta name="Description" content="{CONTENT_DESC}">
 <meta http-equiv="Pragma" content="no-cache">
 <meta name="Generator" content="Amiweb Design Studio">
 <meta name="Author-corporate" content="Amiweb Design Studio">
 <meta name="Publisher" content="Amiweb Design Studio">
 <meta name="Revizit-after" content="1 days">
 <meta name="Robots" content="all">
+<meta name="Keywords" content="{$data.keywords}">
+<meta name="Description" content="{$data.description}">
 <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
 <link href="/styles/sunny.css" type="text/css" rel=stylesheet>
-<script src="lib/js/jquery-1.8.3.min.js" type="text/javascript"></script>
-{HEAD_INCLUDES}
+<script src="/lib/js/AC_RunActiveContent.js" type="text/javascript"></script>
+<script src="/lib/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="/lib/js/sunny.js" type="text/javascript"></script>
 
+<script>
+	var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-27653780-1']);
+	_gaq.push(['_trackPageview']); (function() { var ga =
+	document.createElement('script'); ga.type = 'text/javascript'; ga.async
+	= true; ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+	: 'http://www') + '.google-analytics.com/ga.js'; var s =
+	document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s); })();
+
+</script>
 </head>
 <!-- /header block -->
 
 <body>
-	{PANEL} {FORMS}
+	{$panel} {$forms}
 	<table width="100%" border="0" cellpadding="0" cellspacing="0"
 		bgcolor="#FFFFFF">
 		<tr>
@@ -41,7 +53,8 @@
 							class="menu_title"><table width="100%" border="0" cellpadding="0"
 								cellspacing="0" bgcolor="#B2DEF7">
 								<tr>
-									<td valign="top" bgcolor="#B2DEF7" class="menu_title">{CONTENT_TITLE}</td>
+									<td valign="top" bgcolor="#B2DEF7" class="menu_title"><h1
+											class="seoh1">{$data.title}</h1></td>
 									<td width="20" valign="middle" bgcolor="#B2DEF7">&nbsp;</td>
 									<td width="20" valign="middle" bgcolor="#B2DEF7"><a href="/"
 										title="На главную"><img src="/images/home_disabled.gif"
@@ -73,136 +86,27 @@
 		<tr>
 			<td><table width="981" border="0" cellpadding="0" cellspacing="0">
 					<tr>
-						<td width="218" valign="top">{MENU}</td>
+						<td width="218" valign="top">{$mainmenu}</td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
-
-						<td width="531" valign="top">
-
-							<table width="100%" cellpadding="0" cellspacing="3" border="0">
-
-								<tr>
-									<td><a class="news_title_content">{TITLE}</a></td>
-								</tr>
-
-								<tr>
-									<td valign="top" width="300"><span class="news_date">Добавлено:
-											{DATE}</span></td>
-								</tr>
-								<tr>
-									<td><br></td>
-								</tr>
-								<tr>
-									<td colspan="2"><div class="body_text2">{NEWS_BODY_DETAIL} {CONTENT_FILES}</div>
-									</td>
-								</tr>
-
-
-
-								<tr>
-									<td colspan="2"><br>
-										<div align="left">
-											Поделитесь материалом с друзьями:<br> <br>
-											<!-- AddThis Button BEGIN -->
-											<div class="addthis_toolbox addthis_default_style ">
-												<a class="addthis_button_preferred_1"></a> <a
-													class="addthis_button_preferred_2"></a> <a
-													class="addthis_button_preferred_3"></a> <a
-													class="addthis_button_preferred_4"></a> <a
-													class="addthis_button_compact"></a> <a
-													class="addthis_counter addthis_bubble_style"></a>
-											</div>
-											<script type="text/javascript"
-												src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e498df604e379cd"></script>
-											<!-- AddThis Button END -->
-										</div>
-									</td>
-								</tr>
-								<tr>
-									<td><br></td>
-								</tr>
-								<!-- <tr>
-									<td colspan="2">Подпишитесь на <A
-										HREF=http://subscribe.ru/catalog/economics.school.aktivsistema
-										TARGET=_top>нашу рассылку</A> о том, как сделать свой бизнес
-										системным. Просто введите свой e-mail и нажмите "Подписаться":
-
-										<FORM TARGET=_top ACTION=http://subscribe.ru/member/quick
-											METHOD=POST>
-											<INPUT TYPE=hidden NAME=action VALUE=quick>
-											<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>
-
-												<TR>
-													<TD BGCOLOR=#FFFFFF ALIGN=CENTER VALIGN=middle COLSPAN=2><INPUT
-														TYPE=hidden NAME=grp VALUE="economics.school.aktivsistema">
-														<INPUT TYPE=text NAME=email SIZE=50 MAXLENGTH=100
-														VALUE="ваш e-mail" style="font-size: 10pt"> <INPUT
-														TYPE=submit VALUE="Подписаться" style="font-size: 10pt">
-													</TD>
-												</TR>
-
-											</TABLE>
-											<INPUT TYPE=hidden NAME=src
-												VALUE="list_economics.school.aktivsistema">
-										</FORM> <br>
-									</td>
-								</tr> -->
-
-								<tr>
-									<td colspan="2"><a href="/base">Посмотрите другие материалы
-											Базы знаний...</a></td>
-								</tr>
-
-
-
-							</table>
-						
+						<td width="531" valign="top">{$data.body}{$files}</td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
 						<td width="186" valign="top"><table width="100%" border="0"
 								cellspacing="0" cellpadding="0">
 								<tr>
-									<td><br>
-										<table width="100%" border="0" cellspacing="0" cellpadding="3">
-											<tr>
-												<td colspan="3" class="baza_h1"></td>
-											</tr>
-											<tr>
-												<td width="73" valign="top"><a href="/actions"><img
-														src="/images/design/company/club.jpg" width="69"
-														height="107" border="0"> </a></td>
-												<td align="left" valign="top"><span class="club_h1">События</span><br>
-													<span class="actions_date">{ACTIONS_DATE}</span>
-													<table width="100%" border="0" cellspacing="0"
-														cellpadding="0">
-														<tr>
-															<td height="10"><img src="/images/t_fill.gif" width="1"
-																height="10"></td>
-														</tr>
-														<tr>
-															<td class="club_t1" colspan="3" valign="top"><div
-																	style="clear: left; float: left; margin-right: 10px; padding-right: 0px;">
-																	<a href="/actions">{ACTIONS_TITLE}</a>
-																</div></td>
-														</tr>
-														<tr>
-															<td class="club_b1">&nbsp;</td>
-														</tr>
-													</table></td>
-											</tr>
-											<tr>
-												<td colspan="3" align="left"><span class="txt1">{ACTIONS_BODY_DESC}</span>
-												</td>
-											</tr>
-										</table>
-									</td>
+									<td>{$knowledgebase}</td>
+								</tr>
+								
+								<tr>
+									<td>{$actions}</td>
 								</tr>
 							</table></td>
 					</tr>
 				</table></td>
 		</tr>
 		<tr>
-			<td><img src="/images/t_fill.gif" width="1" height="10"></td>
+			<td><img src="../images/t_fill.gif" width="1" height="10"></td>
 		</tr>
 		<tr>
 			<td height="2"><table height="2" border="0" cellspacing="0"
@@ -240,8 +144,7 @@
 										href="/tools/business_studio" class="menu_bottom">Инструменты</a>&nbsp;&nbsp;<a
 										href="/base" class="menu_bottom">База знаний</a> &nbsp;&nbsp;<a
 										href="/actions" class="menu_bottom">События</a> &nbsp;&nbsp;<a
-										href="http://blog.aktiv-sistema.com.ua"
-										class="menu_bottom_blog">Блог</a>
+										href="http://blog.aktiv-sistema.com" class="menu_bottom_blog">Блог</a>
 								</div>
 								<td width="1" class="style5"><img src="/images/t_fiil.png"
 									width="1" height="1" /></td>

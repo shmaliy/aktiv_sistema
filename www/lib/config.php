@@ -3,13 +3,13 @@
   define('dbhost', 'localhost');
 
   
-  define('dbuser', 'aktivsis_user');
-  define('dbpass', '456852');
-  define('dbase',  'aktivsis_db');
-  
-//   define('dbuser', 'root');
-//   define('dbpass', '');
+//   define('dbuser', 'aktivsis_user');
+//   define('dbpass', '456852');
 //   define('dbase',  'aktivsis_db');
+  
+  define('dbuser', 'root');
+  define('dbpass', '');
+  define('dbase',  'aktivsis_db');
 
   define('tpl_path',  'tpl/');
   define('domain', 'http://'.$_SERVER["SERVER_NAME"].'/');

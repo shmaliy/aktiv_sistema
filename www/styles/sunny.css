@@ -219,3 +219,128 @@
 	color:#000;
 	
 }
+
+.knowledgebase {
+	padding:0 0 15px 0;
+	background: url(/images/design/h_menu_lines.jpg) bottom left repeat-x;
+	width:190px;
+	margin:0 0 25px 0;
+}
+
+.knowledgebase .thumbnail {
+	width:80px;
+	margin:0 10px 0 0; 
+	float:left;
+}
+
+.knowledgebase .title {
+	width:100px;
+	float:right;
+}
+
+.knowledgebase .title .main-title {
+	margin: 0 0 10px 0;
+}
+
+.knowledgebase .title .content-title {
+	margin: 0 0 10px 0;
+}
+
+.actions {
+	padding:0 0 15px 0;
+	background: url(/images/design/h_menu_lines.jpg) bottom left repeat-x;
+	width:190px;
+	margin:0 0 25px 0;
+}
+
+.actions .thumbnail {
+	width:80px;
+	margin:0 10px 0 0; 
+	float:left;
+}
+
+.actions .title {
+	width:100px;
+	float:right;
+}
+
+.actions .title .main-title {
+	margin: 0 0 10px 0;
+}
+
+.actions .title .content-title {
+	margin: 0 0 10px 0;
+}
+
+.mainmenu {
+	width:218px;
+	background: url(/images/design/h_menu_lines.jpg) top left repeat-x;
+	padding:5px 0 5px 0;
+}
+
+.mainmenu .main {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.mainmenu .main li {
+	background: url(/images/design/h_menu_lines.jpg) bottom left repeat-x;
+	padding:5px 0 5px 0;
+}
+
+.mainmenu .main li .sub {
+	margin:0;
+	padding:5px 0 0 0;
+	list-style:none;
+	background: url(/images/design/h_menu_lines.jpg) top left repeat-x;
+}
+
+.mainmenu .main li .hidden {
+	display:none;
+}
+
+.mainmenu .main li .sub li {
+	background: none;
+	display:block;
+	margin:0 0 0 45px;
+}
+
+.mainmenu .main li .sub li .active {
+	color: #D92822;
+	font-weight: bold;
+}
+
+.mainmenu .main li .sub li .inactive {
+	color: #00468F;
+	font-weight: bold;
+}
+
+.kb-list {
+	
+}
+
+.kb-list .kb-item {
+	margin: 0 0 20px 0;
+}
+
+.kb-list .kb-item .kb-title {
+	margin: 0 0 5px 0;
+	display:block;
+}
+
+.kb-list .kb-item .kb-title .nan {
+	color:#ccc;
+}
+
+.kb-list .kb-item .kb-title .pay {
+	color:red;
+}
+
+.kb-list .kb-item .kb-title .free {
+	color:green;
+}
+
+.kb-list .kb-item div {
+	
+}
