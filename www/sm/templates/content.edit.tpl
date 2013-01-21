@@ -95,8 +95,9 @@
 									<div class="file-info"><input type="checkbox" name="free_file"> <span>доступен без регистрации</span></div>
 								</div> 
 								<div class="uploaded-file">
+									{if !empty($filestore)}
 									<span>Название файла: </span>
-									<span>{$filestore.title}</span>
+									<span>{iconv('UTF-8', 'windows-1251', $filestore.title)}</span>
 									<div class="clr"></div>
 									
 									<span>Путь к файлу: </span>
@@ -105,11 +106,66 @@
 									
 									<span>Доступен без регистрации: </span>
 									<span>{$filestore.free}</span>
+									<div class="clr"></div>
+									<div class="file-info">
+										<input type="hidden" name="remove_file" value="0"> 
+										<input type="checkbox" name="remove_file"><span>удалить файл</span>
+									</div>
+									{/if}
 								</div>
 								<div class="clr"></div>
+								
 							</div>
 						</td>
 					</tr>
+					
+					<tr>
+						<td style="background-color: #EBEBEB;" class="tsimple"
+							align="left">Ссылки</td>
+						<td align=left style="background-color: #F7F7F7;">
+							<a class="add-links-box" href="#" onclick="return makeLinksListForm();">Добавить ссылку</a>
+							<div id="links-box">
+								{if !empty($linkslist) && count($linkslist) > 0}
+									{foreach $linkslist as $link}
+									<div class="links-element">
+										<div class="label">Название ссылки: </div>
+										<div class="element"><input type="text" name="links-name[]" class="text" value="{iconv('UTF-8', 'windows-1251', $link.name)}"></div>
+										<div class="clr"></div>
+										<div class="label">Адрес: </div>
+										<div class="element"><input type="text" name="links-href[]" class="text" value="{iconv('UTF-8', 'windows-1251', $link.href)}"></div>
+										<div class="clr"></div>
+										<div class="label">Доступна без регистрации: </div>
+										<div class="element">
+											{if $link.free == 1}
+												<input type="checkbox" name="links-free[]" checked>
+											{else}
+												<input type="checkbox" name="links-free[]">
+											{/if}
+										</div>
+										<div class="clr"></div>
+									</div>
+									<div class="clr"></div>
+									{/foreach}
+								{else}
+								<div class="links-element">
+									<div class="label">Название ссылки: </div>
+									<div class="element"><input type="text" name="links-name[]" class="text"></div>
+									<div class="clr"></div>
+									<div class="label">Адрес: </div>
+									<div class="element"><input type="text" name="links-href[]" class="text"></div>
+									<div class="clr"></div>
+									<div class="label">Доступна без регистрации: </div>
+									<div class="element">
+										<input type="checkbox" name="links-free[]">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="clr"></div>
+								{/if}
+							</div>
+						</td>
+					</tr>
+					
 					<tr bgcolor="#ffffff">
 						<td colspan="2" class='t1' align="center" bgcolor="#ffffff"><input
 							name="save" type="submit" value="Сохранить"></td>
@@ -119,13 +175,37 @@
 		</td>
 	</tr>
 </table>
+
+<div id="links-src">
+	<div class="links-element">
+		<div class="label">Название ссылки:</div>
+		<div class="element">
+			<input type="text" name="links-name[]" class="text">
+		</div>
+		<div class="clr"></div>
+		<div class="label">Адрес:</div>
+		<div class="element">
+			<input type="text" name="links-href[]" class="text">
+		</div>
+		<div class="clr"></div>
+		<div class="label">Доступна без регистрации:</div>
+		<div class="element">
+			<input type="checkbox" name="links-free[]">
+		</div>
+		<div class="clr"></div>
+	</div>
+	<div class="clr"></div>
+</div>
+
 {literal}
 <script>
-var files = [];
 
-function makeFilesListForm()
+
+function makeLinksListForm()
 {
-	
+	var data = $('#links-src').html();
+	$('#links-box').append(data);
+	return false;
 }
 
 </script>

@@ -450,3 +450,39 @@
 .header-panel-wrapper .subscribe {
 	
 }
+
+#links-box {
+	width:600px;
+}
+
+#links-box .links-element {
+	width:600px; 
+	margin:10px 15px 20px 15px;
+	border:1px solid #ccc;
+	background:#fff;
+	padding:15px 15px 5px 15px;
+}
+
+#links-box .links-element .label {
+	float:left;
+	display:block;
+	padding:0 15px 10px 0;
+	width:200px;
+}
+
+#links-box .links-element .element {
+	float:left;
+	padding:0 0 10px 0;
+	display:block;
+	width:385px;
+}
+
+#links-box .links-element .element .text {
+	width:385px;
+}
+
+#links-src {
+	display:none;
+	
+}
+

@@ -144,8 +144,12 @@ class Content extends Controller_Abstract {
     		);
     		
     		if (!empty($filestore)) {
-    			$update['fileslist'] = serialize($filestore);
+    			$update['fileslist'] = json_encode($filestore);
     		}
+    		
+     		if(isset($_POST['remove_file']) && $_POST['remove_file'] === 'on' ) {
+     			$update['fileslist'] = '';
+     		}
     		
 //     		echo '<pre>';
 //     		var_export($_FILES);
@@ -153,15 +157,36 @@ class Content extends Controller_Abstract {
 //     		echo '<pre>';
 //     		var_export($_REQUEST);
 //     		echo '</pre>';
-    		
-			
-    		
+
+     		
+     		$links = array();
+     		if (!empty($_POST['links-name'])) {
+     			foreach ($_POST['links-name'] as $key=>$value) {
+     				if (!isset($_POST['links-free'][$key])) {
+     					$_POST['links-free'][$key] = 0;
+     				} else {
+     					$_POST['links-free'][$key] = 1;
+     				}
+     				
+     				$links[] = array(
+     					"name" =>  iconv('windows-1251', 'UTF-8', $value),
+     					"href" => iconv('windows-1251', 'UTF-8', $_POST['links-href'][$key]),
+     					"free" => iconv('windows-1251', 'UTF-8', $_POST['links-free'][$key])
+     				);
+     			}
+     			$update['linkslist'] = json_encode($links);
+     		} else {
+     			$update['linkslist'] = '';
+     		}
+     		
     		$this->_model->update($_REQUEST['ssid'], $this->_model->_tbl, $update);
     		@header("Location: /logon");
     		
     	} else {
+    		
     		$this->_tpl->assign('item', $content);
-    		$this->_tpl->assign('filestore', unserialize($content['fileslist']));
+    		$this->_tpl->assign('filestore', json_decode($content['fileslist'], true));
+    		$this->_tpl->assign('linkslist', json_decode($content['linkslist'], true));
     		$tpl = $this->_tpl->fetch('content.edit.tpl');
 	    	$this->tpl->assign('CONTENT', $tpl);
     	}
