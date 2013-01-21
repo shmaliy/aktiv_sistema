@@ -88,6 +88,10 @@ class mod_Content{
 				case 'signToAction':
 					$this->_controller->signToAction($rParam);
 					return;
+					
+				case 'parseClick':
+					$this->_controller->parseClickAction($rParam);
+					return;
 			}
 		}
 		

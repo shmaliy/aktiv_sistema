@@ -228,6 +228,38 @@ var registerTab = '#tabs-list-register';
 			
 		},
 		
+		parseclick: function (data)
+		{
+			console.log('parseclick');
+			//console.log(url);
+			$('#sunny-form-error').html('');
+			$('#sunny-form-error-register').html('');
+			
+			$.ajax({
+				url: '/parseClick/' + data,
+				data: data,
+				type: 'POST',
+				error: function(jqXHR, textStatus, errorThrown) {
+					
+				},
+				success: function(data, textStatus, jqXHR) {
+					//console.log(jqXHR.responseText);
+					var response = jqXHR.responseText;
+					if (response == 'error') {
+						$(this).active('showmodal', 'modal-container', 'tabs-list-login');
+					} else if (response == 'message') {
+						$(this).active('message', '"Спасибо, Ваша заявка принята. В течении одного рабочего дня с Вами  свяжется менеджер и расскажет Вам все необходимые подробности"');
+					} else {
+						window.open(response);
+					}
+									
+				},
+				complete: function(jqXHR, textStatus) {}
+			});
+			return false;
+			
+		},
+		
 		message: function (text)
 		{
 			alert(text);

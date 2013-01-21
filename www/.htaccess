@@ -1,7 +1,7 @@
 #php_value error_reporting 7
 
 #ErrorDocument 404 /404.html
-
+php_value magic_quotes_gpc off
 
 Options -Indexes
 

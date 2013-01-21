@@ -121,7 +121,8 @@ class Models_Content extends Models_Abstract
 						'content.keywords',
 						'content.description',
 						'content.public_date',
-						'content.fileslist'
+						'content.fileslist',
+						'content.linkslist'
 				)
 		);
 
@@ -172,9 +173,16 @@ class Models_Content extends Models_Abstract
 		foreach ($return as &$item) {
 			if(!empty($item['fileslist']))
 			{
-				$item['fileslist'] = unserialize($item['fileslist']);
+				$item['fileslist'] = json_decode($item['fileslist'], true);
 				array_walk_recursive($item['fileslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
 				
+			}
+			
+			if(!empty($item['linkslist']))
+			{
+				$item['linkslist'] = json_decode($item['linkslist'], true);
+				array_walk_recursive($item['linkslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+			
 			}
 			$item['body'] = str_replace('"images/', '"/images/',$item['body']);
 			$item['body'] = str_replace("'images/", '"/images/',$item['body']);
@@ -248,16 +256,18 @@ class Models_Content extends Models_Abstract
 	public function getContentItem($id = null)
 	{
 		if (null === $id) {
-			return array();
+			return false;
 		}
 
 		$select = $this->_db->select();
 		$select->from(array("content" => $this->_tbl));
 		$select->where('content.id = ?', $id);
 		$return = $this->_db->fetchRow($select);
-
-		array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
-
+		
+		if ($return !== false) {
+			array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+		}
+			
 		return $return;
 	}
 

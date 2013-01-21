@@ -100,8 +100,74 @@ class NewController extends Controller_Abstract
 		$this->_tpl->assign('knowledgebase', $this->baseKnowledgeWidget('1'));
 		$this->_tpl->assign('actions', $this->actionsWidget('1'));
 		$this->_tpl->assign('files', $this->filesAccessAction($result[0]['fileslist'], $result[0]['id'], 'content'));
+		$this->_tpl->assign('links', $this->contentsLinksAccessAction($result[0]['linkslist'], $result[0]['id']));
 		
 		return $this->_tpl->fetch('_layout.tpl');
+	}
+	
+	public function contentsLinksAccessAction($str, $id) {
+		
+		if (empty($str)) {
+			return;
+		}
+		$this->_tpl->assign('id', $id);
+		$this->_tpl->assign('links', $str);
+		//var_export($str);
+		return $this->_tpl->fetch('contents-links-access.tpl');
+	}
+	
+	public function parseClickAction()
+	{
+		//var_export($_REQUEST);
+		
+		$params = explode('|', $_REQUEST['ssid']);
+		$content_id = $params[0];
+		$link_id = $params[1];
+		
+		
+		
+		$content = $this->_contentModel->getContentItem($content_id);
+		if ($content !== false) {
+			$links = json_decode($content['linkslist'], true);
+			//var_export($links);
+			
+			if (isset($links[$link_id])) {
+				
+				if ($links[$link_id]['free'] == '0' && !isset($_SESSION['frontEndLogin']['userId']) || $_SESSION['frontEndLogin']['userId'] === 0) {
+					echo 'error';
+					return;
+				}
+				
+				$firstChar = str_split($links[$link_id]['href'], 1);
+				$firstChar = $firstChar[0];
+				
+				if ($firstChar === '#') {
+					// “упо добавл€ем запись из адреса в статистику 
+					$insert = array(
+							'subscribers_id' =>	$_SESSION['frontEndLogin']['userId'],
+							'activity_type'	=>	iconv("windows-1251", "UTF-8", ' ликнул ссылку  "' . iconv('UTF-8', 'windows-1251', $links[$link_id]['name']) . '" на странице "' . $content['title'] . '".'),
+							'ts'	=> time()
+					);
+					
+					$this->_contentModel->insert($this->_contentModel->_activityTbl, $insert);
+					
+					
+					echo 'message';
+				} else {
+					// ¬ статистику закидываем им€ ссылки, в новом окне открываем ссылку
+					$insert = array(
+							'subscribers_id' =>	$_SESSION['frontEndLogin']['userId'],
+							'activity_type'	=>	iconv("windows-1251", "UTF-8", 'ѕерешел по ссылке "' . iconv('UTF-8', 'windows-1251', $links[$link_id]['name']) . '" на странице "' . $content['title'] . '".'),
+							'ts'	=> time()
+					);
+					
+					$this->_contentModel->insert($this->_contentModel->_activityTbl, $insert);
+					
+					echo $links[$link_id]['href'];
+				}
+			}
+			
+		}
 	}
 	
 	public function baseKnowledgeWidget($limit)
@@ -393,7 +459,7 @@ class NewController extends Controller_Abstract
 		
 		if ($tbl == 'content') {
 			$item = $this->_contentModel->getContentItem($id);
-			$file = unserialize($item['fileslist']);
+			$file = json_decode($item['fileslist'], true);
 			
 			if(isset($_SESSION['frontEndLogin']['userId']) && $_SESSION['frontEndLogin']['userId'] > 0) {
 				echo $file['path'];
