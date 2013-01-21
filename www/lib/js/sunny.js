@@ -159,7 +159,7 @@ var registerTab = '#tabs-list-register';
 							
 						}
 						
-						setTimeout(function() { window.location = '/';}, 2000);
+						setTimeout(function() {window.location.href='';}, 2000);
 					}
 									
 				},

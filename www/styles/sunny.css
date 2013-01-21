@@ -17,7 +17,7 @@
 
 .login-buttons .message {
 	/* outline: 1px solid red; */
-	font-size: 14px;
+	font-size: 12px;
 	margin:0 10px 0 0px;
 	padding:0;
 	color: #00468F;
@@ -440,7 +440,7 @@
 
 .header-panel-wrapper .links {
 	float:right;
-	margin:5px 0 0 0;
+	margin:7px 0 0 0;
 }
 
 .header-panel-wrapper .index-panel {

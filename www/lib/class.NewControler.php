@@ -232,7 +232,7 @@ class NewController extends Controller_Abstract
 		
 		// Первичная проверка на пустые значения
 		foreach ($formData as $key=>$field) {
-			if(empty($field) && $key != 'send_spam' && $key != '0') {
+			if(empty($field) && $key != 'send_spam' && $key != 'o') {
 				$result['errors'][] = iconv("windows-1251", "UTF-8", 'Все поля должны быть заполнены!');
 				echo json_encode($result);
 				return;
