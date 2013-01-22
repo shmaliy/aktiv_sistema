@@ -1,5 +1,10 @@
 @CHARSET "UTF-8";
 
+a, img {
+	border:none;
+	outline:none;
+}
+
 .clr {
 	clear: both;
 	line-height: 0;

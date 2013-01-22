@@ -13,8 +13,8 @@ var registerTab = '#tabs-list-register';
 		
 		showmodal: function (id, tab)
 		{
-			console.log(id);
-			console.log(tab);
+			//console.log(id);
+			//console.log(tab);
 			
 			$(modalFormLogin).hide();
 			$(modalFormRegister).hide();
@@ -37,7 +37,7 @@ var registerTab = '#tabs-list-register';
 		
 		panelswitcher: function(id)
 		{
-			console.log(id);
+			//console.log(id);
 			
 			if (!$(loginTab).hasClass('login')) {
 				$(loginTab).removeClass('login-active').toggleClass('login');
@@ -121,8 +121,8 @@ var registerTab = '#tabs-list-register';
 		
 		request: function (url, data, _htmlCallback)
 		{
-			console.log('request');
-			console.log(url);
+			//console.log('request');
+			//console.log(url);
 			$('#sunny-form-error').html('');
 			$('#sunny-form-error-register').html('');
 			
@@ -170,8 +170,8 @@ var registerTab = '#tabs-list-register';
 		
 		getfile: function (url)
 		{
-			console.log('getfile');
-			console.log(url);
+			//console.log('getfile');
+			//console.log(url);
 			$('#sunny-form-error').html('');
 			$('#sunny-form-error-register').html('');
 			
@@ -200,8 +200,8 @@ var registerTab = '#tabs-list-register';
 		
 		signtoaction: function (url)
 		{
-			console.log('signToAction');
-			console.log(url);
+			//console.log('signToAction');
+			//console.log(url);
 			$('#sunny-form-error').html('');
 			$('#sunny-form-error-register').html('');
 			
@@ -230,7 +230,7 @@ var registerTab = '#tabs-list-register';
 		
 		parseclick: function (data)
 		{
-			console.log('parseclick');
+			//console.log('parseclick');
 			//console.log(url);
 			$('#sunny-form-error').html('');
 			$('#sunny-form-error-register').html('');
