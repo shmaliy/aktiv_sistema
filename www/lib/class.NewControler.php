@@ -100,18 +100,23 @@ class NewController extends Controller_Abstract
 		$this->_tpl->assign('knowledgebase', $this->baseKnowledgeWidget('1'));
 		$this->_tpl->assign('actions', $this->actionsWidget('1'));
 		$this->_tpl->assign('files', $this->filesAccessAction($result[0]['fileslist'], $result[0]['id'], 'content'));
-		$this->_tpl->assign('links', $this->contentsLinksAccessAction($result[0]['linkslist'], $result[0]['id']));
+		$this->_tpl->assign('links', $this->contentsLinksAccessAction($result[0]['linkslist'], $result[0]['id'], 'content'));
 		
 		return $this->_tpl->fetch('_layout.tpl');
 	}
 	
-	public function contentsLinksAccessAction($str, $id) {
+	public function contentsLinksAccessAction($str, $id, $tbl = 'content') {
 		
 		if (empty($str)) {
-			return;
+			return '';
+		}
+		
+		if (!is_array($str)) {
+			$str = json_decode($str, true);
 		}
 		$this->_tpl->assign('id', $id);
 		$this->_tpl->assign('links', $str);
+		$this->_tpl->assign('tbl', $tbl);
 		//var_export($str);
 		return $this->_tpl->fetch('contents-links-access.tpl');
 	}
@@ -123,13 +128,22 @@ class NewController extends Controller_Abstract
 		$params = explode('|', $_REQUEST['ssid']);
 		$content_id = $params[0];
 		$link_id = $params[1];
+		$tbl = $params[2];
 		
 		
 		
-		$content = $this->_contentModel->getContentItem($content_id);
+		if($tbl == 'content') {
+			$content = $this->_contentModel->getContentItem($content_id);
+		} elseif ($tbl == 'base') {
+			$content = $this->_contentModel->getBaseItem($content_id);
+		}
+		
 		if ($content !== false) {
-			$links = json_decode($content['linkslist'], true);
 			//var_export($links);
+
+			$links = $content['linkslist'];
+			
+			//var_export($content);
 			
 			if (isset($links[$link_id])) {
 				
@@ -141,11 +155,16 @@ class NewController extends Controller_Abstract
 				$firstChar = str_split($links[$link_id]['href'], 1);
 				$firstChar = $firstChar[0];
 				
+				if ($tbl == 'base') {
+					$content['title'] = $content['title'] . ' / База знаний';
+				}
+				
 				if ($firstChar === '#') {
+					
 					// Тупо добавляем запись из адреса в статистику 
 					$insert = array(
 							'subscribers_id' =>	$_SESSION['frontEndLogin']['userId'],
-							'activity_type'	=>	iconv("windows-1251", "UTF-8", 'Кликнул ссылку  "' . iconv('UTF-8', 'windows-1251', $links[$link_id]['name']) . '" на странице "' . $content['title'] . '".'),
+							'activity_type'	=>	iconv("windows-1251", "UTF-8", 'Кликнул ссылку  "' . $links[$link_id]['name'] . '" на странице "' . $content['title'] . '".'),
 							'ts'	=> time()
 					);
 					
@@ -157,7 +176,7 @@ class NewController extends Controller_Abstract
 					// В статистику закидываем имя ссылки, в новом окне открываем ссылку
 					$insert = array(
 							'subscribers_id' =>	$_SESSION['frontEndLogin']['userId'],
-							'activity_type'	=>	iconv("windows-1251", "UTF-8", 'Перешел по ссылке "' . iconv('UTF-8', 'windows-1251', $links[$link_id]['name']) . '" на странице "' . $content['title'] . '".'),
+							'activity_type'	=>	iconv("windows-1251", "UTF-8", 'Перешел по ссылке "' . $links[$link_id]['name'] . '" на странице "' . $content['title'] . '".'),
 							'ts'	=> time()
 					);
 					

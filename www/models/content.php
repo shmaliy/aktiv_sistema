@@ -266,6 +266,13 @@ class Models_Content extends Models_Abstract
 		
 		if ($return !== false) {
 			array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+			
+			if(!empty($return['linkslist']))
+			{
+				$return['linkslist'] = json_decode($return['linkslist'], true);
+				array_walk_recursive($return['linkslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+					
+			}
 		}
 			
 		return $return;
@@ -283,7 +290,21 @@ class Models_Content extends Models_Abstract
 		$return = $this->_db->fetchRow($select);
 
 		array_walk_recursive($return, array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
-
+		
+		if(!empty($return['fileslist']))
+		{
+			$return['fileslist'] = json_decode($return['fileslist'], true);
+			array_walk_recursive($return['fileslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+		
+		}
+			
+		if(!empty($return['linkslist']))
+		{
+			$return['linkslist'] = json_decode($return['linkslist'], true);
+			array_walk_recursive($return['linkslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+				
+		}
+		
 		return $return;
 	}
 

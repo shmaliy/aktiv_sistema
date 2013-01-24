@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-16 03:17:32
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-24 23:08:31
          compiled from "sm\templates\base.edit.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:758650f5fa39ef2b10-17768073%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bb1cbb55969d6350fcf84f29663d75246f875b18' => 
     array (
       0 => 'sm\\templates\\base.edit.tpl',
-      1 => 1358299048,
+      1 => 1359059278,
       2 => 'file',
     ),
   ),
@@ -21,6 +21,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   array (
     'item' => 0,
     'filestore' => 0,
+    'linkslist' => 0,
+    'link' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -127,8 +129,66 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 									<span>Доступен без регистрации: </span>
 									<span><?php echo $_smarty_tpl->tpl_vars['filestore']->value['free'];?>
 </span>
+									<div class="clr"></div>
+									<div class="file-info">
+										<input type="hidden" name="remove_file" value="0"> 
+										<input type="checkbox" name="remove_file"><span>удалить файл</span>
+									</div>
 								</div>
 								<div class="clr"></div>
+							</div>
+						</td>
+					</tr>
+					
+					<tr>
+						<td style="background-color: #EBEBEB;" class="tsimple"
+							align="left">Ссылки</td>
+						<td align=left style="background-color: #F7F7F7;">
+							<a class="add-links-box" href="#" onclick="return makeLinksListForm();">Добавить ссылку</a>
+							<div id="links-box">
+								<?php if (!empty($_smarty_tpl->tpl_vars['linkslist']->value)&&count($_smarty_tpl->tpl_vars['linkslist']->value)>0){?>
+									<?php  $_smarty_tpl->tpl_vars['link'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['link']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['linkslist']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['link']->key => $_smarty_tpl->tpl_vars['link']->value){
+$_smarty_tpl->tpl_vars['link']->_loop = true;
+?>
+									<div class="links-element">
+										<div class="label">Название ссылки: </div>
+										<div class="element"><input type="text" name="links-name[]" class="text" value="<?php echo iconv('UTF-8','windows-1251',$_smarty_tpl->tpl_vars['link']->value['name']);?>
+"></div>
+										<div class="clr"></div>
+										<div class="label">Адрес: </div>
+										<div class="element"><input type="text" name="links-href[]" class="text" value="<?php echo iconv('UTF-8','windows-1251',$_smarty_tpl->tpl_vars['link']->value['href']);?>
+"></div>
+										<div class="clr"></div>
+										<div class="label">Доступна без регистрации: </div>
+										<div class="element">
+											<?php if ($_smarty_tpl->tpl_vars['link']->value['free']==1){?>
+												<input type="checkbox" name="links-free[]" checked>
+											<?php }else{ ?>
+												<input type="checkbox" name="links-free[]">
+											<?php }?>
+										</div>
+										<div class="clr"></div>
+									</div>
+									<div class="clr"></div>
+									<?php } ?>
+								<?php }else{ ?>
+								<div class="links-element">
+									<div class="label">Название ссылки: </div>
+									<div class="element"><input type="text" name="links-name[]" class="text"></div>
+									<div class="clr"></div>
+									<div class="label">Адрес: </div>
+									<div class="element"><input type="text" name="links-href[]" class="text"></div>
+									<div class="clr"></div>
+									<div class="label">Доступна без регистрации: </div>
+									<div class="element">
+										<input type="checkbox" name="links-free[]">
+									</div>
+									<div class="clr"></div>
+								</div>
+								<div class="clr"></div>
+								<?php }?>
 							</div>
 						</td>
 					</tr>
@@ -143,4 +203,39 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</td>
 	</tr>
 </table>
+
+<div id="links-src">
+	<div class="links-element">
+		<div class="label">Название ссылки:</div>
+		<div class="element">
+			<input type="text" name="links-name[]" class="text">
+		</div>
+		<div class="clr"></div>
+		<div class="label">Адрес:</div>
+		<div class="element">
+			<input type="text" name="links-href[]" class="text">
+		</div>
+		<div class="clr"></div>
+		<div class="label">Доступна без регистрации:</div>
+		<div class="element">
+			<input type="checkbox" name="links-free[]">
+		</div>
+		<div class="clr"></div>
+	</div>
+	<div class="clr"></div>
+</div>
+
+
+<script>
+
+
+function makeLinksListForm()
+{
+	var data = $('#links-src').html();
+	$('#links-box').append(data);
+	return false;
+}
+
+</script>
+
 <?php }} ?>

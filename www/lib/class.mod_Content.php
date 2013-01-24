@@ -102,7 +102,8 @@ class mod_Content{
 		$myRoutes = array(
 				'tools' => 1,
 				'base' => 1,
-				'actions' => 1
+				'actions' => 1, 
+				'stat'	=> 1
 		);
 		
 		if(isset($myRoutes[$route])) {
@@ -120,11 +121,16 @@ class mod_Content{
 						echo $this->_controller->knowledgeBaseListAction($route, $rParam);
 						return;
 					} else {
+						
 						continue;
 					}
 					
 				case 'actions':
 					echo $this->_controller->actionViewAction($route, $rParam);
+					return;
+					
+				case 'stat':
+					echo $this->_controller->statAction($route, $rParam);
 					return;
 					
 			}
@@ -197,7 +203,20 @@ class mod_Content{
 				$dd2 = @explode('-', $AS_base11111['public_date']);
 				$d2 = @$dd2[2] . '.' . @$dd2[1] . '.' . @substr($dd2[0], -2);
 
+				$linkslist = array();
+				if (!empty($AS_base11111['linkslist'])) {
+					$linkslist = json_decode($AS_base11111['linkslist'], true);
+					
+					foreach($linkslist as &$elem) {
+						foreach ($elem as &$item) {
+							$item = $item = iconv('UTF-8', 'windows-1251', $item);
+						}
+					}
+				}
+				
 				if(!empty($AS_base11111['img_small'])) {
+					
+					
 					$this->tpl->assign(array(
 
 							'ID' => $AS_base11111['id'],
@@ -206,8 +225,10 @@ class mod_Content{
 							'IMAGES' => '<a href="/base/'.$AS_base11111['id'].'"><img src="/images/design/bases/'.$AS_base11111['img_small'].'" border="0"></a>',
 							'BASE_TITLE' => $AS_base11111['title'],
 							'BASE_BODY_DESC' => $AS_base11111['description'],
+							'CONTENT_LINKS' => $this->_controller->contentsLinksAccessAction($linkslist, $AS_base11111['id'], 'base')
 					));
 				} else {
+					
 					$this->tpl->assign(array(
 							'ACBID' => $AS_base11111['id'],
 							'ID' => $AS_base11111['id'],
@@ -215,6 +236,7 @@ class mod_Content{
 							'IMAGES' => '<a href="/base/'.$AS_base11111['id'].'"><img src="/images/design/bases/baza_znabiy.jpg" border="0"></a>',
 							'BASE_TITLE' => $AS_base11111['title'],
 							'BASE_BODY_DESC' => $AS_base11111['description'],
+							'CONTENT_LINKS' => $this->_controller->contentsLinksAccessAction($linkslist, $AS_base11111['id'], 'base')
 					));
 				}
 				$this->tpl->parse('SHOW_BASE_BODY', '.show_base_body');
@@ -232,6 +254,7 @@ class mod_Content{
 							'IMAGES' => '<a href="/base/'.$AS_base11111111['id'].'"><img src="/images/design/bases/'.$AS_base11111111['img_small'].'" border="0"></a>',
 							'BASE_TITLE' => $AS_base11111111['title'],
 							'BASE_BODY_DESC' => $AS_base11111111['description'],
+							'CONTENT_LINKS' => 'dsdsdsd'
 					));
 				} else {
 					$this->tpl->assign(array(
@@ -241,6 +264,7 @@ class mod_Content{
 							'IMAGES' => '<a href="/base/'.$AS_base11111111['id'].'"><img src="/images/design/bases/baza_znabiy.jpg" border="0"></a>',
 							'BASE_TITLE' => $AS_base11111111['title'],
 							'BASE_BODY_DESC' => $AS_base11111111['description'],
+							'CONTENT_LINKS' => 'dsdsdsd'
 					));
 				}
 				$this->tpl->parse('SHOW_BASE_BODY', '.show_base_body');

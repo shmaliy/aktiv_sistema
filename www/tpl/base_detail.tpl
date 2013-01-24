@@ -96,7 +96,7 @@
 									<td><br></td>
 								</tr>
 								<tr>
-									<td colspan="2"><div class="body_text2">{NEWS_BODY_DETAIL} {CONTENT_FILES}</div>
+									<td colspan="2"><div class="body_text2">{NEWS_BODY_DETAIL} {CONTENT_FILES} {CONTENT_LINKS}</div>
 									</td>
 								</tr>
 
