@@ -94,10 +94,19 @@
 							<div class="kb-list">
 							{foreach $data as $item}		
 								<div class="kb-item">
+									<!-- {$reglinks = 0} -->
+									{if !empty($item.linkslist)}
+										{foreach $item.linkslist as $link}
+											{if $link.free == 0}
+											<!-- {$reglinks = 1} -->
+											{/if}
+										{/foreach}
+									{/if}
+								
 									<!-- {$fileinfo = ''} -->
-									{if !empty($item.fileslist) && $item.fileslist.free == 0}
+									{if !empty($item.fileslist) && $item.fileslist.free == 0 || $reglinks == 1}
 									<!-- {$fileinfo = '<span class="pay">(требует регистрации)</span>'} -->
-									{elseif !empty($item.fileslist) && $item.fileslist.free == 1}
+									{elseif !empty($item.fileslist) && $item.fileslist.free == 1 || $reglinks == 0}
 									<!-- {$fileinfo = '<span class="free">(не требует регистрации)</span>'} -->
 									{/if}
 								

@@ -129,10 +129,10 @@
 									{foreach $linkslist as $link}
 									<div class="links-element">
 										<div class="label">Название ссылки: </div>
-										<div class="element"><input type="text" name="links-name[]" class="text" value="{iconv('UTF-8', 'windows-1251', $link.name)}"></div>
+										<div class="element"><input type="text" name="links-name[]" class="text" value="{$link.name}"></div>
 										<div class="clr"></div>
 										<div class="label">Адрес: </div>
-										<div class="element"><input type="text" name="links-href[]" class="text" value="{iconv('UTF-8', 'windows-1251', $link.href)}"></div>
+										<div class="element"><input type="text" name="links-href[]" class="text" value="{$link.href}"></div>
 										<div class="clr"></div>
 										<div class="label">Доступна без регистрации: </div>
 										<div class="element">

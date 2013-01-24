@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-18 12:17:41
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-25 00:38:58
          compiled from "sm\templates\_knowledge-base-list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3187950f8933a4058f7-90143455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a6a8409b1360c4fd2643e248c34b33674c32c1ea' => 
     array (
       0 => 'sm\\templates\\_knowledge-base-list.tpl',
-      1 => 1358504259,
+      1 => 1359067137,
       2 => 'file',
     ),
   ),
@@ -24,6 +24,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'mainmenu' => 0,
     'data' => 0,
     'item' => 0,
+    'link' => 0,
+    'reglinks' => 0,
     'fileinfo' => 0,
     'actions' => 0,
   ),
@@ -132,10 +134,23 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars
 $_smarty_tpl->tpl_vars['item']->_loop = true;
 ?>		
 								<div class="kb-item">
+									<!-- <?php $_smarty_tpl->tpl_vars['reglinks'] = new Smarty_variable(0, null, 0);?> -->
+									<?php if (!empty($_smarty_tpl->tpl_vars['item']->value['linkslist'])){?>
+										<?php  $_smarty_tpl->tpl_vars['link'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['link']->_loop = false;
+ $_from = $_smarty_tpl->tpl_vars['item']->value['linkslist']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
+foreach ($_from as $_smarty_tpl->tpl_vars['link']->key => $_smarty_tpl->tpl_vars['link']->value){
+$_smarty_tpl->tpl_vars['link']->_loop = true;
+?>
+											<?php if ($_smarty_tpl->tpl_vars['link']->value['free']==0){?>
+											<!-- <?php $_smarty_tpl->tpl_vars['reglinks'] = new Smarty_variable(1, null, 0);?> -->
+											<?php }?>
+										<?php } ?>
+									<?php }?>
+								
 									<!-- <?php $_smarty_tpl->tpl_vars['fileinfo'] = new Smarty_variable('', null, 0);?> -->
-									<?php if (!empty($_smarty_tpl->tpl_vars['item']->value['fileslist'])&&$_smarty_tpl->tpl_vars['item']->value['fileslist']['free']==0){?>
+									<?php if (!empty($_smarty_tpl->tpl_vars['item']->value['fileslist'])&&$_smarty_tpl->tpl_vars['item']->value['fileslist']['free']==0||$_smarty_tpl->tpl_vars['reglinks']->value==1){?>
 									<!-- <?php $_smarty_tpl->tpl_vars['fileinfo'] = new Smarty_variable('<span class="pay">(требует регистрации)</span>', null, 0);?> -->
-									<?php }elseif(!empty($_smarty_tpl->tpl_vars['item']->value['fileslist'])&&$_smarty_tpl->tpl_vars['item']->value['fileslist']['free']==1){?>
+									<?php }elseif(!empty($_smarty_tpl->tpl_vars['item']->value['fileslist'])&&$_smarty_tpl->tpl_vars['item']->value['fileslist']['free']==1||$_smarty_tpl->tpl_vars['reglinks']->value==0){?>
 									<!-- <?php $_smarty_tpl->tpl_vars['fileinfo'] = new Smarty_variable('<span class="free">(не требует регистрации)</span>', null, 0);?> -->
 									<?php }?>
 								

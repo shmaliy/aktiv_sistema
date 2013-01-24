@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-24 21:58:00
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-25 00:24:04
          compiled from "sm\templates\contents-links-access.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2902550fda8db1223e7-18536199%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '997e633207ead53bec613ae35a4a65e4b140af53' => 
     array (
       0 => 'sm\\templates\\contents-links-access.tpl',
-      1 => 1359057479,
+      1 => 1359066242,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'variables' => 
   array (
     'links' => 0,
+    'value' => 0,
     'id' => 0,
     'key' => 0,
     'tbl' => 0,
-    'value' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -34,9 +34,19 @@ foreach ($_from as $_smarty_tpl->tpl_vars['value']->key => $_smarty_tpl->tpl_var
 $_smarty_tpl->tpl_vars['value']->_loop = true;
  $_smarty_tpl->tpl_vars['key']->value = $_smarty_tpl->tpl_vars['value']->key;
 ?>
-	<div><a class="access-link" onclick="return $.fn.active('parseclick', '<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+	<?php if ($_smarty_tpl->tpl_vars['value']->value['name']!==''){?>
+	<a class="access-link" onclick="return $.fn.active('parseclick', '<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
 |<?php echo $_smarty_tpl->tpl_vars['key']->value;?>
 |<?php echo $_smarty_tpl->tpl_vars['tbl']->value;?>
-');" href="#"><?php echo $_smarty_tpl->tpl_vars['value']->value['name'];?>
-</a></div>
-<?php } ?><?php }} ?>
+');" href="#">
+		<?php echo $_smarty_tpl->tpl_vars['value']->value['name'];?>
+
+		<?php if ($_smarty_tpl->tpl_vars['value']->value['free']==1){?>
+		<span>(Не требуется регистрация)</span>
+		<?php }else{ ?>
+		<span>(Требуется регистрация)</span>
+		<?php }?> 	
+	</a>
+	<?php }?>
+<?php } ?>
+<div class="clear"></div><?php }} ?>

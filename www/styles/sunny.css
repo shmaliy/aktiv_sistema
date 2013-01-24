@@ -491,3 +491,29 @@ a, img {
 	
 }
 
+.access-link {
+	width:238px;
+	height: 58px;
+	display:block;
+	float:left;
+	background:url(/images/sunny/links_list_item_nohover.png) top left no-repeat;
+	margin:15px 5px 15px 0;
+	color: #205a86;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px;
+	text-align:center;
+	overflow:hidden;
+}
+
+.access-link:hover {
+	background:url(/images/sunny/links_list_item_hover.png) top left no-repeat;
+	text-decoration:none;
+}
+
+.access-link span {
+	display:block;	
+	text-transform:none;
+	font-size:10px;
+}
+

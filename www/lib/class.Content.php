@@ -185,8 +185,8 @@ class Content extends Controller_Abstract {
     	} else {
     		
     		$this->_tpl->assign('item', $content);
-    		$this->_tpl->assign('filestore', json_decode($content['fileslist'], true));
-    		$this->_tpl->assign('linkslist', json_decode($content['linkslist'], true));
+    		$this->_tpl->assign('filestore', $content['fileslist']);
+    		$this->_tpl->assign('linkslist', $content['linkslist']);
     		$tpl = $this->_tpl->fetch('content.edit.tpl');
 	    	$this->tpl->assign('CONTENT', $tpl);
     	}
