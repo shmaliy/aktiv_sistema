@@ -736,3 +736,63 @@ Stack trace:
 [16-Jan-2013 13:48:26] PHP Notice:  Undefined index: register_from in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
 [16-Jan-2013 13:48:26] PHP Notice:  Trying to get property of non-object in W:\home\aktiv\www\sm\templates_c\f11633c2467bd68826c6eaf712bc12630c976158.file.form.register.tpl.php on line 27
 [16-Jan-2013 16:57:08] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'aktivsis_user'@'localhost' (using password: YES) in W:\home\aktiv\www\lib\class.Mysql.php on line 55
+[29-Jan-2013 11:30:07] PHP Warning:  array_walk_recursive() expects parameter 1 to be array, null given in W:\home\aktiv_sistema\www\models\content.php on line 311
+[29-Jan-2013 11:30:31] PHP Warning:  array_walk_recursive() expects parameter 1 to be array, null given in W:\home\aktiv_sistema\www\models\content.php on line 311
+[29-Jan-2013 11:40:25] PHP Warning:  unserialize() expects parameter 1 to be string, array given in W:\home\aktiv_sistema\www\lib\class.Base.php on line 170
+[29-Jan-2013 11:41:12] PHP Warning:  json_decode() expects parameter 1 to be string, array given in W:\home\aktiv_sistema\www\lib\class.Base.php on line 170
+[29-Jan-2013 14:03:23] PHP Fatal error:  Uncaught exception 'SmartyCompilerException' with message 'Syntax Error in template &quot;sm\templates\base.item.tpl&quot;  on line 6 &quot;&amp;lt;title&amp;gt;{PAGE_TITLE}&amp;lt;/title&amp;gt;&quot; unknown tag &quot;PAGE_TITLE&quot;' in W:\home\aktiv_sistema\www\lib\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php:657
+Stack trace:
+#0 W:\home\aktiv_sistema\www\lib\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php(443): Smarty_Internal_TemplateCompilerBase->trigger_template_error('unknown tag "PA...', 6)
+#1 W:\home\aktiv_sistema\www\lib\smarty\libs\sysplugins\smarty_internal_templateparser.php(2393): Smarty_Internal_TemplateCompilerBase->compileTag('PAGE_TITLE', Array)
+#2 W:\home\aktiv_sistema\www\lib\smarty\libs\sysplugins\smarty_internal_templateparser.php(3101): Smarty_Internal_Templateparser->yy_r37()
+#3 W:\home\aktiv_sistema\www\lib\smarty\libs\sysplugins\smarty_internal_templateparser.php(3201): Smarty_Internal_Templateparser->yy_reduce(37)
+#4 W:\home\aktiv_sistema\www\lib in W:\home\aktiv_sistema\www\lib\smarty\libs\sysplugins\smarty_internal_templatecompilerbase.php on line 657
+[29-Jan-2013 14:04:59] PHP Notice:  Undefined index: page_title in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 38
+[29-Jan-2013 14:04:59] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 48
+[29-Jan-2013 14:04:59] PHP Notice:  Undefined index: forms in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 72
+[29-Jan-2013 14:04:59] PHP Notice:  Trying to get property of non-object in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 72
+[29-Jan-2013 14:04:59] PHP Notice:  Undefined index: panel in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 105
+[29-Jan-2013 14:04:59] PHP Notice:  Trying to get property of non-object in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 105
+[29-Jan-2013 14:04:59] PHP Notice:  Undefined index: mainmenu in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 128
+[29-Jan-2013 14:04:59] PHP Notice:  Trying to get property of non-object in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 128
+[29-Jan-2013 14:04:59] PHP Notice:  Undefined index: files in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 133
+[29-Jan-2013 14:04:59] PHP Notice:  Trying to get property of non-object in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 133
+[29-Jan-2013 14:04:59] PHP Notice:  Undefined index: links in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 134
+[29-Jan-2013 14:04:59] PHP Notice:  Trying to get property of non-object in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 134
+[29-Jan-2013 14:04:59] PHP Notice:  Undefined index: knowledgebase in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 141
+[29-Jan-2013 14:05:00] PHP Notice:  Trying to get property of non-object in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 141
+[29-Jan-2013 14:05:00] PHP Notice:  Undefined index: actions in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 146
+[29-Jan-2013 14:05:00] PHP Notice:  Trying to get property of non-object in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 146
+[29-Jan-2013 14:06:29] PHP Notice:  Undefined variable: menu in W:\home\aktiv_sistema\www\lib\class.NewControler.php on line 128
+[29-Jan-2013 14:06:29] PHP Notice:  Undefined variable: submenu in W:\home\aktiv_sistema\www\lib\class.NewControler.php on line 128
+[29-Jan-2013 14:06:30] PHP Notice:  Undefined index: page_title in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 38
+[29-Jan-2013 14:06:30] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 48
+[29-Jan-2013 14:07:28] PHP Notice:  Undefined index: page_title in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 38
+[29-Jan-2013 14:07:28] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 48
+[29-Jan-2013 14:07:46] PHP Notice:  Undefined index: page_title in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 37
+[29-Jan-2013 14:07:46] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:08:55] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:09:13] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:10:19] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:10:35] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:11:06] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:12:18] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:12:39] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:13:42] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:14:01] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:14:20] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:26:11] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:32:13] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 14:57:43] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 15:37:57] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 15:54:52] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 16:06:54] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 16:07:21] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 16:08:46] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 16:10:37] PHP Notice:  Undefined index: keywords in W:\home\aktiv_sistema\www\sm\templates_c\7370904acd8c01ecd5e5cbcfb8d49b33335812d5.file.base.item.tpl.php on line 47
+[29-Jan-2013 16:10:48] PHP Notice:  Uninitialized string offset: 0 in W:\home\aktiv_sistema\www\sm\templates_c\bb1cbb55969d6350fcf84f29663d75246f875b18.file.base.edit.tpl.php on line 120
+[29-Jan-2013 16:10:48] PHP Notice:  Uninitialized string offset: 0 in W:\home\aktiv_sistema\www\sm\templates_c\bb1cbb55969d6350fcf84f29663d75246f875b18.file.base.edit.tpl.php on line 125
+[29-Jan-2013 16:10:48] PHP Notice:  Uninitialized string offset: 0 in W:\home\aktiv_sistema\www\sm\templates_c\bb1cbb55969d6350fcf84f29663d75246f875b18.file.base.edit.tpl.php on line 130
+[29-Jan-2013 16:12:01] PHP Notice:  Uninitialized string offset: 0 in W:\home\aktiv_sistema\www\sm\templates_c\bb1cbb55969d6350fcf84f29663d75246f875b18.file.base.edit.tpl.php on line 120
+[29-Jan-2013 16:12:01] PHP Notice:  Uninitialized string offset: 0 in W:\home\aktiv_sistema\www\sm\templates_c\bb1cbb55969d6350fcf84f29663d75246f875b18.file.base.edit.tpl.php on line 125
+[29-Jan-2013 16:12:01] PHP Notice:  Uninitialized string offset: 0 in W:\home\aktiv_sistema\www\sm\templates_c\bb1cbb55969d6350fcf84f29663d75246f875b18.file.base.edit.tpl.php on line 130

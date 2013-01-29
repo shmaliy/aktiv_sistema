@@ -121,6 +121,24 @@ class NewController extends Controller_Abstract
 		return $this->_tpl->fetch('contents-links-access.tpl');
 	}
 	
+	public function baseItemAction($menu, $id)
+	{
+		$item = $this->_contentModel->getBaseItem($id);
+		$this->_tpl->assign('data', $item);
+		$this->_tpl->assign('mainmenu', $this->mainMenuAction($menu, $id));
+		$this->_tpl->assign('panel', $this->topPanelAction());
+		$this->_tpl->assign('forms', $this->formsAction());
+		$this->_tpl->assign('knowledgebase', $this->baseKnowledgeWidget('1'));
+		$this->_tpl->assign('actions', $this->actionsWidget('1'));
+		$this->_tpl->assign('files', $this->filesAccessAction($item['fileslist'], $item['id'], 'base'));
+		$this->_tpl->assign('links', $this->contentsLinksAccessAction($item['linkslist'], $item['id'], 'base'));
+// 		echo '<pre>';
+// 		var_export($item);
+// 		echo '</pre>';
+		
+		return $this->_tpl->fetch('base.item.tpl');
+	}
+	
 	public function parseClickAction()
 	{
 		//var_export($_REQUEST);

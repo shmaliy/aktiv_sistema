@@ -420,12 +420,12 @@ a, img {
 
 .header-contents .header-panel .panel {
 	float:right;
-	margin:0 15px 0 0;
+	margin:0 10px 0 0;
 }
 
 .header-contents .header-panel .links {
 	float:right;
-	margin: 5px 0 0 0;
+	margin: 6px 0 0 0;
 }
 
 .index-panel {
@@ -445,7 +445,7 @@ a, img {
 
 .header-panel-wrapper .links {
 	float:right;
-	margin:7px 0 0 0;
+	margin:8px 0 0 0;
 }
 
 .header-panel-wrapper .index-panel {

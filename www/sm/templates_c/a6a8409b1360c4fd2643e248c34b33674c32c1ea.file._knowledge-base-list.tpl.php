@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-25 00:38:58
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-29 16:10:32
          compiled from "sm\templates\_knowledge-base-list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3187950f8933a4058f7-90143455%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'a6a8409b1360c4fd2643e248c34b33674c32c1ea' => 
     array (
       0 => 'sm\\templates\\_knowledge-base-list.tpl',
-      1 => 1359067137,
+      1 => 1359465016,
       2 => 'file',
     ),
   ),
@@ -149,9 +149,9 @@ $_smarty_tpl->tpl_vars['link']->_loop = true;
 								
 									<!-- <?php $_smarty_tpl->tpl_vars['fileinfo'] = new Smarty_variable('', null, 0);?> -->
 									<?php if (!empty($_smarty_tpl->tpl_vars['item']->value['fileslist'])&&$_smarty_tpl->tpl_vars['item']->value['fileslist']['free']==0||$_smarty_tpl->tpl_vars['reglinks']->value==1){?>
-									<!-- <?php $_smarty_tpl->tpl_vars['fileinfo'] = new Smarty_variable('<span class="pay">(требует регистрации)</span>', null, 0);?> -->
+									<!-- <?php $_smarty_tpl->tpl_vars['fileinfo'] = new Smarty_variable('<span class="pay">(доступно зарегистрированным пользователям)</span>', null, 0);?> -->
 									<?php }elseif(!empty($_smarty_tpl->tpl_vars['item']->value['fileslist'])&&$_smarty_tpl->tpl_vars['item']->value['fileslist']['free']==1||$_smarty_tpl->tpl_vars['reglinks']->value==0){?>
-									<!-- <?php $_smarty_tpl->tpl_vars['fileinfo'] = new Smarty_variable('<span class="free">(не требует регистрации)</span>', null, 0);?> -->
+									<!-- <?php $_smarty_tpl->tpl_vars['fileinfo'] = new Smarty_variable('<span class="free">(в свободном доступе)</span>', null, 0);?> -->
 									<?php }?>
 								
 									<a class="kb-title" href="/base/<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>

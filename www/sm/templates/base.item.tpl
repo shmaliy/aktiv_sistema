@@ -1,8 +1,9 @@
+<!-- /tpl/des_tools.tpl -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <!-- header block -->
 <head>
-<title>База знаний — консалтинговая компания «Актив-Система»</title>
+<title>{$data.title}</title>
 <meta http-equiv="Content-Type"
 	content="text/html; charset=windows-1251">
 <meta http-equiv="Pragma" content="no-cache">
@@ -11,7 +12,8 @@
 <meta name="Publisher" content="Amiweb Design Studio">
 <meta name="Revizit-after" content="1 days">
 <meta name="Robots" content="all">
-<meta name="Description" content="База знаний — «Актив-Система» - консалтинг в области развития и оптимизации бизнеса: стратегическое планирование, описание и оптимизация бизнес-процессов, внедрение системы сбалансированных показателей и ключевых показателей оценки эффективности бизнес-процессов.">
+<meta name="Keywords" content="{$data.keywords}">
+<meta name="Description" content="{$data.description}">
 <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
 <link href="/styles/sunny.css" type="text/css" rel=stylesheet>
 <script src="/lib/js/AC_RunActiveContent.js" type="text/javascript"></script>
@@ -43,8 +45,9 @@
 						<td width="214" bgcolor="#FFFFFF"><a href="/"><img
 								src="/images/design/active_system_LOGO.jpg" width="214"
 								height="73" border="0"> </a></td>
-						<td width="20" bgcolor="#FFFFFF"><img
-							src="/images/t_fill.gif" width="20" height="1"></td>
+						<td width="20" bgcolor="#FFFFFF"><img src="/images/t_fill.gif"
+							width="20" height="1"></td>
+						
 						<td height="121" align="left" valign="bottom" bgcolor="#B2DEF7"
 							class="menu_title">
 							<div class="header-contents">
@@ -68,58 +71,97 @@
 								</div>
 								<div class="clr"></div>
 								<div class="header-title">
-									<h1>База знаний</h1>
+									<h1>{$data.title}</h1>
 								</div>
-								
 							</div>
-							
 						</td>
 					</tr>
+					
 				</table></td>
 			<td bgcolor="#B2DEF7">&nbsp;</td>
 		</tr>
+		
 		<tr>
-			<td height="49"><img src="/images/t_fill.gif" width="1"
-				height="49"></td>
+			<td height="49"><img src="/images/t_fill.gif" width="1" height="49">
+			</td>
 			<td rowspan="6">&nbsp;</td>
 		</tr>
 		<tr>
-			<td><table width="981" border="0" cellpadding="0"
-					cellspacing="0">
+			<td><table width="981" border="0" cellpadding="0" cellspacing="0">
 					<tr>
-						<td width="218" valign="top">{$mainmenu} </td>
-						<td width="23"><img src="/images/t_fill.gif" width="23"
-							height="1"></td>
-						<td width="531" valign="top">
-							<div class="kb-list">
-							{foreach $data as $item}		
-								<div class="kb-item">
-									<!-- {$reglinks = 0} -->
-									{if !empty($item.linkslist)}
-										{foreach $item.linkslist as $link}
-											{if $link.free == 0}
-											<!-- {$reglinks = 1} -->
-											{/if}
-										{/foreach}
-									{/if}
-								
-									<!-- {$fileinfo = ''} -->
-									{if !empty($item.fileslist) && $item.fileslist.free == 0 || $reglinks == 1}
-									<!-- {$fileinfo = '<span class="pay">(доступно зарегистрированным пользователям)</span>'} -->
-									{elseif !empty($item.fileslist) && $item.fileslist.free == 1 || $reglinks == 0}
-									<!-- {$fileinfo = '<span class="free">(в свободном доступе)</span>'} -->
-									{/if}
-								
-									<a class="kb-title" href="/base/{$item.id}">{$item.title} {$fileinfo}</a>
-									<div>{$item.description}</div>
-								</div>
-							{/foreach}
-							</div>
+						<td width="218" valign="top">{$mainmenu}</td>
+						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
-						<td width="23"><img src="/images/t_fill.gif" width="23"
-							height="1"></td>
+						<td width="531" valign="top">
+														
+							<div class="base-date">Добавлено: {$data.public_date}</div>
+							{$data.body}{$files}{$links}
+							
+							<div>
+								<table cellpadding="0" cellspacing="0">
+									<tr>
+										<td colspan="2"><br>
+											<div align="left">
+												Поделитесь материалом с друзьями:<br> <br>
+												<!-- AddThis Button BEGIN -->
+												<div class="addthis_toolbox addthis_default_style ">
+													<a class="addthis_button_preferred_1"></a> <a
+														class="addthis_button_preferred_2"></a> <a
+														class="addthis_button_preferred_3"></a> <a
+														class="addthis_button_preferred_4"></a> <a
+														class="addthis_button_compact"></a> <a
+														class="addthis_counter addthis_bubble_style"></a>
+												</div>
+												<script type="text/javascript"
+													src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e498df604e379cd"></script>
+												<!-- AddThis Button END -->
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td><br></td>
+									</tr>
+									<!-- <tr>
+										<td colspan="2">Подпишитесь на <A
+											HREF=http://subscribe.ru/catalog/economics.school.aktivsistema
+											TARGET=_top>нашу рассылку</A> о том, как сделать свой бизнес
+											системным. Просто введите свой e-mail и нажмите "Подписаться":
+	
+											<FORM TARGET=_top ACTION=http://subscribe.ru/member/quick
+												METHOD=POST>
+												<INPUT TYPE=hidden NAME=action VALUE=quick>
+												<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2>
+	
+													<TR>
+														<TD BGCOLOR=#FFFFFF ALIGN=CENTER VALIGN=middle COLSPAN=2><INPUT
+															TYPE=hidden NAME=grp VALUE="economics.school.aktivsistema">
+															<INPUT TYPE=text NAME=email SIZE=50 MAXLENGTH=100
+															VALUE="ваш e-mail" style="font-size: 10pt"> <INPUT
+															TYPE=submit VALUE="Подписаться" style="font-size: 10pt">
+														</TD>
+													</TR>
+	
+												</TABLE>
+												<INPUT TYPE=hidden NAME=src
+													VALUE="list_economics.school.aktivsistema">
+											</FORM> <br>
+										</td>
+									</tr> -->
+	
+									<tr>
+										<td colspan="2"><a href="/base">Посмотрите другие материалы
+												Базы знаний...</a></td>
+									</tr>
+								</table>							
+							</div>
+						
+						</td>
+						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
+						</td>
 						<td width="186" valign="top"><table width="100%" border="0"
 								cellspacing="0" cellpadding="0">
+
+
 								<tr>
 									<td>{$actions}</td>
 								</tr>
@@ -127,6 +169,7 @@
 					</tr>
 				</table></td>
 		</tr>
+		
 		<tr>
 			<td><img src="../images/t_fill.gif" width="1" height="10"></td>
 		</tr>
@@ -148,13 +191,14 @@
 		<tr>
 			<td><table border="0" cellspacing="0" cellpadding="0">
 					<tr>
-						<td width="1"><img src="/images/t_fiil.png" width="1"
-							height="1" /></td>
+						<td width="1"><img src="/images/t_fiil.png" width="1" height="1" />
+						</td>
 						<td width="240" align="center" valign="top">
+						
 						<td width="530" align="center" valign="top"><div align="left">
-								<span class="footer_copyright">Актив-Система, &copy;
-									2008-2011<br> Дизайн: АТМА Brand Development<br>
-									Программирование: Студия web дизайна АМИВЕБ
+								<span class="footer_copyright">Актив-Система, &copy; 2008-2011<br>
+									Дизайн: АТМА Brand Development<br> Программирование: Студия web
+									дизайна АМИВЕБ
 								</span><br />
 							</div>
 							<div>
@@ -169,11 +213,12 @@
 								</div>
 								<td width="1" class="style5"><img src="/images/t_fiil.png"
 									width="1" height="1" /></td>
-								<td valign="top" class="style5"><table width="240"
-										border="0" cellspacing="0" cellpadding="0">
+								<td valign="top" class="style5"><table width="240" border="0"
+										cellspacing="0" cellpadding="0">
 										<tr>
 											<td align="left" valign="top"><span class="style6"><img
-													src="/images/design/hren.jpg" width="14" height="14" /> </span></td>
+													src="/images/design/hren.jpg" width="14" height="14" /> </span>
+											</td>
 											<td align="left" valign="top">
 												<div class="footer_copyright">Компания
 													&quot;Актив-Система&quot;</div>
@@ -191,6 +236,7 @@
 											</td>
 										</tr>
 									</table></td>
+					
 					</tr>
 				</table></td>
 		</tr>

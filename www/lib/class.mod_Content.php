@@ -121,8 +121,8 @@ class mod_Content{
 						echo $this->_controller->knowledgeBaseListAction($route, $rParam);
 						return;
 					} else {
-						
-						continue;
+						echo $this->_controller->baseItemAction($route, $rParam);
+						return;
 					}
 					
 				case 'actions':
@@ -214,6 +214,10 @@ class mod_Content{
 					}
 				}
 				
+// 				echo '<pre>';
+// 				var_export($AS_base11111);
+// 				echo '<pre>';
+				
 				if(!empty($AS_base11111['img_small'])) {
 					
 					
@@ -225,7 +229,7 @@ class mod_Content{
 							'IMAGES' => '<a href="/base/'.$AS_base11111['id'].'"><img src="/images/design/bases/'.$AS_base11111['img_small'].'" border="0"></a>',
 							'BASE_TITLE' => $AS_base11111['title'],
 							'BASE_BODY_DESC' => $AS_base11111['description'],
-							'CONTENT_LINKS' => $this->_controller->contentsLinksAccessAction($linkslist, $AS_base11111['id'], 'base')
+							'CONTENT_LINKS' => $this->_controller->contentsLinksAccessAction($AS_base11111['linkslist'], $AS_base11111['id'], 'base')
 					));
 				} else {
 					

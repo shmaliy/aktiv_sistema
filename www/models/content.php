@@ -308,7 +308,9 @@ class Models_Content extends Models_Abstract
 		if(!empty($return['fileslist']))
 		{
 			$return['fileslist'] = json_decode($return['fileslist'], true);
-			array_walk_recursive($return['fileslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+			if(is_array($return['fileslist']) && !empty($return['fileslist'])) {
+				array_walk_recursive($return['fileslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
+			}
 		
 		}
 			
@@ -318,6 +320,9 @@ class Models_Content extends Models_Abstract
 			array_walk_recursive($return['linkslist'], array($this, 'iconvCallback'), array('from' => self::$charsetDb, 'to' => self::$charsetFrontend));
 				
 		}
+		
+		$return['body'] = str_replace('"images/', '"/images/',$return['body']);
+		$return['body'] = str_replace("'images/", '"/images/',$return['body']);
 		
 		return $return;
 	}

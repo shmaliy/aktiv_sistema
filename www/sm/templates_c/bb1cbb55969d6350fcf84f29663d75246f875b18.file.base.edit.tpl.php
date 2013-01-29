@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-24 23:08:31
+<?php /* Smarty version Smarty-3.1.12, created on 2013-01-29 16:15:00
          compiled from "sm\templates\base.edit.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:758650f5fa39ef2b10-17768073%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'bb1cbb55969d6350fcf84f29663d75246f875b18' => 
     array (
       0 => 'sm\\templates\\base.edit.tpl',
-      1 => 1359059278,
+      1 => 1359465295,
       2 => 'file',
     ),
   ),
@@ -116,6 +116,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 									<div class="file-info"><input type="checkbox" name="free_file"> <span>доступен без регистрации</span></div>
 								</div> 
 								<div class="uploaded-file">
+									<?php if (!empty($_smarty_tpl->tpl_vars['filestore']->value)){?>
 									<span>Название файла: </span>
 									<span><?php echo $_smarty_tpl->tpl_vars['filestore']->value['title'];?>
 </span>
@@ -134,6 +135,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 										<input type="hidden" name="remove_file" value="0"> 
 										<input type="checkbox" name="remove_file"><span>удалить файл</span>
 									</div>
+									<?php }?>
 								</div>
 								<div class="clr"></div>
 							</div>
@@ -154,11 +156,11 @@ $_smarty_tpl->tpl_vars['link']->_loop = true;
 ?>
 									<div class="links-element">
 										<div class="label">Название ссылки: </div>
-										<div class="element"><input type="text" name="links-name[]" class="text" value="<?php echo iconv('UTF-8','windows-1251',$_smarty_tpl->tpl_vars['link']->value['name']);?>
+										<div class="element"><input type="text" name="links-name[]" class="text" value="<?php echo $_smarty_tpl->tpl_vars['link']->value['name'];?>
 "></div>
 										<div class="clr"></div>
 										<div class="label">Адрес: </div>
-										<div class="element"><input type="text" name="links-href[]" class="text" value="<?php echo iconv('UTF-8','windows-1251',$_smarty_tpl->tpl_vars['link']->value['href']);?>
+										<div class="element"><input type="text" name="links-href[]" class="text" value="<?php echo $_smarty_tpl->tpl_vars['link']->value['href'];?>
 "></div>
 										<div class="clr"></div>
 										<div class="label">Доступна без регистрации: </div>

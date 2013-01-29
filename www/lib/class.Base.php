@@ -106,7 +106,7 @@ class class_Base extends Controller_Abstract {
 	    		if ($_FILES['fileslist']['size'] > 0) {
 	    			if(move_uploaded_file($_FILES['fileslist']['tmp_name'], "uploads/" . $_FILES['fileslist']['name'])) {
 	    				$filestore = array(
-	    						'title' => iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['files-name'])),
+	    						'title' => iconv('windows-1251', 'UTF-8', $_REQUEST['files-name']),
 	    						'path' => "uploads/" . $_FILES['fileslist']['name'],
 	    						'free' => $free_file
 	    				);
@@ -116,8 +116,8 @@ class class_Base extends Controller_Abstract {
     		
     		
     		$update = array(
-    				'title' 		=> 	iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['title'])),
-    				'description'	=>	iconv('windows-1251', 'UTF-8', htmlspecialchars($_REQUEST['description'])),
+    				'title' 		=> 	iconv('windows-1251', 'UTF-8', $_REQUEST['title']),
+    				'description'	=>	iconv('windows-1251', 'UTF-8', $_REQUEST['description']),
     				'body' 			=> iconv('windows-1251', 'UTF-8', str_replace('images/', 'images/', $_REQUEST['body'])),
     				'public_date' 	=> $_REQUEST['public_date'],
     				'status' 		=> iconv('windows-1251', 'UTF-8', $status),
@@ -167,7 +167,7 @@ class class_Base extends Controller_Abstract {
     		
     	} else {
     		$this->_tpl->assign('item', $content);
-    		$this->_tpl->assign('filestore', unserialize($content['fileslist']));
+    		$this->_tpl->assign('filestore', $content['fileslist']);
     		$tpl = $this->_tpl->fetch('base.edit.tpl');
     		$this->tpl->assign('CONTENT', $tpl);
     	}
