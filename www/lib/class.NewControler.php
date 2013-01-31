@@ -83,7 +83,7 @@ class NewController extends Controller_Abstract
 			);
 				
 			$this->_contentModel->insert($this->_contentModel->_activityTbl, $insert);
-			echo $item['title'] . ' - ' . $item['public_date'];
+			echo iconv("windows-1251", "UTF-8", $item['title'] . ' - ' . $item['public_date']);
 		} else {
 			echo 'error';
 		}
@@ -232,7 +232,7 @@ class NewController extends Controller_Abstract
 		else {
 			$user = $this->_subscribersModel->parseLogin(array('id' => $_SESSION['frontEndLogin']['userId']));
 			$this->_tpl->assign('link', 1);
-			if ($user['email'] == 'admin@aktiv-sistema.com' || $user['email'] == 'shmaliy@sunny.net.ua') {
+			if ($user['email'] == 'z.vadim@aktiv-sistema.com' || $user['email'] == 'shmaliy@sunny.net.ua') {
 				$this->_tpl->assign('link', 1);
 			} else {
 				$this->_tpl->assign('link', 0);
