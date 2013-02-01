@@ -95,7 +95,7 @@
 						<td width="531" valign="top">
 														
 							<div class="base-date">Добавлено: {$data.public_date}</div>
-							{$data.body}{$files}{$links}
+							{$data.body}<div class="clr"></div>{$files}<div class="clr"></div>{$links}<div class="clr"></div>
 							
 							<div>
 								<table cellpadding="0" cellspacing="0">

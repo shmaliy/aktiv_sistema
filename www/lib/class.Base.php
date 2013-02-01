@@ -168,6 +168,7 @@ class class_Base extends Controller_Abstract {
     	} else {
     		$this->_tpl->assign('item', $content);
     		$this->_tpl->assign('filestore', $content['fileslist']);
+    		$this->_tpl->assign('linkslist', $content['linkslist']);
     		$tpl = $this->_tpl->fetch('base.edit.tpl');
     		$this->tpl->assign('CONTENT', $tpl);
     	}

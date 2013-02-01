@@ -90,7 +90,7 @@
 						<td width="218" valign="top">{$mainmenu} </td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
-						<td width="531" valign="top">{$data.body}{$files}{$links}</td>
+						<td width="531" valign="top">{$data.body}<div class="clr"></div>{$files}<div class="clr"></div>{$links}<div class="clr"></div></td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
 						<td width="186" valign="top"><table width="100%" border="0"
