@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-21 22:38:32
+<?php /* Smarty version Smarty-3.1.12, created on 2013-02-04 20:53:14
          compiled from "sm\templates\_layout.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3000050f864c6021326-49329438%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0e1e2071582b3d310d8ce47206f7441020f63d12' => 
     array (
       0 => 'sm\\templates\\_layout.tpl',
-      1 => 1358800705,
+      1 => 1359915968,
       2 => 'file',
     ),
   ),
@@ -130,9 +130,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
 						<td width="531" valign="top"><?php echo $_smarty_tpl->tpl_vars['data']->value['body'];?>
-<?php echo $_smarty_tpl->tpl_vars['files']->value;?>
-<?php echo $_smarty_tpl->tpl_vars['links']->value;?>
-</td>
+<div class="clr"></div><?php echo $_smarty_tpl->tpl_vars['files']->value;?>
+<div class="clr"></div><?php echo $_smarty_tpl->tpl_vars['links']->value;?>
+<div class="clr"></div></td>
 						<td width="23"><img src="/images/t_fill.gif" width="23" height="1">
 						</td>
 						<td width="186" valign="top"><table width="100%" border="0"

@@ -159,7 +159,26 @@ var registerTab = '#tabs-list-register';
 							
 						}
 						
-						setTimeout(function() {window.location.href='';}, 2000);
+						if (response['return']) {
+							var action = explode('/', response['return']);
+							//console.log(action);
+							
+							
+							if (action[1] == 'parseClick') {
+								$(this).active('parseclick', action[2]);
+								setTimeout(function() {window.location.href='';}, 2000);
+							}
+							
+							if (action[1] == 'signToAction') {
+								$(this).active('signtoaction', '/' + action[1] + '/' + action[2]);
+								setTimeout(function() {window.location.href='';}, 2000);
+							}
+							
+						} else {
+							setTimeout(function() {window.location.href='';}, 2000);
+						}
+						
+						
 					}
 									
 				},
@@ -281,6 +300,43 @@ var registerTab = '#tabs-list-register';
 	};
 })( jQuery );
 
+
+function explode( delimiter, string ) { // Split a string by string
+		    //
+		    // +   original by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+		    // +   improved by: kenneth
+		    // +   improved by: Kevin van Zonneveld (http://kevin.vanzonneveld.net)
+		 
+	var emptyArray = { 0: '' };
+		 
+	if ( arguments.length != 2
+		|| typeof arguments[0] == 'undefined'
+		|| typeof arguments[1] == 'undefined' )
+	{
+		return null;
+	}
+		 
+	if ( delimiter === ''
+		|| delimiter === false
+		|| delimiter === null )
+	{
+		return false;
+	}
+		 
+	if ( typeof delimiter == 'function'
+		|| typeof delimiter == 'object'
+		|| typeof string == 'function'
+		|| typeof string == 'object' )
+	{
+		return emptyArray;
+	}
+		 
+	if ( delimiter === true ) {
+		delimiter = '1';
+	}
+		 
+	return string.toString().split ( delimiter.toString() );
+}
 
 
 $(document).ready(function(){

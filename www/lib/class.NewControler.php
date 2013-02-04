@@ -85,6 +85,7 @@ class NewController extends Controller_Abstract
 			$this->_contentModel->insert($this->_contentModel->_activityTbl, $insert);
 			echo iconv("windows-1251", "UTF-8", $item['title'] . ' - ' . $item['public_date']);
 		} else {
+			$_SESSION['request']['last_request'] = $_SERVER['REQUEST_URI'];
 			echo 'error';
 		}
 	}
@@ -166,6 +167,9 @@ class NewController extends Controller_Abstract
 			if (isset($links[$link_id])) {
 				
 				if ($links[$link_id]['free'] == '0' && !isset($_SESSION['frontEndLogin']['userId']) || $_SESSION['frontEndLogin']['userId'] === 0) {
+					
+					$_SESSION['request']['last_request'] = $_SERVER['REQUEST_URI'];
+	
 					echo 'error';
 					return;
 				}
@@ -304,6 +308,10 @@ class NewController extends Controller_Abstract
 		}
 		
 		$result['success'] = iconv("windows-1251", "UTF-8", 'Авторизация прошла успешно!');
+		if (isset($_SESSION['request']['last_request']) && !empty($_SESSION['request']['last_request'])) {
+			$result['return'] = $_SESSION['request']['last_request'];
+			unset($_SESSION['request']['last_request']);
+		}
 		echo json_encode($result);
 		
 		session_id($sid);
@@ -418,6 +426,10 @@ class NewController extends Controller_Abstract
 		
 		$_SESSION['frontEndLogin']['userId'] = $this->_subscribersModel->insert($this->_subscribersModel->getTbl(), $insert);
 		$result['success'] = iconv("windows-1251", "UTF-8", 'Регистрация прошла успешно!');
+		if (isset($_SESSION['request']['last_request']) && !empty($_SESSION['request']['last_request'])) {
+			$result['return'] = $_SESSION['request']['last_request'];
+			unset($_SESSION['request']['last_request']);
+		}
 		echo json_encode($result);
 	}
 	
@@ -496,7 +508,7 @@ class NewController extends Controller_Abstract
 		
 		if ($tbl == 'content') {
 			$item = $this->_contentModel->getContentItem($id);
-			$file = json_decode($item['fileslist'], true);
+			$file = $item['fileslist'];
 			
 			if(isset($_SESSION['frontEndLogin']['userId']) && $_SESSION['frontEndLogin']['userId'] > 0) {
 				echo $file['path'];

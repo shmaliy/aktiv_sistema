@@ -491,19 +491,32 @@ a, img {
 	
 }
 
-.access-link {
+.link-container {
+	width:258px;
+	height:98px;
+	display:block;
+	float:left;
+	margin:15px 5px 25px 0;
+}
+
+.link-container .access-link {
 	width:238px;
 	height: 58px;
 	display:block;
-	float:left;
 	background:url(/images/sunny/links_list_item_nohover.png) top left no-repeat;
-	margin:15px 5px 15px 0;
+	margin:15px 3px 5px 0;
 	color: #205a86;
 	text-decoration:none;
 	text-transform:uppercase;
 	padding:10px;
 	text-align:center;
 	overflow:hidden;
+}
+
+.link-container .remark {
+	font-size:10px;
+	width:258px;
+	text-align:center;
 }
 
 .access-link:hover {
