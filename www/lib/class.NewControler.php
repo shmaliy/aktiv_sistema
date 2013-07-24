@@ -92,6 +92,8 @@ class NewController extends Controller_Abstract
 	
 	public function contentItemAction($menu, $submenu) {
 		
+		$test = $this->_contentModel->testSelect();
+		
 		$result = $this->_contentModel->getContentListNew($menu, $submenu);
 		//var_export($result);
 		$this->_tpl->assign('data', $result[0]);

@@ -27,6 +27,28 @@ class Models_Content extends Models_Abstract
 		parent::__construct();
 	}
 	
+	public function testSelect()
+	{
+		$select = $this->_db->select();
+		
+		$select->from(
+			array('part' => 'parts'),
+			array('man_id', 'p_name' => 'name')
+		);
+		
+		$select->joinLeft(
+			array('man' => 'manufacturers'),
+			"part.man_id = man.id",
+			array(
+				'id', 'name'		
+			) 		
+		);
+ 		$select->orWhere("man.name = ?", 'Dell Ltd');
+ 		$select->orWhere("man.name = ?", 'JDF Ltd');
+		
+		echo $select;
+	}
+	
 	public function getMenuTree($str = 0, $submenu = 0) {
 		
 		$select = $this->_db->select();

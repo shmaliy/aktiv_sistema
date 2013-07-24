@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2013-01-29 14:26:11
+<?php /* Smarty version Smarty-3.1.12, created on 2013-02-06 23:59:24
          compiled from "sm\templates\base.item.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:258775107acdbde7e60-76930305%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7370904acd8c01ecd5e5cbcfb8d49b33335812d5' => 
     array (
       0 => 'sm\\templates\\base.item.tpl',
-      1 => 1359458768,
+      1 => 1359915968,
       2 => 'file',
     ),
   ),
@@ -135,9 +135,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 							<div class="base-date">Добавлено: <?php echo $_smarty_tpl->tpl_vars['data']->value['public_date'];?>
 </div>
 							<?php echo $_smarty_tpl->tpl_vars['data']->value['body'];?>
-<?php echo $_smarty_tpl->tpl_vars['files']->value;?>
-<?php echo $_smarty_tpl->tpl_vars['links']->value;?>
-
+<div class="clr"></div><?php echo $_smarty_tpl->tpl_vars['files']->value;?>
+<div class="clr"></div><?php echo $_smarty_tpl->tpl_vars['links']->value;?>
+<div class="clr"></div>
 							
 							<div>
 								<table cellpadding="0" cellspacing="0">
